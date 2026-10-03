@@ -10,8 +10,12 @@ import type { EventCategory } from './eventCategory';
 import type { EventSource } from './eventSource';
 
 export interface EventInput {
-  /** @minLength 1 */
+  /**
+     * @minLength 1
+     * @maxLength 200
+     */
   title: string;
+  /** @maxLength 2000 */
   summary: string;
   /**
      * @nullable

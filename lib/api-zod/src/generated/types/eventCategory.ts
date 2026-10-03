@@ -19,4 +19,13 @@ export const EventCategory = {
   'Arts_&_Culture': 'Arts & Culture',
   Wellness: 'Wellness',
   Community: 'Community',
+  'Faith_&_Spirituality': 'Faith & Spirituality',
+  'Science_&_Technology': 'Science & Technology',
+  Workshops: 'Workshops',
+  Film: 'Film',
+  Sustainability: 'Sustainability',
+  'Service_&_Volunteering': 'Service & Volunteering',
+  Food: 'Food',
+  Politics: 'Politics',
+  Student_Government: 'Student Government',
 } as const;

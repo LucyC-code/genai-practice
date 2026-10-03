@@ -2,7 +2,7 @@ import { Mail, Globe, Users, Megaphone, MessageCircle } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import type { EventCategory, EventSource } from "@workspace/api-client-react";
 
-export const CATEGORIES: EventCategory[] = ["Academic", "Career", "Networking", "Social", "Sports", "Clubs", "Arts & Culture", "Wellness", "Community"];
+export const CATEGORIES: EventCategory[] = ["Academic", "Career", "Networking", "Social", "Sports", "Clubs", "Arts & Culture", "Wellness", "Community", "Faith & Spirituality", "Science & Technology", "Workshops", "Film", "Sustainability", "Service & Volunteering", "Food", "Politics", "Student Government"];
 export const CLASS_YEARS = ["Freshman", "Sophomore", "Junior", "Senior", "Graduate"] as const;
 export function audienceLabel(years: readonly string[] | undefined) {
   if (!years?.length) return "Year not specified";
@@ -13,6 +13,8 @@ export function audienceLabel(years: readonly string[] | undefined) {
 export const SOURCES: EventSource[] = ["Email", "Instagram", "GroupMe", "Campus website", "Student organization", "Other"];
 export const CAT_COLOR: Record<string, string> = {
   Academic: "#2f6f8f", Career: "#e8572a", Networking: "#256c62", Social: "#d94f8a", Sports: "#3556a5", Clubs: "#8c5734", "Arts & Culture": "#7a4fc4", Wellness: "#2e8b6a", Community: "#e0a416",
+  "Faith & Spirituality": "#65519a", "Science & Technology": "#215f89", Workshops: "#6f5729", Film: "#6d426a",
+  Sustainability: "#276449", "Service & Volunteering": "#246b73", Food: "#9b422e", Politics: "#3c4c7a", "Student Government": "#5c5475",
 };
 export function SourceIcon({ source, className = "h-3.5 w-3.5" }: { source: string; className?: string }) {
   if (source === "Instagram") return <SiInstagram className={className} />;

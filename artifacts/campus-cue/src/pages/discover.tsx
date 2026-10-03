@@ -125,6 +125,7 @@ export default function Discover() {
   const [sport, setSport] = useState<Sport>("");
   const [onDate, setOnDate] = useState("");
   const [visibleCount, setVisibleCount] = useState(48);
+  const [includeWeeklySchedules, setIncludeWeeklySchedules] = useState(true);
   const [view, setView] = useState<"list" | "calendar">(() =>
     new URLSearchParams(window.location.search).get("view") === "calendar" ? "calendar" : "list");
   const changeView = (next: "list" | "calendar") => {
@@ -137,7 +138,7 @@ export default function Discover() {
   };
   useEffect(() => {
     setVisibleCount(48);
-  }, [search, category, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil]);
+  }, [search, category, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil, includeWeeklySchedules]);
   const params = useMemo<GetEventsParams>(() => {
     const p: GetEventsParams = { timeframe };
     if (search.trim()) p.search = search.trim();
@@ -149,10 +150,12 @@ export default function Discover() {
   const { data: ov } = useGetEventOverview();
   const availabilityActive = !!availableFrom && !!availableUntil && availableFrom < availableUntil;
   const matchingEvents = (events ?? []).filter(ev =>
+    (includeWeeklySchedules || !ev.tags.includes("Published weekly schedule")) &&
     matchesDiscovery(ev, activity, sport, onDate) && (!availabilityActive ||
       (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil)));
-  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil || !!activity || !!sport || !!onDate;
-  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); setActivity(""); setSport(""); setOnDate(""); };
+  const weeklyCount = matchingEvents.filter(ev => ev.tags.includes("Published weekly schedule")).length;
+  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil || !!activity || !!sport || !!onDate || !includeWeeklySchedules;
+  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); setActivity(""); setSport(""); setOnDate(""); setIncludeWeeklySchedules(true); };
   return (
     <div className="space-y-8">
       <section className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
@@ -179,11 +182,18 @@ export default function Discover() {
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
-          {(["", ...CATEGORIES] as const).map(c => (
+          {(["", ...CATEGORIES.slice(0, 9)] as const).map(c => (
               <button key={c || "all"} aria-pressed={category === c} onClick={() => { setCategory(c as EventCategory | ""); if (c !== "Sports") setSport(""); }} data-testid={`button-category-${c || "all"}`}
               className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all hover:-translate-y-0.5 ${category === c ? "border-foreground text-white" : "border-border bg-background"}`}
               style={category === c ? { background: c ? CAT_COLOR[c] : "hsl(var(--foreground))" } : undefined}>{c === "Networking" && <Handshake className="h-4 w-4" />}{c || "All"}</button>
           ))}
+          <label className="flex items-center gap-2 text-sm font-semibold">
+            More categories
+            <select value={CATEGORIES.slice(9).includes(category as EventCategory) ? category : ""} onChange={e => { setCategory(e.target.value as EventCategory | ""); setSport(""); }} data-testid="select-more-categories" className="max-w-56 rounded-lg border-2 border-input bg-background px-2 py-1.5 text-sm font-normal">
+              <option value="">Choose a category</option>
+              {CATEGORIES.slice(9).map(c => <option key={c} value={c}>{c}</option>)}
+            </select>
+          </label>
         </div>
         <fieldset className="border-t border-border pt-3">
           <legend className="pt-3 text-sm font-semibold">What do you want to do?</legend>
@@ -220,13 +230,20 @@ export default function Discover() {
           {(availableFrom || availableUntil) && <button onClick={() => { setAvailableFrom(""); setAvailableUntil(""); }} data-testid="button-clear-availability" className="text-xs underline">Clear</button>}
           <p className="w-full text-xs text-muted-foreground">{availabilityActive ? "Showing events fully inside this window with confirmed start and end times. No calendar connection needed." : availableFrom && availableUntil ? "End time must be later than start time." : "Optional: enter both times to find events that fit."}</p>
         </div>
+        <div className="space-y-1 border-t border-border pt-3">
+          <label className="flex items-center gap-2 text-sm font-semibold">
+            <input type="checkbox" checked={includeWeeklySchedules} onChange={e => setIncludeWeeklySchedules(e.target.checked)} data-testid="checkbox-weekly-schedules" className="h-4 w-4 accent-primary" />
+            Include published weekly schedules
+          </label>
+          <p className="text-xs text-muted-foreground">Counts refer to dated occurrences, not unique event series. Weekly schedules are labeled and exclude published semester breaks. Turn this off to focus on individually dated announcements.</p>
+        </div>
       </section>
       <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
         <div className="inline-flex rounded-full border-2 border-foreground bg-card p-0.5" role="group" aria-label="Event view">
           <button onClick={() => changeView("list")} aria-pressed={view === "list"} data-testid="button-view-list" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "list" ? "bg-foreground text-background" : "hover:bg-muted"}`}><List className="h-4 w-4" />List</button>
           <button onClick={() => changeView("calendar")} aria-pressed={view === "calendar"} data-testid="button-view-calendar" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "calendar" ? "bg-foreground text-background" : "hover:bg-muted"}`}><CalendarDays className="h-4 w-4" />Calendar</button>
         </div>
-        <span className="font-mono-cue text-muted-foreground" aria-live="polite">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}`}</span>
+        <span className="font-mono-cue text-muted-foreground" aria-live="polite">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}${weeklyCount ? ` · ${weeklyCount} weekly-schedule occurrences` : ""}`}</span>
         {filtersActive && <button onClick={reset} data-testid="button-clear-filters" className="flex items-center gap-1.5 font-semibold underline underline-offset-4"><RotateCcw className="h-3.5 w-3.5" />Clear filters</button>}
       </div>
 

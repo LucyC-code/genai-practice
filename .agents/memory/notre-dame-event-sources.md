@@ -20,3 +20,15 @@ Official athletics schedules at https://fightingirish.com/ can contain an older 
 **Why:** The track page still displayed a previous season while football and hockey had current upcoming games. The rugby page's heading was newer than its URL. Some NDCentral listings used setup or room-reservation windows instead of public show times.
 
 **How to apply:** Verify the season heading, home/away location, and event description before importing. Never turn TBA or a tournament placeholder into midnight, or present a room reservation as the performance. Public listing visibility alone is not an all-year eligibility statement; independently check AI-extracted audience claims.
+
+Published weekly schedules may be expanded only within their stated operating period and with their exceptions applied; label them as schedule occurrences, not separate special-event announcements.
+
+**Why:** Campus Ministry's campus Mass schedule explicitly applies only when classes are in session. The Basilica has different home-football and holiday schedules. Blindly repeating a weekly slot through breaks would create nonexistent services.
+
+**How to apply:** Cross-check https://campusministry.nd.edu/pray/mass-schedule/campus-mass-schedule/ with the official academic calendar and https://basilica.nd.edu/prayer-and-worship/mass-confession-schedule/. Do not infer post-game start times or extend a current fall schedule into a new semester.
+
+Library event RSS publication dates and URL slugs are not authoritative start dates. The public events collection exposes schema.org Event records with startDate, endDate, location, and eventStatus.
+
+**Why:** A library exhibit's URL date differed from its actual opening date, and RSS pubDate recorded when the listing was updated. Ordinary iCalendar endpoints do not exist uniformly across Notre Dame department sites.
+
+**How to apply:** Prefer structured Event dates from https://www.library.nd.edu/events. Discover each site's published feed links rather than assuming every site supports events.ics; exclude off-campus and virtual-only venues when expanding this campus-only collection.

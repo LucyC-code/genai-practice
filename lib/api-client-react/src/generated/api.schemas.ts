@@ -22,6 +22,15 @@ export const EventCategory = {
   'Arts_&_Culture': 'Arts & Culture',
   Wellness: 'Wellness',
   Community: 'Community',
+  'Faith_&_Spirituality': 'Faith & Spirituality',
+  'Science_&_Technology': 'Science & Technology',
+  Workshops: 'Workshops',
+  Film: 'Film',
+  Sustainability: 'Sustainability',
+  'Service_&_Volunteering': 'Service & Volunteering',
+  Food: 'Food',
+  Politics: 'Politics',
+  Student_Government: 'Student Government',
 } as const;
 
 export type ClassYear = typeof ClassYear[keyof typeof ClassYear];
@@ -84,8 +93,12 @@ export interface Event {
 }
 
 export interface EventInput {
-  /** @minLength 1 */
+  /**
+     * @minLength 1
+     * @maxLength 200
+     */
   title: string;
+  /** @maxLength 2000 */
   summary: string;
   /**
      * @nullable
