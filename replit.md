@@ -1,10 +1,11 @@
-# [Project name]
+# CampusCue
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A mobile-responsive campus discovery hub that organizes scattered announcements into a shared, filterable event feed.
 
 ## Run & Operate
 
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/campus-cue run dev` — run the website through its managed workflow
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
@@ -22,15 +23,24 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- Website: `artifacts/campus-cue`; shared API: `artifacts/api-server`
+- API contract: `lib/api-spec/openapi.yaml`; generated clients: `lib/api-client-react`
+- Database schema: `lib/db/src/schema`; event extraction logic: `artifacts/api-server/src/lib/event-extraction.ts`
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first slice uses labeled demo seed events and pasted source announcements, not live scraping. This keeps the prototype focused on the aggregation-to-discovery pipeline without channel authorization or scraping complexity.
+- AI extraction proposes metadata; users review and edit every suggestion before publishing. Unknown facts remain null instead of being invented.
+- Relative dates are resolved against the server's current UTC date, with that reference date shown in parser notes for human verification.
+- Calendar days remain `YYYY-MM-DD` strings end to end to avoid timezone shifts.
+- Reports are stored for manual follow-up; an organizer correction queue is not part of this first slice.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Discover shared events with search, categories, today/this-week filters, and a manually entered free-time window.
+- Paste an email, caption, or chat announcement; extract multiple events with AI; review missing fields and uncertainties; publish each approved suggestion.
+- Read event details and report inaccurate or duplicate entries.
+- Prototype boundaries from the problem framing: responsive web only; no ticketing/payments, user messaging/profiles, two-way calendar sync, or live source scraping.
 
 ## User preferences
 

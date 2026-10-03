@@ -1,0 +1,1 @@
+- [Notre Dame event sources](notre-dame-event-sources.md) — NDCentral exposes public club event details; check campus location and dates before using Instagram announcements.
