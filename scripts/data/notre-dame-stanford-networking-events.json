@@ -1,0 +1,228 @@
+{
+  "researchedAt": "2026-10-03",
+  "timezone": "America/Indiana/Indianapolis",
+  "window": {
+    "from": "2026-10-04",
+    "through": "2026-10-10",
+    "gameKickoff": "2026-10-10T15:30:00-04:00",
+    "gameSource": "https://hospitality.nd.edu/events/2026/10/10/kickoff-notre-dame-vs-stanford/"
+  },
+  "coverageNote": "Eight distinct, individually dated organizer-confirmed gatherings before the Stanford kickoff. Community/alumni and leadership networking are distinguished from employer recruiting; donor events preserve membership and registration requirements. No repeated weekly schedules or separate cards for subprograms.",
+  "sources": [
+    {
+      "url": "https://giving.nd.edu/notre-dame-giving-society-events-for-the-2026-football-season",
+      "kind": "Official article confirming Stanford-weekend program and member audience"
+    },
+    {
+      "url": "https://giving.nd.edu/wp-json/tribe/events/v1/events?start_date=2026-10-04&end_date=2026-10-10&per_page=5",
+      "kind": "Public organizer Event API, dated entries with Eastern timezone and venue; pages 1–3 reviewed"
+    },
+    {
+      "url": "https://hospitality.nd.edu/cheer/football-gameday/on-campus-events/",
+      "kind": "Official dated Friday program with times and venues"
+    },
+    {
+      "url": "https://mendoza.nd.edu/alumni/gamedayconnect",
+      "kind": "Stanford-specific Friday schedule and adult/guest attendance rules"
+    },
+    {
+      "url": "https://my.nd.edu/networks/events/282547",
+      "kind": "Alumni organizer listing; date/time corroborated by Hospitality program"
+    }
+  ],
+  "socialResearch": [
+    {
+      "url": "https://www.instagram.com/ndalumni",
+      "status": "Publicly indexed Instagram results checked; not treated as proof of a new dated event."
+    },
+    {
+      "url": "https://www.instagram.com/notredamebusiness",
+      "status": "Publicly indexed posts checked. Ascend EMBA Summit is October 14–16, after Stanford, so excluded. No Instagram-only event imported without current dated corroboration."
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Fr. Link Council Dinner with Dean Cole",
+      "url": "https://giving.nd.edu/event-list/fr-link-council-dinner-with-dean-cole/",
+      "reason": "Confirmed October 9 dinner but venue is explicitly to be determined; do not invent a verified campus venue."
+    },
+    {
+      "title": "Rockne practice, locker-room tours, and Pete’s Pregame",
+      "reason": "Sports viewing/tours/talks without an explicit networking program; not relabeled merely to increase Networking count."
+    },
+    {
+      "title": "Rockne Bash",
+      "url": "https://giving.nd.edu/event-list/rockne-bash-2/",
+      "reason": "Announced as a music/food-truck party, rather than an explicit networking event; not relabeled to increase count."
+    },
+    {
+      "title": "Ascend: Notre Dame EMBA Summit",
+      "reason": "October 14–16 is outside the requested pre-Stanford window."
+    },
+    {
+      "title": "Notre Dame of Maryland alumni weekend",
+      "reason": "Different institution and campus."
+    }
+  ],
+  "categoryCounts": {
+    "Networking": 8
+  },
+  "events": [
+    {
+      "title": "Football Fridays at the Eck — Stanford Weekend",
+      "summary": "Meet fellow Notre Dame alumni and friends at the Eck Visitors Center before the Stanford game. Free and open to the public, with live music, a science exploration program, and conversations with Notre Dame guests. Food and drinks are available for purchase; campus is cashless. This is a community/alumni gathering, not an employer recruiting fair. Individual performances are part of this program, not separate networking events.",
+      "eventDate": "2026-10-09",
+      "startTime": "11:00",
+      "endTime": "17:30",
+      "location": "Eck Visitors Center",
+      "hostOrganization": "Notre Dame Alumni Association",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Open to the public",
+        "Alumni gathering",
+        "Free admission"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://my.nd.edu/networks/events/282547"
+    },
+    {
+      "title": "Here Come the Irish Kickoff — Stanford Weekend",
+      "summary": "Kick off your weekend right where the action happens. Grab a bite from the hors d’oeuvres station, hit the bar, and get your cameras ready for epic photos inside Notre Dame Stadium. This is your time to mingle with fellow members, soak in the stadium energy, and enjoy some special surprises and activities. Open to all giving society members at the Green, Blue, and Gold levels, as well as members of the Sorin Founder’s Society, Dean’s Circle, Jesse Harper Council, Athletics Director’s Circle, and Badin Guild. Advance registration is required for giving-society events. This is a donor-community gathering, not an open student recruiting event.",
+      "eventDate": "2026-10-09",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "location": "Foley’s Club at Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Giving Societies",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Members only",
+        "Registration required",
+        "Donor community"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://giving.nd.edu/event-list/here-come-the-irish-kickoff-3/"
+    },
+    {
+      "title": "Inspired Leadership Initiative Open House — Stanford Weekend",
+      "summary": "Connect with ILI staff, current fellows, and alumni over refreshments. Free and open to the public; a short presentation starts at 2:15 p.m. The Inspired Leadership Initiative is designed for accomplished individuals who have completed their careers and are exploring their next stage of life. This is a leadership/career-transition open house, not a student internship or employer recruiting fair.",
+      "eventDate": "2026-10-09",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "location": "329 DeBartolo Hall",
+      "hostOrganization": "Inspired Leadership Initiative",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Open to the public",
+        "Leadership open house",
+        "Career transition"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://hospitality.nd.edu/events/2026/10/09/inspired-leadership-initiative-ili-open-house-16/"
+    },
+    {
+      "title": "Rockne Premier Cocktail Hour — Stanford Weekend",
+      "summary": "Soak up the electric energy right inside the most unique spaces of Notre Dame Stadium. This is your chance to grab a drink, talk strategy with Notre Dame coaches, and hang out with special guests from the Athletics Department the night before the big game. Open to Jesse Harper Council and Athletics Director’s Circle members. Advance registration is required for giving-society events. This is a donor-community gathering, not an open student recruiting event.",
+      "eventDate": "2026-10-09",
+      "startTime": "16:30",
+      "endTime": "18:30",
+      "location": "Seven on 9 – Corbett Family Hall, Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Giving Societies",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Members only",
+        "Registration required",
+        "Donor community"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://giving.nd.edu/event-list/rockne-premier-cocktail-hour-3/"
+    },
+    {
+      "title": "Mendoza Rally — Stanford Weekend",
+      "summary": "Connect with Mendoza alumni and current graduate business students in the Mendoza Courtyard ahead of the Stanford game. Complimentary admission, light fare, and an open bar. The organizer asks attendees to focus on connecting with current graduate students. Adults only; Mendoza alumni are asked to bring no more than two guests. This is an alumni/graduate-business gathering, not a general employer recruiting fair.",
+      "eventDate": "2026-10-09",
+      "startTime": "16:30",
+      "endTime": "18:30",
+      "location": "Mendoza College of Business Courtyard",
+      "hostOrganization": "Mendoza College of Business",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Alumni & graduate students",
+        "Adults only",
+        "Complimentary admission"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://mendoza.nd.edu/alumni/gamedayconnect"
+    },
+    {
+      "title": "Rockne Reception — Stanford Weekend",
+      "summary": "Bring the energy to Club Naimoli for a signature evening packed with great food, drinks, and the ultimate inside track. Connect with fellow Rockne members and hear directly from an exciting lineup of Fighting Irish speakers and special guests. As always, you’ll catch the Notre Dame Volleyball match in absolute comfort, enjoying prime views of the court from our top-tier club space. Please note: The clear bag policy is in effect for this event. Open to Rockne Athletics Fund members at the Irish, Green, Blue and Gold levels. Advance registration is required for giving-society events. This is a donor-community gathering, not an open student recruiting event.",
+      "eventDate": "2026-10-09",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "location": "Club Naimoli at Joyce Center",
+      "hostOrganization": "Notre Dame Giving Societies",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Members only",
+        "Registration required",
+        "Donor community"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://giving.nd.edu/event-list/rockne-reception/"
+    },
+    {
+      "title": "Shake Down the Thunder Tailgate — Stanford Weekend",
+      "summary": "Experience the ultimate gameday celebration in the heart of student life at Notre Dame’s Duncan Student Center. Join your fellow giving society members for an exclusive, family-friendly tailgate featuring an impressive spread of tailgate favorites, beer and wine, and rotating entertainment from some of Notre Dame’s most beloved traditions — including appearances by the iconic Notre Dame Leprechaun, Notre Dame Cheerleaders, Notre Dame Bagpipe Band, and more. Catch live coverage of afternoon sports on a 22-foot-wide TV screen and multiple TVs throughout the space before heading into the stadium to cheer on the Irish. Please ensure you have your game ticket ready for scanning upon entry , as the venue is located within Notre Dame Stadium and access requires a valid game ticket. Open to all giving society members at the Green, Blue, and Gold levels, as well as members of the Sorin Founder’s Society, Dean’s Circle, Jesse Harper Council, Athletics Director’s Circle, and Badin Guild. Advance registration is required for giving-society events. This is a donor-community gathering, not an open student recruiting event.",
+      "eventDate": "2026-10-10",
+      "startTime": "12:00",
+      "endTime": "15:00",
+      "location": "Duncan Student Center at Notre Dame Stadium (Door 16)",
+      "hostOrganization": "Notre Dame Giving Societies",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Members only",
+        "Registration required",
+        "Donor community"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://giving.nd.edu/event-list/shake-down-the-thunder-tailgate-3/"
+    },
+    {
+      "title": "Badin Guild Tailgate — Stanford Weekend",
+      "summary": "Join your fellow Badin Guild members for the ultimate tailgate before the Fighting Irish take on Stanford! Open to all Badin Guild members. Advance registration is required for giving-society events. This is a donor-community gathering, not an open student recruiting event.",
+      "eventDate": "2026-10-10",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "location": "West of South Dining Hall on South Quad",
+      "hostOrganization": "Notre Dame Giving Societies",
+      "category": "Networking",
+      "tags": [
+        "Stanford weekend",
+        "Members only",
+        "Registration required",
+        "Donor community"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://giving.nd.edu/event-list/badin-guild-tailgate/"
+    }
+  ]
+}

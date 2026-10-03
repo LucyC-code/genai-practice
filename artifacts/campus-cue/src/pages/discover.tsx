@@ -8,6 +8,7 @@ import { CATEGORIES, CLASS_YEARS, audienceLabel, CAT_COLOR, EventArt, SourceIcon
 import { ACTIVITIES, SPORTS, matchesDiscovery, type Activity, type Sport } from "@/lib/discovery-filters";
 import { CalendarActions } from "@/components/calendar-actions";
 import { EventCalendar } from "@/components/event-calendar";
+import { MAX_SELECTED_CATEGORIES, toggleCategory, matchesCategories, serverCategory } from "@/lib/category-selection";
 
 const TF = [["all", "Anytime"], ["today", "Today"], ["week", "This week"]] as const;
 
@@ -115,7 +116,7 @@ function Detail({ ev, onClose }: { ev: Event | null; onClose: () => void }) {
 
 export default function Discover() {
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState<EventCategory | "">("");
+  const [categories, setCategories] = useState<EventCategory[]>([]);
   const [classYear, setClassYear] = useState<ClassYear | "">("");
   const [timeframe, setTimeframe] = useState<"all" | "today" | "week">("all");
   const [open, setOpen] = useState<Event | null>(null);
@@ -138,24 +139,37 @@ export default function Discover() {
   };
   useEffect(() => {
     setVisibleCount(48);
-  }, [search, category, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil, includeWeeklySchedules]);
+  }, [search, categories, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil, includeWeeklySchedules]);
   const params = useMemo<GetEventsParams>(() => {
     const p: GetEventsParams = { timeframe };
     if (search.trim()) p.search = search.trim();
+    const category = serverCategory(categories);
     if (category) p.category = category;
     if (classYear) p.classYear = classYear;
     return p;
-  }, [search, category, timeframe, classYear]);
+  }, [search, categories, timeframe, classYear]);
   const { data: events, isLoading, isError, refetch } = useGetEvents(params);
   const { data: ov } = useGetEventOverview();
   const availabilityActive = !!availableFrom && !!availableUntil && availableFrom < availableUntil;
   const matchingEvents = (events ?? []).filter(ev =>
+    matchesCategories(ev.category, categories) &&
     (includeWeeklySchedules || !ev.tags.includes("Published weekly schedule")) &&
-    matchesDiscovery(ev, activity, sport, onDate) && (!availabilityActive ||
+    matchesDiscovery(ev, activity, ev.category === "Sports" ? sport : "", onDate) && (!availabilityActive ||
       (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil)));
   const weeklyCount = matchingEvents.filter(ev => ev.tags.includes("Published weekly schedule")).length;
-  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil || !!activity || !!sport || !!onDate || !includeWeeklySchedules;
-  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); setActivity(""); setSport(""); setOnDate(""); setIncludeWeeklySchedules(true); };
+  const categoryLimitReached = categories.length >= MAX_SELECTED_CATEGORIES;
+  const sportSelectionBlocked = categoryLimitReached && !categories.includes("Sports");
+  const selectCategory = (category: EventCategory) => {
+    setCategories(current => toggleCategory(current, category));
+    if (category === "Sports") setSport("");
+  };
+  const selectSport = (sport: Sport | "") => {
+    if (sport && sportSelectionBlocked) return;
+    setSport(sport);
+    if (sport) setCategories(current => current.includes("Sports") ? current : toggleCategory(current, "Sports"));
+  };
+  const filtersActive = !!search || categories.length > 0 || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil || !!activity || !!sport || !!onDate || !includeWeeklySchedules;
+  const reset = () => { setSearch(""); setCategories([]); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); setActivity(""); setSport(""); setOnDate(""); setIncludeWeeklySchedules(true); };
   return (
     <div className="space-y-8">
       <section className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
@@ -181,19 +195,23 @@ export default function Discover() {
             {TF.map(([v, l]) => <button key={v} aria-pressed={timeframe === v} onClick={() => { setTimeframe(v); setOnDate(""); }} data-testid={`button-timeframe-${v}`} className={`flex-1 rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${timeframe === v ? "bg-foreground text-background" : "hover:bg-muted"}`}>{l}</button>)}
           </div>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {(["", ...CATEGORIES.slice(0, 9)] as const).map(c => (
-              <button key={c || "all"} aria-pressed={category === c} onClick={() => { setCategory(c as EventCategory | ""); if (c !== "Sports") setSport(""); }} data-testid={`button-category-${c || "all"}`}
-              className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all hover:-translate-y-0.5 ${category === c ? "border-foreground text-white" : "border-border bg-background"}`}
-              style={category === c ? { background: c ? CAT_COLOR[c] : "hsl(var(--foreground))" } : undefined}>{c === "Networking" && <Handshake className="h-4 w-4" />}{c || "All"}</button>
-          ))}
-          <label className="flex items-center gap-2 text-sm font-semibold">
-            More categories
-            <select value={CATEGORIES.slice(9).includes(category as EventCategory) ? category : ""} onChange={e => { setCategory(e.target.value as EventCategory | ""); setSport(""); }} data-testid="select-more-categories" className="max-w-56 rounded-lg border-2 border-input bg-background px-2 py-1.5 text-sm font-normal">
-              <option value="">Choose a category</option>
-              {CATEGORIES.slice(9).map(c => <option key={c} value={c}>{c}</option>)}
-            </select>
-          </label>
+        <div className="space-y-2">
+          <p id="category-selection-help" className="text-xs text-muted-foreground" aria-live="polite" data-testid="text-category-selection">
+            Choose up to {MAX_SELECTED_CATEGORIES} categories. {categories.length ? `${categories.length} of ${MAX_SELECTED_CATEGORIES} selected · Showing events in any selected category.${categoryLimitReached ? " Deselect one to choose another." : ""}` : "None selected means all categories."}
+          </p>
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Event categories, choose up to four" aria-describedby="category-selection-help">
+            <button aria-pressed={categories.length === 0} onClick={() => { setCategories([]); setSport(""); }} data-testid="button-category-all"
+              className={`rounded-full border-2 px-3 py-1 text-sm font-semibold ${categories.length === 0 ? "border-foreground bg-foreground text-background" : "border-border bg-background hover:bg-muted"}`}>All</button>
+            {CATEGORIES.map(category => {
+              const selected = categories.includes(category);
+              return <button key={category} aria-pressed={selected} disabled={!selected && categoryLimitReached} onClick={() => selectCategory(category)} data-testid={`button-category-${category}`}
+                className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all enabled:hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 ${selected ? "border-foreground text-white" : "border-border bg-background"}`}
+                style={selected ? { background: CAT_COLOR[category] } : undefined}>
+                {selected ? <CheckCircle2 className="h-3.5 w-3.5" /> : category === "Networking" ? <Handshake className="h-4 w-4" /> : null}
+                {category}
+              </button>;
+            })}
+          </div>
         </div>
         <fieldset className="border-t border-border pt-3">
           <legend className="pt-3 text-sm font-semibold">What do you want to do?</legend>
@@ -203,7 +221,7 @@ export default function Discover() {
           </div>
           <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
             <label className="flex items-center gap-2 font-semibold">Sport
-              <select value={sport} onChange={e => { setSport(e.target.value as Sport); if (e.target.value) setCategory("Sports"); }} data-testid="select-sport" className="max-w-48 rounded-lg border-2 border-input bg-background px-2 py-1.5 font-normal">
+              <select value={sport} disabled={sportSelectionBlocked} onChange={e => selectSport(e.target.value as Sport | "")} data-testid="select-sport" className="max-w-48 rounded-lg border-2 border-input bg-background px-2 py-1.5 font-normal disabled:cursor-not-allowed disabled:opacity-50" aria-describedby={sportSelectionBlocked ? "sport-category-limit" : undefined}>
                 <option value="">Any sport</option>
                 {SPORTS.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
@@ -213,6 +231,7 @@ export default function Discover() {
             </label>
             {onDate && <button onClick={() => setOnDate("")} className="text-xs underline" data-testid="button-clear-date">Any date</button>}
           </div>
+          {sportSelectionBlocked && <p id="sport-category-limit" className="mt-2 text-xs text-muted-foreground">Deselect a category to add Sports and choose a sport.</p>}
           <p className="mt-2 text-xs text-muted-foreground">Filters work together. Club membership, dorm invitations, tickets, or registration may be required—open the original listing before attending.</p>
         </fieldset>
         <fieldset className="border-t border-border pt-3">

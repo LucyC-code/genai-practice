@@ -1,9 +1,16 @@
 import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 import assert from "node:assert/strict";
 import { CreateEventBody, GetEventsResponse, CreateEventResponse } from "../../lib/api-zod/src/index";
 
-const fixturePath = fileURLToPath(new URL("../data/notre-dame-deep-coverage-events.json", import.meta.url));
+const fixtureArg = process.argv.indexOf("--fixture");
+if (fixtureArg >= 0 && (!process.argv[fixtureArg + 1] || process.argv[fixtureArg + 1].startsWith("--"))) {
+  throw new Error("--fixture requires a JSON file path.");
+}
+const fixturePath = fixtureArg >= 0
+  ? resolve(process.cwd(), process.argv[fixtureArg + 1])
+  : fileURLToPath(new URL("../data/notre-dame-deep-coverage-events.json", import.meta.url));
 const fixture = JSON.parse(await readFile(fixturePath, "utf8"));
 const events = (fixture.events as unknown[]).map(event => CreateEventBody.parse(event));
 const dateValid = (date: string) => new Date(`${date}T12:00:00Z`).toISOString().slice(0, 10) === date;
@@ -21,6 +28,12 @@ for (const event of events) {
   assert.ok(event.title.length <= 200 && event.summary.length <= 2000, `Announcement exceeds publish limits: ${event.title}`);
   for (const time of [event.startTime, event.endTime]) {
     assert.ok(time === null || time === undefined || /^([01]\d|2[0-3]):[0-5]\d$/.test(time), `Invalid time: ${event.title}`);
+  }
+  if (fixture.window) {
+    assert.ok(event.eventDate >= fixture.window.from && event.eventDate <= fixture.window.through, `Outside researched window: ${event.title}`);
+    if (fixture.window.gameKickoff) {
+      assert.ok(event.startTime && Date.parse(`${event.eventDate}T${event.startTime}:00-04:00`) < Date.parse(fixture.window.gameKickoff), `Not before the game: ${event.title}`);
+    }
   }
   assert.ok(!keys.has(key(event)), `Duplicate occurrence: ${event.title}`);
   keys.add(key(event));
