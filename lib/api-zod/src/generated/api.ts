@@ -24,8 +24,9 @@ export const getEventsQueryTimeframeDefault = `all`;
 
 export const GetEventsQueryParams = zod.object({
   "search": zod.coerce.string().optional(),
-  "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']).optional(),
-  "timeframe": zod.enum(['all', 'today', 'week']).default(getEventsQueryTimeframeDefault)
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']).optional(),
+  "timeframe": zod.enum(['all', 'today', 'week']).default(getEventsQueryTimeframeDefault),
+  "classYear": zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years']).optional()
 })
 
 export const getEventsResponseEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
@@ -33,6 +34,8 @@ export const getEventsResponseSourceUrlMax = 2048;
 
 
 export const getEventsResponseSourceUrlRegExp = new RegExp('^https?:/');
+export const getEventsResponseClassYearsMax = 6;
+
 
 
 export const GetEventsResponseItem = zod.object({
@@ -44,10 +47,11 @@ export const GetEventsResponseItem = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(getEventsResponseSourceUrlMax).regex(getEventsResponseSourceUrlRegExp).nullable(),
+  "classYears": zod.array(zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years'])).max(getEventsResponseClassYearsMax).describe('Stated audience. All years means explicitly open to everyone; empty means unspecified.'),
   "missingFields": zod.array(zod.string()),
   "createdAt": zod.coerce.date()
 })
@@ -63,6 +67,8 @@ export const createEventBodySourceUrlMax = 2048;
 
 
 export const createEventBodySourceUrlRegExp = new RegExp('^https?:/');
+export const createEventBodyClassYearsMax = 6;
+
 
 
 export const CreateEventBody = zod.object({
@@ -73,10 +79,11 @@ export const CreateEventBody = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
-  "sourceUrl": zod.string().url().max(createEventBodySourceUrlMax).regex(createEventBodySourceUrlRegExp).nullish()
+  "sourceUrl": zod.string().url().max(createEventBodySourceUrlMax).regex(createEventBodySourceUrlRegExp).nullish(),
+  "classYears": zod.array(zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years'])).max(createEventBodyClassYearsMax).optional().describe('Only select audiences supported by the announcement. Empty means unspecified.')
 })
 
 export const createEventResponseEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
@@ -84,6 +91,8 @@ export const createEventResponseSourceUrlMax = 2048;
 
 
 export const createEventResponseSourceUrlRegExp = new RegExp('^https?:/');
+export const createEventResponseClassYearsMax = 6;
+
 
 
 export const CreateEventResponse = zod.object({
@@ -95,10 +104,11 @@ export const CreateEventResponse = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(createEventResponseSourceUrlMax).regex(createEventResponseSourceUrlRegExp).nullable(),
+  "classYears": zod.array(zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years'])).max(createEventResponseClassYearsMax).describe('Stated audience. All years means explicitly open to everyone; empty means unspecified.'),
   "missingFields": zod.array(zod.string()),
   "createdAt": zod.coerce.date()
 })
@@ -133,6 +143,8 @@ export const parseAnnouncementResponseEventsItemOneSourceUrlMax = 2048;
 
 
 export const parseAnnouncementResponseEventsItemOneSourceUrlRegExp = new RegExp('^https?:/');
+export const parseAnnouncementResponseEventsItemOneClassYearsMax = 6;
+
 
 
 export const ParseAnnouncementResponse = zod.object({
@@ -144,10 +156,11 @@ export const ParseAnnouncementResponse = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
-  "sourceUrl": zod.string().url().max(parseAnnouncementResponseEventsItemOneSourceUrlMax).regex(parseAnnouncementResponseEventsItemOneSourceUrlRegExp).nullish()
+  "sourceUrl": zod.string().url().max(parseAnnouncementResponseEventsItemOneSourceUrlMax).regex(parseAnnouncementResponseEventsItemOneSourceUrlRegExp).nullish(),
+  "classYears": zod.array(zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years'])).max(parseAnnouncementResponseEventsItemOneClassYearsMax).optional().describe('Only select audiences supported by the announcement. Empty means unspecified.')
 }).and(zod.object({
   "missingFields": zod.array(zod.string()),
   "uncertainties": zod.array(zod.string())

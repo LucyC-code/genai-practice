@@ -61,6 +61,7 @@
     "hostOrganization": "Liu Institute for Asia and Asian Studies",
     "category": "Academic",
     "tags": ["Free", "Open to the public", "Author reading", "Livestream"],
+    "classYears": ["All years"],
     "source": "Campus website",
     "sourceUrl": "https://events.nd.edu/events/2026/10/06/asian-american-distinguished-speaker-series-with-yiyun-li/"
   },
@@ -74,6 +75,7 @@
     "hostOrganization": "Klau Institute for Civil and Human Rights",
     "category": "Academic",
     "tags": ["Dinner provided", "AI", "Politics", "All welcome"],
+    "classYears": ["All years"],
     "source": "Campus website",
     "sourceUrl": "https://events.nd.edu/events/2026/10/07/pizza-pop-and-politics-walter-scheirer/"
   },

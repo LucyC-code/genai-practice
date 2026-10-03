@@ -5,6 +5,7 @@
  * Campus event discovery and announcement parsing API
  * OpenAPI spec version: 0.1.0
  */
+import type { ClassYear } from './classYear';
 import type { EventCategory } from './eventCategory';
 import type { GetEventsTimeframe } from './getEventsTimeframe';
 
@@ -12,4 +13,5 @@ export type GetEventsParams = {
 search?: string;
 category?: EventCategory;
 timeframe?: GetEventsTimeframe;
+classYear?: ClassYear;
 };

@@ -37,10 +37,12 @@ A mobile-responsive campus discovery hub that organizes scattered announcements 
 
 ## Product
 
-- Discover shared events with search, categories, today/this-week filters, and a manually entered free-time window.
+- Discover shared events with search, categories (including Networking), class-year audiences (Freshman through Graduate), today/this-week filters, and a manually entered free-time window.
+- Year filters include explicitly all-year events and exclude unspecified audiences. An empty audience is unknown, not open eligibility. Department, club, and registration restrictions stay in event summaries.
 - Paste an email, caption, or chat announcement; extract multiple events with AI; review missing fields and uncertainties; publish each approved suggestion.
 - Read event details and report inaccurate or duplicate entries.
 - The user chose to replace the original three demo entries with verified Notre Dame events, preserving user-submitted entries. Import data is in `scripts/data/notre-dame-events.json`; dates and times were checked against primary listings.
+- The expanded October listings are in `scripts/data/notre-dame-events-expanded.json`, verified against public NDCentral RSS/event listings and university department calendars. Imports add records without removing submissions or duplicating source URLs or exact title/date/start-time matches.
 - Prototype boundaries from the problem framing: responsive web only; no ticketing/payments, user messaging/profiles, two-way calendar sync, or live source scraping.
 
 ## User preferences

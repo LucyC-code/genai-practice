@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { useQueryClient } from "@tanstack/react-query";
 import { Sparkles, CheckCircle2, AlertTriangle, Loader2, Send, X } from "lucide-react";
-import { useParseAnnouncement, useCreateEvent, getGetEventsQueryKey, getGetEventOverviewQueryKey, type ParsedEvent, type EventSource, type EventCategory } from "@workspace/api-client-react";
+import { useParseAnnouncement, useCreateEvent, getGetEventsQueryKey, getGetEventOverviewQueryKey, type ParsedEvent, type EventSource, type EventCategory, type ClassYear } from "@workspace/api-client-react";
 import { useToast } from "@/hooks/use-toast";
-import { CATEGORIES, SOURCES, SourceIcon, EventArt } from "@/lib/cue";
+import { CATEGORIES, CLASS_YEARS, SOURCES, SourceIcon, EventArt } from "@/lib/cue";
 
 type Draft = { key: number; ev: ParsedEvent; tags: string; done: boolean; removed: boolean };
 const fld = "w-full rounded-lg border-2 border-input bg-background px-3 py-2 text-sm outline-none focus:border-primary";
@@ -53,6 +53,18 @@ function DraftCard({ d, idx, update, publish, remove, pending, busy }: { d: Draf
         <Field label="Tags (comma separated)"><input className={fld} value={d.tags} onChange={x => update({}, x.target.value)} data-testid={`input-tags-${idx}`} /></Field>
         <Field label="Original channel"><select className={fld} value={e.source} onChange={x => update({ source: x.target.value as EventSource })} data-testid={`select-source-${idx}`}>{SOURCES.map(c => <option key={c}>{c}</option>)}</select></Field>
         <div className="sm:col-span-2"><Field label="Original listing URL (optional)"><input type="url" className={fld} value={e.sourceUrl ?? ""} placeholder="https://..." onChange={x => update({ sourceUrl: nul(x.target.value) })} data-testid={`input-source-url-${idx}`} /></Field></div>
+        <fieldset className="sm:col-span-2 rounded-lg border-2 border-input p-3">
+          <legend className="px-1 text-xs font-mono-cue uppercase text-muted-foreground">Stated class-year audience</legend>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            {(["All years", ...CLASS_YEARS] as ClassYear[]).map(year => <label key={year} className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" data-testid={`checkbox-year-${idx}-${year}`} checked={(e.classYears ?? []).includes(year)} onChange={x => {
+                const current = e.classYears ?? [];
+                update({ classYears: x.target.checked ? year === "All years" ? ["All years"] : [...current.filter(y => y !== "All years"), year] : current.filter(y => y !== year) });
+              }} />{year}
+            </label>)}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">Leave unchecked if the source does not specify an audience. Select “All years” only if everyone is explicitly welcome. Keep other participation requirements in the summary.</p>
+        </fieldset>
       </div>
       <div className="flex justify-end border-t-2 border-dashed p-3">
         <button onClick={publish} disabled={busy || !e.title.trim()} data-testid={`button-publish-${idx}`} className="inline-flex items-center gap-2 rounded-full border-2 border-foreground bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5 disabled:opacity-50">

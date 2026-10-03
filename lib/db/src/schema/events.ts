@@ -13,6 +13,7 @@ export const eventsTable = pgTable("campus_events", {
   hostOrganization: text("host_organization"),
   category: text("category").notNull(),
   tags: text("tags").array().notNull().default([]),
+  classYears: text("class_years").array().notNull().default([]),
   source: text("source").notNull(),
   sourceUrl: text("source_url"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),

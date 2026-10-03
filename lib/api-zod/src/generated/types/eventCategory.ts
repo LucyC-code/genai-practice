@@ -12,6 +12,7 @@ export type EventCategory = typeof EventCategory[keyof typeof EventCategory];
 export const EventCategory = {
   Academic: 'Academic',
   Career: 'Career',
+  Networking: 'Networking',
   Social: 'Social',
   'Arts_&_Culture': 'Arts & Culture',
   Wellness: 'Wellness',

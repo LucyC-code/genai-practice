@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react";
-import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX, ExternalLink } from "lucide-react";
-import { useGetEvents, useGetEventOverview, useReportEvent, EventReportInputReason, type Event, type EventCategory, type GetEventsParams } from "@workspace/api-client-react";
+import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX, ExternalLink, Handshake, GraduationCap } from "lucide-react";
+import { useGetEvents, useGetEventOverview, useReportEvent, EventReportInputReason, type Event, type EventCategory, type GetEventsParams, type ClassYear } from "@workspace/api-client-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
-import { CATEGORIES, CAT_COLOR, EventArt, SourceIcon, Unconfirmed, dateParts, timeRange } from "@/lib/cue";
+import { CATEGORIES, CLASS_YEARS, audienceLabel, CAT_COLOR, EventArt, SourceIcon, Unconfirmed, dateParts, timeRange } from "@/lib/cue";
 
 const TF = [["all", "Anytime"], ["today", "Today"], ["week", "This week"]] as const;
 
@@ -33,6 +33,7 @@ function EventCard({ ev, i, onOpen, fits }: { ev: Event; i: number; onOpen: () =
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="rounded-full px-2 py-0.5 font-semibold text-white" style={{ background: CAT_COLOR[ev.category] }}>{ev.category}</span>
           <span className="flex items-center gap-1 text-muted-foreground"><SourceIcon source={ev.source} />{ev.source}</span>
+          <span className="flex items-center gap-1 text-muted-foreground"><GraduationCap className="h-3.5 w-3.5" />{audienceLabel(ev.classYears)}</span>
         </div>
         <h3 className="mt-1.5 text-lg font-bold leading-snug group-hover:text-primary transition-colors">{ev.title}</h3>
         <p className="mt-1 text-sm leading-relaxed text-foreground/80">{ev.summary}</p>
@@ -81,6 +82,7 @@ function Detail({ ev, onClose }: { ev: Event | null; onClose: () => void }) {
               <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Time</dt><dd>{timeRange(ev.startTime, ev.endTime) ?? <Unconfirmed />}</dd>
               <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Where</dt><dd>{ev.location ?? <Unconfirmed />}</dd>
               <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Host</dt><dd>{ev.hostOrganization ?? <Unconfirmed />}</dd>
+              <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Class years</dt><dd>{audienceLabel(ev.classYears)}</dd>
             </dl>
             {ev.sourceUrl && <a href={ev.sourceUrl} target="_blank" rel="noopener noreferrer" data-testid="link-event-source" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline underline-offset-4">View original event listing<ExternalLink className="h-4 w-4" /></a>}
             {ev.tags.length > 0 && <div className="flex flex-wrap gap-1.5">{ev.tags.map(t => <span key={t} className="rounded-md bg-muted px-2 py-0.5 text-xs font-mono-cue">#{t}</span>)}</div>}
@@ -109,6 +111,7 @@ function Detail({ ev, onClose }: { ev: Event | null; onClose: () => void }) {
 export default function Discover() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<EventCategory | "">("");
+  const [classYear, setClassYear] = useState<ClassYear | "">("");
   const [timeframe, setTimeframe] = useState<"all" | "today" | "week">("all");
   const [open, setOpen] = useState<Event | null>(null);
   const [availableFrom, setAvailableFrom] = useState("");
@@ -117,14 +120,16 @@ export default function Discover() {
     const p: GetEventsParams = { timeframe };
     if (search.trim()) p.search = search.trim();
     if (category) p.category = category;
+    if (classYear) p.classYear = classYear;
     return p;
-  }, [search, category, timeframe]);
+  }, [search, category, timeframe, classYear]);
   const { data: events, isLoading, isError, refetch } = useGetEvents(params);
   const { data: ov } = useGetEventOverview();
   const availabilityActive = !!availableFrom && !!availableUntil && availableFrom < availableUntil;
   const matchingEvents = (events ?? []).filter(ev => !availabilityActive ||
     (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil));
-  const reset = () => { setSearch(""); setCategory(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); };
+  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil;
+  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); };
   return (
     <div className="space-y-8">
       <section className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
@@ -147,16 +152,24 @@ export default function Discover() {
             <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search events or hosts" aria-label="Search events or hosts" data-testid="input-search" className="w-full bg-transparent text-sm outline-none" />
           </label>
           <div className="flex rounded-full border-2 border-foreground p-0.5">
-            {TF.map(([v, l]) => <button key={v} onClick={() => setTimeframe(v)} data-testid={`button-timeframe-${v}`} className={`flex-1 rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${timeframe === v ? "bg-foreground text-background" : "hover:bg-muted"}`}>{l}</button>)}
+            {TF.map(([v, l]) => <button key={v} aria-pressed={timeframe === v} onClick={() => setTimeframe(v)} data-testid={`button-timeframe-${v}`} className={`flex-1 rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${timeframe === v ? "bg-foreground text-background" : "hover:bg-muted"}`}>{l}</button>)}
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
           {(["", ...CATEGORIES] as const).map(c => (
-            <button key={c || "all"} onClick={() => setCategory(c as EventCategory | "")} data-testid={`button-category-${c || "all"}`}
-              className={`rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all hover:-translate-y-0.5 ${category === c ? "border-foreground text-white" : "border-border bg-background"}`}
-              style={category === c ? { background: c ? CAT_COLOR[c] : "hsl(var(--foreground))" } : undefined}>{c || "All"}</button>
+            <button key={c || "all"} aria-pressed={category === c} onClick={() => setCategory(c as EventCategory | "")} data-testid={`button-category-${c || "all"}`}
+              className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all hover:-translate-y-0.5 ${category === c ? "border-foreground text-white" : "border-border bg-background"}`}
+              style={category === c ? { background: c ? CAT_COLOR[c] : "hsl(var(--foreground))" } : undefined}>{c === "Networking" && <Handshake className="h-4 w-4" />}{c || "All"}</button>
           ))}
         </div>
+        <fieldset className="border-t border-border pt-3">
+          <legend className="flex items-center gap-1.5 pt-3 text-sm font-semibold"><GraduationCap className="h-4 w-4" />My class year</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {(["", ...CLASS_YEARS] as const).map(y => <button key={y || "all"} aria-pressed={classYear === y} onClick={() => setClassYear(y)} data-testid={`button-year-${y || "all"}`}
+              className={`rounded-full border-2 px-3 py-1 text-sm font-semibold ${classYear === y ? "border-foreground bg-foreground text-background" : "border-border bg-background hover:bg-muted"}`}>{y || "Any year"}</button>)}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">{classYear ? `Showing ${classYear.toLowerCase()} and explicitly all-year events. Unspecified audiences are excluded; other registration or membership requirements may still apply.` : "Choose a year to see its stated audience plus events open to all years. No audience is guessed."}</p>
+        </fieldset>
         <div className="flex flex-wrap items-center gap-2 border-t border-border pt-3 text-sm">
           <span className="font-semibold">My free-time window</span>
           <label className="flex items-center gap-2">From <input type="time" value={availableFrom} onChange={e => setAvailableFrom(e.target.value)} data-testid="input-available-from" className="rounded-lg border-2 border-input bg-background px-2 py-1" /></label>
@@ -165,6 +178,10 @@ export default function Discover() {
           <p className="w-full text-xs text-muted-foreground">{availabilityActive ? "Showing events fully inside this window with confirmed start and end times. No calendar connection needed." : availableFrom && availableUntil ? "End time must be later than start time." : "Optional: enter both times to find events that fit."}</p>
         </div>
       </section>
+      <div className="flex items-center justify-between gap-3 text-sm" aria-live="polite">
+        <span className="font-mono-cue text-muted-foreground">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}`}</span>
+        {filtersActive && <button onClick={reset} data-testid="button-clear-filters" className="flex items-center gap-1.5 font-semibold underline underline-offset-4"><RotateCcw className="h-3.5 w-3.5" />Clear filters</button>}
+      </div>
 
       {isLoading ? <div className="grid gap-5 md:grid-cols-2">{[0,1,2,3].map(i => <Skeleton key={i} className="h-36 rounded-2xl" />)}</div>
       : isError ? <div className="rounded-2xl border-2 border-dashed border-destructive p-10 text-center" data-testid="status-error">

@@ -5,6 +5,7 @@
  * Campus event discovery and announcement parsing API
  * OpenAPI spec version: 0.1.0
  */
+import type { ClassYear } from './classYear';
 import type { EventCategory } from './eventCategory';
 import type { EventSource } from './eventSource';
 
@@ -34,4 +35,9 @@ export interface EventInput {
      * @pattern ^https?://
      */
   sourceUrl?: string | null;
+  /**
+     * Only select audiences supported by the announcement. Empty means unspecified.
+     * @maxItems 6
+     */
+  classYears?: ClassYear[];
 }

@@ -15,10 +15,23 @@ export type EventCategory = typeof EventCategory[keyof typeof EventCategory];
 export const EventCategory = {
   Academic: 'Academic',
   Career: 'Career',
+  Networking: 'Networking',
   Social: 'Social',
   'Arts_&_Culture': 'Arts & Culture',
   Wellness: 'Wellness',
   Community: 'Community',
+} as const;
+
+export type ClassYear = typeof ClassYear[keyof typeof ClassYear];
+
+
+export const ClassYear = {
+  Freshman: 'Freshman',
+  Sophomore: 'Sophomore',
+  Junior: 'Junior',
+  Senior: 'Senior',
+  Graduate: 'Graduate',
+  All_years: 'All years',
 } as const;
 
 export type EventSource = typeof EventSource[keyof typeof EventSource];
@@ -59,6 +72,11 @@ export interface Event {
      * @pattern ^https?://
      */
   sourceUrl: string | null;
+  /**
+     * Stated audience. All years means explicitly open to everyone; empty means unspecified.
+     * @maxItems 6
+     */
+  classYears: ClassYear[];
   missingFields: string[];
   createdAt: string;
 }
@@ -89,6 +107,11 @@ export interface EventInput {
      * @pattern ^https?://
      */
   sourceUrl?: string | null;
+  /**
+     * Only select audiences supported by the announcement. Empty means unspecified.
+     * @maxItems 6
+     */
+  classYears?: ClassYear[];
 }
 
 export type ParsedEvent = EventInput & {
@@ -145,6 +168,7 @@ export type GetEventsParams = {
 search?: string;
 category?: EventCategory;
 timeframe?: GetEventsTimeframe;
+classYear?: ClassYear;
 };
 
 export type GetEventsTimeframe = typeof GetEventsTimeframe[keyof typeof GetEventsTimeframe];

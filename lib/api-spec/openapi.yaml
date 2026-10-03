@@ -49,6 +49,11 @@ paths:
             type: string
             enum: [all, today, week]
             default: all
+        - name: classYear
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/ClassYear"
       responses:
         "200":
           description: Filtered events
@@ -140,7 +145,10 @@ components:
         - status
     EventCategory:
       type: string
-      enum: [Academic, Career, Social, "Arts & Culture", Wellness, Community]
+      enum: [Academic, Career, Networking, Social, "Arts & Culture", Wellness, Community]
+    ClassYear:
+      type: string
+      enum: [Freshman, Sophomore, Junior, Senior, Graduate, "All years"]
     EventSource:
       type: string
       enum: [Email, Instagram, GroupMe, "Campus website", "Student organization", Other]
@@ -177,6 +185,13 @@ components:
           format: uri
           pattern: '^https?://'
           maxLength: 2048
+        classYears:
+          type: array
+          description: Stated audience. All years means explicitly open to everyone; empty means unspecified.
+          maxItems: 6
+          uniqueItems: true
+          items:
+            $ref: "#/components/schemas/ClassYear"
         missingFields:
           type: array
           items:
@@ -197,6 +212,7 @@ components:
         - tags
         - source
         - sourceUrl
+        - classYears
         - missingFields
         - createdAt
     EventInput:
@@ -231,6 +247,13 @@ components:
           format: uri
           pattern: '^https?://'
           maxLength: 2048
+        classYears:
+          type: array
+          description: Only select audiences supported by the announcement. Empty means unspecified.
+          maxItems: 6
+          uniqueItems: true
+          items:
+            $ref: "#/components/schemas/ClassYear"
       required:
         - title
         - summary

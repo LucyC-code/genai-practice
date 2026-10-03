@@ -8,6 +8,7 @@
 
 export * from './announcementInput';
 export * from './announcementParseResult';
+export * from './classYear';
 export * from './event';
 export * from './eventCategory';
 export * from './eventInput';

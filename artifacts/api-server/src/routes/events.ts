@@ -19,7 +19,7 @@ router.get("/events", async (req, res): Promise<void> => {
     res.status(400).json({ error: "Invalid event filters." });
     return;
   }
-  const { search, category, timeframe } = parsed.data;
+  const { search, category, timeframe, classYear } = parsed.data;
   const filters: SQL[] = [];
   if (search?.trim()) {
     const searchFilter = or(
@@ -30,6 +30,7 @@ router.get("/events", async (req, res): Promise<void> => {
     if (searchFilter) filters.push(searchFilter);
   }
   if (category) filters.push(eq(eventsTable.category, category));
+  if (classYear) filters.push(sql`(${classYear} = ANY(${eventsTable.classYears}) OR 'All years' = ANY(${eventsTable.classYears}))`);
   if (timeframe === "today") filters.push(eq(eventsTable.eventDate, today()));
   if (timeframe === "week") filters.push(and(gte(eventsTable.eventDate, today()), lte(eventsTable.eventDate, weekEnd()))!);
   const events = await db.select().from(eventsTable)
@@ -90,6 +91,8 @@ router.post("/events", async (req, res): Promise<void> => {
     startTime: blankToNull(parsed.data.startTime),
     endTime: blankToNull(parsed.data.endTime),
     sourceUrl: parsed.data.sourceUrl?.trim() || null,
+    classYears: [...new Set(parsed.data.classYears ?? [])].includes("All years")
+      ? ["All years"] : [...new Set(parsed.data.classYears ?? [])],
     tags: parsed.data.tags.map((tag) => tag.trim()).filter(Boolean).slice(0, 12),
   };
   if (!event.title || event.title.length > 200 || event.summary.length > 2000 ||
