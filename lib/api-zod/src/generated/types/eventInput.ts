@@ -28,4 +28,10 @@ export interface EventInput {
   category: EventCategory;
   tags: string[];
   source: EventSource;
+  /**
+     * @maxLength 2048
+     * @nullable
+     * @pattern ^https?://
+     */
+  sourceUrl?: string | null;
 }

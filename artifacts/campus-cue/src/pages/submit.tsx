@@ -52,6 +52,7 @@ function DraftCard({ d, idx, update, publish, remove, pending, busy }: { d: Draf
         <Field label="Category"><select className={fld} value={e.category} onChange={x => update({ category: x.target.value as EventCategory })} data-testid={`select-category-${idx}`}>{CATEGORIES.map(c => <option key={c}>{c}</option>)}</select></Field>
         <Field label="Tags (comma separated)"><input className={fld} value={d.tags} onChange={x => update({}, x.target.value)} data-testid={`input-tags-${idx}`} /></Field>
         <Field label="Original channel"><select className={fld} value={e.source} onChange={x => update({ source: x.target.value as EventSource })} data-testid={`select-source-${idx}`}>{SOURCES.map(c => <option key={c}>{c}</option>)}</select></Field>
+        <div className="sm:col-span-2"><Field label="Original listing URL (optional)"><input type="url" className={fld} value={e.sourceUrl ?? ""} placeholder="https://..." onChange={x => update({ sourceUrl: nul(x.target.value) })} data-testid={`input-source-url-${idx}`} /></Field></div>
       </div>
       <div className="flex justify-end border-t-2 border-dashed p-3">
         <button onClick={publish} disabled={busy || !e.title.trim()} data-testid={`button-publish-${idx}`} className="inline-flex items-center gap-2 rounded-full border-2 border-foreground bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5 disabled:opacity-50">

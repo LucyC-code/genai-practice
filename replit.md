@@ -4,7 +4,7 @@ A mobile-responsive campus discovery hub that organizes scattered announcements 
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/api-server run dev` — run the API server through its managed workflow
 - `pnpm --filter @workspace/campus-cue run dev` — run the website through its managed workflow
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
@@ -29,7 +29,7 @@ A mobile-responsive campus discovery hub that organizes scattered announcements 
 
 ## Architecture decisions
 
-- The first slice uses labeled demo seed events and pasted source announcements, not live scraping. This keeps the prototype focused on the aggregation-to-discovery pipeline without channel authorization or scraping complexity.
+- The discovery feed uses researched Notre Dame university and club listings with original source links, alongside manually published announcements. This is a curated snapshot, not automatic live scraping or an authorized Instagram connection.
 - AI extraction proposes metadata; users review and edit every suggestion before publishing. Unknown facts remain null instead of being invented.
 - Relative dates are resolved against the server's current UTC date, with that reference date shown in parser notes for human verification.
 - Calendar days remain `YYYY-MM-DD` strings end to end to avoid timezone shifts.
@@ -40,6 +40,7 @@ A mobile-responsive campus discovery hub that organizes scattered announcements 
 - Discover shared events with search, categories, today/this-week filters, and a manually entered free-time window.
 - Paste an email, caption, or chat announcement; extract multiple events with AI; review missing fields and uncertainties; publish each approved suggestion.
 - Read event details and report inaccurate or duplicate entries.
+- The user chose to replace the original three demo entries with verified Notre Dame events, preserving user-submitted entries. Import data is in `scripts/data/notre-dame-events.json`; dates and times were checked against primary listings.
 - Prototype boundaries from the problem framing: responsive web only; no ticketing/payments, user messaging/profiles, two-way calendar sync, or live source scraping.
 
 ## User preferences

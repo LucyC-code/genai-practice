@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX } from "lucide-react";
+import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX, ExternalLink } from "lucide-react";
 import { useGetEvents, useGetEventOverview, useReportEvent, EventReportInputReason, type Event, type EventCategory, type GetEventsParams } from "@workspace/api-client-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -82,6 +82,7 @@ function Detail({ ev, onClose }: { ev: Event | null; onClose: () => void }) {
               <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Where</dt><dd>{ev.location ?? <Unconfirmed />}</dd>
               <dt className="font-mono-cue text-xs uppercase text-muted-foreground">Host</dt><dd>{ev.hostOrganization ?? <Unconfirmed />}</dd>
             </dl>
+            {ev.sourceUrl && <a href={ev.sourceUrl} target="_blank" rel="noopener noreferrer" data-testid="link-event-source" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline underline-offset-4">View original event listing<ExternalLink className="h-4 w-4" /></a>}
             {ev.tags.length > 0 && <div className="flex flex-wrap gap-1.5">{ev.tags.map(t => <span key={t} className="rounded-md bg-muted px-2 py-0.5 text-xs font-mono-cue">#{t}</span>)}</div>}
             {ev.missingFields.length > 0 && <p className="rounded-lg bg-accent/40 px-3 py-2 text-xs">Not confirmed in the original announcement: {ev.missingFields.join(", ")}.</p>}
             <div className="border-t-2 border-dashed pt-4">
@@ -128,9 +129,9 @@ export default function Discover() {
     <div className="space-y-8">
       <section className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
         <div className="rise">
-          <p className="font-mono-cue text-xs uppercase tracking-widest text-primary">Between-class board</p>
+          <p className="font-mono-cue text-xs uppercase tracking-widest text-primary">Notre Dame · Between-class board</p>
           <h1 className="mt-2 text-4xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl">What's on, <span className="bg-accent px-2 -rotate-1 inline-block">right now</span> on campus.</h1>
-          <p className="mt-3 max-w-xl text-muted-foreground">Flyers, group chats and inbox blasts, pulled into one list you can scan in a minute. Entries here are demo campus events.</p>
+          <p className="mt-3 max-w-xl text-muted-foreground">Discover Notre Dame events from university calendars and student clubs. Open a card for the original listing and check the latest details.</p>
         </div>
         <div className="grid grid-cols-3 gap-3 rise" style={{ animationDelay: "120ms" }}>
           <Stat n={ov?.totalUpcoming} label="Upcoming" id="stat-upcoming" />

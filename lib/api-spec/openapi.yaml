@@ -172,6 +172,11 @@ components:
             type: string
         source:
           $ref: "#/components/schemas/EventSource"
+        sourceUrl:
+          type: [string, "null"]
+          format: uri
+          pattern: '^https?://'
+          maxLength: 2048
         missingFields:
           type: array
           items:
@@ -191,6 +196,7 @@ components:
         - category
         - tags
         - source
+        - sourceUrl
         - missingFields
         - createdAt
     EventInput:
@@ -220,6 +226,11 @@ components:
             type: string
         source:
           $ref: "#/components/schemas/EventSource"
+        sourceUrl:
+          type: [string, "null"]
+          format: uri
+          pattern: '^https?://'
+          maxLength: 2048
       required:
         - title
         - summary

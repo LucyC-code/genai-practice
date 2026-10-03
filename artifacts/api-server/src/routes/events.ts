@@ -89,6 +89,7 @@ router.post("/events", async (req, res): Promise<void> => {
     hostOrganization: blankToNull(parsed.data.hostOrganization),
     startTime: blankToNull(parsed.data.startTime),
     endTime: blankToNull(parsed.data.endTime),
+    sourceUrl: parsed.data.sourceUrl?.trim() || null,
     tags: parsed.data.tags.map((tag) => tag.trim()).filter(Boolean).slice(0, 12),
   };
   if (!event.title || event.title.length > 200 || event.summary.length > 2000 ||

@@ -29,6 +29,10 @@ export const GetEventsQueryParams = zod.object({
 })
 
 export const getEventsResponseEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
+export const getEventsResponseSourceUrlMax = 2048;
+
+
+export const getEventsResponseSourceUrlRegExp = new RegExp('^https?:/');
 
 
 export const GetEventsResponseItem = zod.object({
@@ -43,6 +47,7 @@ export const GetEventsResponseItem = zod.object({
   "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
+  "sourceUrl": zod.string().url().max(getEventsResponseSourceUrlMax).regex(getEventsResponseSourceUrlRegExp).nullable(),
   "missingFields": zod.array(zod.string()),
   "createdAt": zod.coerce.date()
 })
@@ -54,6 +59,10 @@ export const GetEventsResponse = zod.array(GetEventsResponseItem)
  */
 
 export const createEventBodyEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
+export const createEventBodySourceUrlMax = 2048;
+
+
+export const createEventBodySourceUrlRegExp = new RegExp('^https?:/');
 
 
 export const CreateEventBody = zod.object({
@@ -66,10 +75,15 @@ export const CreateEventBody = zod.object({
   "hostOrganization": zod.string().nullable(),
   "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
-  "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other'])
+  "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
+  "sourceUrl": zod.string().url().max(createEventBodySourceUrlMax).regex(createEventBodySourceUrlRegExp).nullish()
 })
 
 export const createEventResponseEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
+export const createEventResponseSourceUrlMax = 2048;
+
+
+export const createEventResponseSourceUrlRegExp = new RegExp('^https?:/');
 
 
 export const CreateEventResponse = zod.object({
@@ -84,6 +98,7 @@ export const CreateEventResponse = zod.object({
   "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
+  "sourceUrl": zod.string().url().max(createEventResponseSourceUrlMax).regex(createEventResponseSourceUrlRegExp).nullable(),
   "missingFields": zod.array(zod.string()),
   "createdAt": zod.coerce.date()
 })
@@ -114,6 +129,10 @@ export const ParseAnnouncementBody = zod.object({
 
 
 export const parseAnnouncementResponseEventsItemOneEventDateRegExp = new RegExp('^\\d{4}-\\d{2}-\\d{2}$');
+export const parseAnnouncementResponseEventsItemOneSourceUrlMax = 2048;
+
+
+export const parseAnnouncementResponseEventsItemOneSourceUrlRegExp = new RegExp('^https?:/');
 
 
 export const ParseAnnouncementResponse = zod.object({
@@ -127,7 +146,8 @@ export const ParseAnnouncementResponse = zod.object({
   "hostOrganization": zod.string().nullable(),
   "category": zod.enum(['Academic', 'Career', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
-  "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other'])
+  "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
+  "sourceUrl": zod.string().url().max(parseAnnouncementResponseEventsItemOneSourceUrlMax).regex(parseAnnouncementResponseEventsItemOneSourceUrlRegExp).nullish()
 }).and(zod.object({
   "missingFields": zod.array(zod.string()),
   "uncertainties": zod.array(zod.string())

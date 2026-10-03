@@ -32,7 +32,7 @@ export function Shell({ children }: { children: ReactNode }) {
       </header>
       <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
       <footer className="mx-auto max-w-6xl px-4 pb-10 text-xs text-muted-foreground font-mono-cue">
-        Seed entries are demo campus events. Source labels name the original announcement channel; CampusCue is not connected to any of them.
+        Notre Dame listings researched October 3, 2026. Times are campus-local Eastern time. Check the original listing for changes and RSVP requirements. CampusCue is independent, not affiliated with Notre Dame, and does not automatically sync these sources.
       </footer>
     </div>
   );

@@ -14,6 +14,7 @@ export const eventsTable = pgTable("campus_events", {
   category: text("category").notNull(),
   tags: text("tags").array().notNull().default([]),
   source: text("source").notNull(),
+  sourceUrl: text("source_url"),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 

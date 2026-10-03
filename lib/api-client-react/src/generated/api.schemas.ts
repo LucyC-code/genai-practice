@@ -53,6 +53,12 @@ export interface Event {
   category: EventCategory;
   tags: string[];
   source: EventSource;
+  /**
+     * @maxLength 2048
+     * @nullable
+     * @pattern ^https?://
+     */
+  sourceUrl: string | null;
   missingFields: string[];
   createdAt: string;
 }
@@ -77,6 +83,12 @@ export interface EventInput {
   category: EventCategory;
   tags: string[];
   source: EventSource;
+  /**
+     * @maxLength 2048
+     * @nullable
+     * @pattern ^https?://
+     */
+  sourceUrl?: string | null;
 }
 
 export type ParsedEvent = EventInput & {
