@@ -3,13 +3,15 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: Campus event discovery and announcement parsing API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: events
+    description: Campus event discovery, parsing, and reporting
 paths:
   /healthz:
     get:
@@ -24,6 +26,109 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /events:
+    get:
+      operationId: getEvents
+      tags: [events]
+      summary: List and filter published campus events
+      parameters:
+        - name: search
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: category
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/EventCategory"
+        - name: timeframe
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [all, today, week]
+            default: all
+      responses:
+        "200":
+          description: Filtered events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Event"
+    post:
+      operationId: createEvent
+      tags: [events]
+      summary: Publish a reviewed event to the campus feed
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EventInput"
+      responses:
+        "201":
+          description: Published event
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Event"
+  /events/overview:
+    get:
+      operationId: getEventOverview
+      tags: [events]
+      summary: Get high-level campus event counts
+      responses:
+        "200":
+          description: Event overview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventOverview"
+  /events/parse:
+    post:
+      operationId: parseAnnouncement
+      tags: [events]
+      summary: Extract event details from an unstructured campus announcement
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnnouncementInput"
+      responses:
+        "200":
+          description: Event suggestions for human review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnnouncementParseResult"
+  /events/{eventId}/reports:
+    post:
+      operationId: reportEvent
+      tags: [events]
+      summary: Flag a questionable event for review
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EventReportInput"
+      responses:
+        "201":
+          description: Report received
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventReport"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +138,183 @@ components:
           type: string
       required:
         - status
+    EventCategory:
+      type: string
+      enum: [Academic, Career, Social, "Arts & Culture", Wellness, Community]
+    EventSource:
+      type: string
+      enum: [Email, Instagram, GroupMe, "Campus website", "Student organization", Other]
+    Event:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        summary:
+          type: string
+        eventDate:
+          type: [string, "null"]
+          format: date
+        startTime:
+          type: [string, "null"]
+        endTime:
+          type: [string, "null"]
+        location:
+          type: [string, "null"]
+        hostOrganization:
+          type: [string, "null"]
+        category:
+          $ref: "#/components/schemas/EventCategory"
+        tags:
+          type: array
+          items:
+            type: string
+        source:
+          $ref: "#/components/schemas/EventSource"
+        missingFields:
+          type: array
+          items:
+            type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - title
+        - summary
+        - eventDate
+        - startTime
+        - endTime
+        - location
+        - hostOrganization
+        - category
+        - tags
+        - source
+        - missingFields
+        - createdAt
+    EventInput:
+      type: object
+      properties:
+        title:
+          type: string
+          minLength: 1
+        summary:
+          type: string
+        eventDate:
+          type: [string, "null"]
+          format: date
+        startTime:
+          type: [string, "null"]
+        endTime:
+          type: [string, "null"]
+        location:
+          type: [string, "null"]
+        hostOrganization:
+          type: [string, "null"]
+        category:
+          $ref: "#/components/schemas/EventCategory"
+        tags:
+          type: array
+          items:
+            type: string
+        source:
+          $ref: "#/components/schemas/EventSource"
+      required:
+        - title
+        - summary
+        - eventDate
+        - startTime
+        - endTime
+        - location
+        - hostOrganization
+        - category
+        - tags
+        - source
+    ParsedEvent:
+      allOf:
+        - $ref: "#/components/schemas/EventInput"
+        - type: object
+          properties:
+            missingFields:
+              type: array
+              items:
+                type: string
+            uncertainties:
+              type: array
+              items:
+                type: string
+          required:
+            - missingFields
+            - uncertainties
+    AnnouncementInput:
+      type: object
+      properties:
+        announcement:
+          type: string
+          minLength: 12
+          maxLength: 12000
+        source:
+          $ref: "#/components/schemas/EventSource"
+      required:
+        - announcement
+        - source
+    AnnouncementParseResult:
+      type: object
+      properties:
+        events:
+          type: array
+          items:
+            $ref: "#/components/schemas/ParsedEvent"
+        notes:
+          type: array
+          items:
+            type: string
+      required:
+        - events
+        - notes
+    EventOverview:
+      type: object
+      properties:
+        totalUpcoming:
+          type: integer
+        happeningToday:
+          type: integer
+        happeningThisWeek:
+          type: integer
+      required:
+        - totalUpcoming
+        - happeningToday
+        - happeningThisWeek
+    EventReportInput:
+      type: object
+      properties:
+        reason:
+          type: string
+          enum: ["Incorrect details", Duplicate, "Not a campus event", Other]
+        details:
+          type: [string, "null"]
+      required:
+        - reason
+        - details
+    EventReport:
+      type: object
+      properties:
+        id:
+          type: integer
+        eventId:
+          type: integer
+        reason:
+          type: string
+        details:
+          type: [string, "null"]
+        submittedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - eventId
+        - reason
+        - details
+        - submittedAt
 
