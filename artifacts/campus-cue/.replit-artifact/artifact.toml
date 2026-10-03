@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CampusCue"
+description = "A mobile-friendly campus event discovery hub for students. Browse a unified feed, filter opportunities by category, and turn pasted campus announcements into structured event previews with missing details clearly flagged."
+version = "1.0.0"
+id = "artifacts/campus-cue"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22554
+
+[services.development]
+run = "pnpm --filter @workspace/campus-cue run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/campus-cue", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/campus-cue/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22554"
+BASE_PATH = "/"
