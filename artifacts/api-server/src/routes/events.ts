@@ -7,11 +7,12 @@ import {
   ReportEventBody, ReportEventParams, ReportEventResponse,
 } from "@workspace/api-zod";
 import { extractEvents, isCalendarDate, missingEventFields } from "../lib/event-extraction";
+import { campusToday, campusWeekEnd } from "../lib/campus-date";
 
 const router: IRouter = Router();
 const parseUsage = new Map<string, { count: number; resetAt: number }>();
-const today = () => new Date().toISOString().slice(0, 10);
-const weekEnd = () => new Date(Date.now() + 6 * 86400000).toISOString().slice(0, 10);
+const today = campusToday;
+const weekEnd = campusWeekEnd;
 
 router.get("/events", async (req, res): Promise<void> => {
   const parsed = GetEventsQueryParams.safeParse(req.query);
@@ -26,6 +27,7 @@ router.get("/events", async (req, res): Promise<void> => {
       ilike(eventsTable.title, `%${search.trim()}%`),
       ilike(eventsTable.summary, `%${search.trim()}%`),
       ilike(eventsTable.hostOrganization, `%${search.trim()}%`),
+      sql`array_to_string(${eventsTable.tags}, ' ') ILIKE ${`%${search.trim()}%`}`,
     );
     if (searchFilter) filters.push(searchFilter);
   }

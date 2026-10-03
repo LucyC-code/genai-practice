@@ -1,0 +1,4420 @@
+{
+  "researchedOn": "2026-10-03",
+  "coverage": "Reviewed public Notre Dame campus listings. NDCentral club feed through November 2; selected official home athletics and SAO events through November 28. Not exhaustive or automatically synchronized.",
+  "timezone": "America/Indiana/Indianapolis",
+  "events": [
+    {
+      "title": "Siegfried Oktoberfest",
+      "summary": "Siegfried Hall Council hosts an Oktoberfest on the Siegfried patio, open to the campus. Enjoy food, cultural contests, and live music. All donations collected during the event support the Ronald McDonald House Charities of Michiana.",
+      "eventDate": "2026-10-03",
+      "startTime": "12:00",
+      "endTime": "18:00",
+      "location": "Siegfried Hall Patio & Lawn",
+      "hostOrganization": "Siegfried Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12800844"
+    },
+    {
+      "title": "Right to Life Concert",
+      "summary": "The Hillbilly Thomists perform a concert co-sponsored by the de Nicola Center. The description gives an 8–9:30 p.m. performance, rather than the longer venue reservation. Check the source for admission.",
+      "eventDate": "2026-10-03",
+      "startTime": "20:00",
+      "endTime": "21:30",
+      "location": "Mainstage Theatre Washington Hall",
+      "hostOrganization": "Right To Life, Notre Dame",
+      "category": "Arts & Culture",
+      "tags": [
+        "Concert"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12810668"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-04",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "location": "Stepan Center",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842180"
+    },
+    {
+      "title": "Semester Long Studio Practice",
+      "summary": "RitmoND rehearses dances during reserved semester practice time. This is a club rehearsal, not a public performance; check with the club about joining.",
+      "eventDate": "2026-10-04",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "location": "Rec Sports - Rockne Activity Studio 109",
+      "hostOrganization": "RitmoND",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12847044"
+    },
+    {
+      "title": "Asian Allure Dance Practice",
+      "summary": "The Hawaii Club holds dance rehearsals for their Asian Allure performance at the Smith Center Activity Studio. This event is a club-specific practice.",
+      "eventDate": "2026-10-04",
+      "startTime": "12:00",
+      "endTime": "14:15",
+      "location": "Rec Sports - Smith Center Activity Studio 4",
+      "hostOrganization": "Hawaii Club - Na Pua Kai 'Ewalu",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12766373"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-04",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12610112"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-04",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Rec Sports - Smith Center Activity Studio 1",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737628"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-04",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Rec Sports - Smith Center Activity Studio 1",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737629"
+    },
+    {
+      "title": "Special Olympics Practice",
+      "summary": "Special Olympics lists a football practice at Ricci Field 5. Confirm athlete and volunteer participation requirements with the organization; this is not a varsity spectator game.",
+      "eventDate": "2026-10-04",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Rec Sports - Ricci Field 5",
+      "hostOrganization": "Special Olympics, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Football",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724885"
+    },
+    {
+      "title": "Survivor Showcase",
+      "summary": "Survivor: Notre Dame hosts a showcase on the Library Lawn, inviting the tri-campus community to try various obstacle challenges modeled after the television show.",
+      "eventDate": "2026-10-04",
+      "startTime": "17:00",
+      "endTime": "19:30",
+      "location": "Library Lawn (Priority Date Reservation)",
+      "hostOrganization": "Survivor: Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772136"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-04",
+      "startTime": "18:00",
+      "endTime": "21:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611449"
+    },
+    {
+      "title": "Asian Allure practice",
+      "summary": "The Filipino-American Student Organization hosts a Tinikling practice at Washington Hall for the upcoming Asian Cultural showcase.",
+      "eventDate": "2026-10-04",
+      "startTime": "20:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Rehearsal Room",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842138"
+    },
+    {
+      "title": "Red Cross Blood Drive",
+      "summary": "The Red Cross Club hosts a blood drive on the 8th floor of the Rasmus Club for members of the Notre Dame community.",
+      "eventDate": "2026-10-05",
+      "startTime": "11:00",
+      "endTime": "16:00",
+      "location": "8th Floor, Rasmus Club",
+      "hostOrganization": "American Red Cross Club of the University of Notre Dame",
+      "category": "Community",
+      "tags": [
+        "Blood drive"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12753423"
+    },
+    {
+      "title": "Access-ABLE Weekly Meeting",
+      "summary": "Access-ABLE hosts weekly meetings in Coleman-Morse to provide a safe space for students in the disability community.",
+      "eventDate": "2026-10-05",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "201 Coleman-Morse",
+      "hostOrganization": "Access-ABLE of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12624599"
+    },
+    {
+      "title": "Stand-Up Weekly Meeting",
+      "summary": "Student Stand-ups of Notre Dame hosts a weekly meeting in DeBartolo Hall to workshop and pitch jokes.",
+      "eventDate": "2026-10-05",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "207 DeBartolo Hall",
+      "hostOrganization": "Student Stand-ups of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12667125"
+    },
+    {
+      "title": "SOLES General Meeting",
+      "summary": "The Society of Latino Engineers and Scientists holds a general meeting for members to focus on community building and professional development.",
+      "eventDate": "2026-10-05",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "131 DeBartolo Hall",
+      "hostOrganization": "Society of Latino Engineers and Scientists",
+      "category": "Networking",
+      "tags": [
+        "Club meeting",
+        "Professional development"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12831248"
+    },
+    {
+      "title": "WLF Pre-Meet the Employers",
+      "summary": "Women’s Legal Forum members gather in Eck Commons for a reception associated with Public Interest Meet the Employers, with food and light refreshments. This reception is for WLF members.",
+      "eventDate": "2026-10-05",
+      "startTime": "19:00",
+      "endTime": "21:00",
+      "location": "Eck Hall of Law",
+      "hostOrganization": "Women's Legal Forum, Notre Dame Law School",
+      "category": "Networking",
+      "tags": [
+        "Reception",
+        "Members event",
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12822474"
+    },
+    {
+      "title": "Peer Listening Program",
+      "summary": "The McDonald Center for Student Well-Being hosts a Peer Listening session at the LaFortune Student Center, offering students a space for support.",
+      "eventDate": "2026-10-05",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, Room 303",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584251"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-05",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12581822"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-05",
+      "startTime": "20:30",
+      "endTime": "22:30",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737150"
+    },
+    {
+      "title": "Succulent giveaway",
+      "summary": "Graduate Student Government hosts a succulent giveaway in the Duncan Student Lounge to celebrate Graduate Student Appreciation Week.",
+      "eventDate": "2026-10-06",
+      "startTime": "11:45",
+      "endTime": "12:45",
+      "location": "Duncan Student Lounge",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12672661"
+    },
+    {
+      "title": "Marketing Club: Resumes, Internships & Connections",
+      "summary": "Marketing Club members review resumes, compare internship experiences, and hear guest speakers. Check with the club about joining and this session’s agenda.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Meeting Rm 2 South  W210",
+      "hostOrganization": "Marketing Club, University of Notre Dame Undergraduate",
+      "category": "Career",
+      "tags": [
+        "Club meeting",
+        "Internships",
+        "Resume review"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12805763"
+    },
+    {
+      "title": "ASCE October General Meeting",
+      "summary": "The American Society of Civil Engineers hosts a general meeting to discuss club events and conference competition opportunities.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "131 DeBartolo Hall",
+      "hostOrganization": "American Society of Civil Engineers, University of Notre Dame Student Chapter",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840030"
+    },
+    {
+      "title": "Weekly Meeting",
+      "summary": "Delight Ministries hosts a weekly bible study and fellowship meeting in the Mendoza College of Business.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "158 Mendoza College of Business",
+      "hostOrganization": "Delight Ministries at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12785201"
+    },
+    {
+      "title": "Fall Semester Club Meetings",
+      "summary": "The American Sign Language Club holds weekly meetings to teach members ASL and discuss the Deaf community.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "202 DeBartolo Hall",
+      "hostOrganization": "American Sign Language Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12833655"
+    },
+    {
+      "title": "AI/ML Kickoff",
+      "summary": "The Linux Users Group hosts an AI/ML kickoff event in DeBartolo Hall to introduce their new initiative.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "116 DeBartolo Hall",
+      "hostOrganization": "Linux Users Group of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12843105"
+    },
+    {
+      "title": "Migrant Prayer Service",
+      "summary": "The Student Coalition for Immigration Advocacy hosts a migrant prayer service at the Log Chapel to pray for and reflect on the dignity of migrants.",
+      "eventDate": "2026-10-06",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "Log Chapel",
+      "hostOrganization": "Student Coalition for Immigration Advocacy of Notre Dame",
+      "category": "Community",
+      "tags": [
+        "Community"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12843837"
+    },
+    {
+      "title": "TEA@ND Projects Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds project meetings for students interested in the themed entertainment industry.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "B19 Fitzpatrick Hall of Engineering",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710414"
+    },
+    {
+      "title": "Technology and Catholicism Weekly Meetings",
+      "summary": "The Technology and Catholicism Club hosts a weekly discussion group in Coleman-Morse regarding the intersection of technology and faith.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Technology and Catholicism Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12738036"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "location": "Saint Liam Hall, Room 215",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584353"
+    },
+    {
+      "title": "College Democrats Biweekly Meeting",
+      "summary": "The College Democrats host a biweekly meeting for members to discuss policy and political careers.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "location": "Meeting Rm 2 South  W210",
+      "hostOrganization": "College Democrats of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840234"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-06",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12601627"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611450"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-06",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12561520"
+    },
+    {
+      "title": "Asian American Association Asian Allure Auditions",
+      "summary": "The Asian American Association holds auditions for their upcoming Asian Allure showcase at the Washington Hall main stage.",
+      "eventDate": "2026-10-05",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Main Stage",
+      "hostOrganization": "Asian American Association of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12812162"
+    },
+    {
+      "title": "Asian American Association Asian Allure Auditions",
+      "summary": "The Asian American Association holds auditions for their upcoming Asian Allure showcase at the Washington Hall main stage.",
+      "eventDate": "2026-10-06",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Main Stage",
+      "hostOrganization": "Asian American Association of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12812163"
+    },
+    {
+      "title": "CASA Information Event",
+      "summary": "Legal Voices for Children and Youth hosts an information event at Eck Hall regarding volunteer opportunities with the St. Joseph County CASA office.",
+      "eventDate": "2026-10-07",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck Hall",
+      "hostOrganization": "Legal Voices for Children and Youth of Notre Dame Law School",
+      "category": "Community",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799774"
+    },
+    {
+      "title": "Multistate Impact Litigation",
+      "summary": "The American Constitution Society hosts a lecture by Jamila Johnson on multistate impact litigation at Eck Hall of Law.",
+      "eventDate": "2026-10-07",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck Hall of Law",
+      "hostOrganization": "American Constitution Society for Law and Policy, Notre Dame Law School Chapter",
+      "category": "Academic",
+      "tags": [
+        "Law",
+        "Speaker"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799824"
+    },
+    {
+      "title": "Wellness Wednesday",
+      "summary": "Drop by the McDonald Center’s wellness event for free snacks, swag, and practical tips for a midweek reset. Locations vary by week; use this card and the original source for the current spot.",
+      "eventDate": "2026-10-07",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Fieldhouse Mall",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12482746"
+    },
+    {
+      "title": "Special Olympics Practice",
+      "summary": "Special Olympics lists a football practice at Ricci Field 5. Confirm athlete and volunteer participation requirements with the organization; this is not a varsity spectator game.",
+      "eventDate": "2026-10-07",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Rec Sports - Ricci Field 5",
+      "hostOrganization": "Special Olympics, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Football",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724892"
+    },
+    {
+      "title": "Video Game Club General Meeting",
+      "summary": "Play the Gaming Lab’s featured games, PCs, and consoles, then stay for snacks and conversation with Video Gaming Club. Check club participation details.",
+      "eventDate": "2026-10-07",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Information Technology Center, Gaming Lab 121",
+      "hostOrganization": "Video Gaming Club of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Gaming",
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12817942"
+    },
+    {
+      "title": "Jeopardy and Game Night",
+      "summary": "The Society of Physics Students hosts a physics-themed Jeopardy and game night for club members.",
+      "eventDate": "2026-10-07",
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "location": "Phlibrary",
+      "hostOrganization": "Society of Physics Students, University of Notre Dame Chapter",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Trivia",
+        "Club meeting",
+        "Members event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12848415"
+    },
+    {
+      "title": "Plaster Casting Workshop and Intro Meeting",
+      "summary": "The Historic Preservation Club hosts an introductory meeting and plaster casting workshop at the Walsh Family Hall of Architecture.",
+      "eventDate": "2026-10-07",
+      "startTime": "17:15",
+      "endTime": "18:15",
+      "location": "Walsh Family Hall of Architecture",
+      "hostOrganization": "Historic Preservation Club",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12805681"
+    },
+    {
+      "title": "Put It In Perspective",
+      "summary": "The McDonald Center for Student Well-Being hosts a workshop on anxiety management. Dinner will be provided.",
+      "eventDate": "2026-10-07",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "location": "Champions of Diversity Room",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12514987"
+    },
+    {
+      "title": "DFA Weekly Studio Meeting",
+      "summary": "Design For America holds a weekly studio meeting in DeBartolo Hall.",
+      "eventDate": "2026-10-07",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "120 DeBartolo Hall",
+      "hostOrganization": "Design For America",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12831281"
+    },
+    {
+      "title": "Prospective Club Information Meeting",
+      "summary": "The Club Coordination Council hosts an information meeting for prospective clubs in DeBartolo Hall.",
+      "eventDate": "2026-10-07",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "116 DeBartolo Hall",
+      "hostOrganization": "Club Coordination Council",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting",
+        "Starting a club"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12848426"
+    },
+    {
+      "title": "Loans 101",
+      "summary": "The Office of Student Enrichment hosts a Loans 101 workshop at DeBartolo Hall to discuss borrowing and repayment strategies.",
+      "eventDate": "2026-10-07",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "126 DeBartolo Hall",
+      "hostOrganization": "Office of Student Enrichment",
+      "category": "Career",
+      "tags": [
+        "Academic"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12744973"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-07",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, GRC Huddle Room (223)",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12513906"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-07",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, Room 223",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584399"
+    },
+    {
+      "title": "PrismND Weekly HangOUTS",
+      "summary": "PrismND hosts a weekly community hangout for LGBTQ+ students and members of the tri-campus community to socialize.",
+      "eventDate": "2026-10-07",
+      "startTime": "21:00",
+      "endTime": "22:00",
+      "location": "LaFortune Student Center Champions of Diversity Room - Priority Date Request",
+      "hostOrganization": "PrismND",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12730863"
+    },
+    {
+      "title": "PDub's BDubs",
+      "summary": "Pasquerilla West’s dorm-restaurant trial serves boneless wings and a dirty-soda bar for hall residents. The description does not confirm that later dates opened to other students.",
+      "eventDate": "2026-10-07",
+      "startTime": "21:00",
+      "endTime": "22:30",
+      "location": "Pasquerilla West Hall",
+      "hostOrganization": "Pasquerilla West Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Residents event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12725063"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-07",
+      "startTime": "20:30",
+      "endTime": "22:30",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737151"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-07",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12561521"
+    },
+    {
+      "title": "Asian American Association Asian Allure Auditions",
+      "summary": "The Asian American Association holds auditions for their upcoming Asian Allure showcase at the Washington Hall main stage.",
+      "eventDate": "2026-10-07",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Main Stage",
+      "hostOrganization": "Asian American Association of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12812164"
+    },
+    {
+      "title": "Patent Litigation and ITC Practice: Insights from Alston & Bird’s Ravi Fernando",
+      "summary": "The Intellectual Property Law Society hosts alumnus Ravi Fernando at Eck Hall for a discussion on patent litigation and trade commission work.",
+      "eventDate": "2026-10-08",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck Hall of Law",
+      "hostOrganization": "Intellectual Property Law Society",
+      "category": "Career",
+      "tags": [
+        "Alumni speaker",
+        "Law"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799840"
+    },
+    {
+      "title": "Take a Paws",
+      "summary": "The McDonald Center for Student Well-Being hosts a weekly dog therapy session for students to destress.",
+      "eventDate": "2026-10-08",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "location": "McDonald Center for Student Well-Being",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12500176"
+    },
+    {
+      "title": "Cyber Security Team Practice",
+      "summary": "The Linux Users Group hosts a cybersecurity team practice session for students to run labs and competitions.",
+      "eventDate": "2026-10-08",
+      "startTime": "16:30",
+      "endTime": "17:30",
+      "location": "244 DeBartolo Hall",
+      "hostOrganization": "Linux Users Group of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799801"
+    },
+    {
+      "title": "A Conversation with Dr. Melissa Kearney",
+      "summary": "The Women in Economics Club hosts Dr. Melissa Kearney in DeBartolo Hall for a discussion on economics and professional opportunities.",
+      "eventDate": "2026-10-08",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "215 DeBartolo Hall",
+      "hostOrganization": "Women in Economics Club",
+      "category": "Career",
+      "tags": [
+        "Economics",
+        "Speaker"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710101"
+    },
+    {
+      "title": "CCS Mahjong & Game Night",
+      "summary": "The Chinese Culture Society hosts a game night with mahjong and snacks. Everyone is welcome to attend.",
+      "eventDate": "2026-10-08",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Chinese Culture Society",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Mahjong",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12641323"
+    },
+    {
+      "title": "Advice From Upperclassmen!",
+      "summary": "Sophomore Chemistry and Biochemistry Club officers share advice with freshmen in those majors about classes, research, service, and internships.",
+      "eventDate": "2026-10-08",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "143 DeBartolo Hall",
+      "hostOrganization": "Chemistry and Biochemistry Club",
+      "category": "Networking",
+      "tags": [
+        "Mentorship",
+        "Club meeting"
+      ],
+      "classYears": [
+        "Freshman"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12831441"
+    },
+    {
+      "title": "Hellenic Student Association Welcome Meeting",
+      "summary": "The Hellenic Student Association holds its first club meeting in DeBartolo Hall, featuring Greek food and member introductions.",
+      "eventDate": "2026-10-08",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "125 DeBartolo Hall",
+      "hostOrganization": "Hellenic Student Association of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Free Greek food",
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842276"
+    },
+    {
+      "title": "FAAND Bi-Weekly Meeting!",
+      "summary": "The Food Allergy Advocacy of Notre Dame club holds a bi-weekly meeting in DeBartolo Hall.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:00",
+      "endTime": "19:30",
+      "location": "Conference 2C  W212A",
+      "hostOrganization": "Food Allergy Advocacy of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12768088"
+    },
+    {
+      "title": "QB Mentorship Kickoff Event",
+      "summary": "The QuestBridge chapter pairs experienced scholars with new members for academic guidance, professional development, and community connection. This mentorship program is for QuestBridge scholars.",
+      "eventDate": "2026-10-08",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "Meeting Rm 2 North W246",
+      "hostOrganization": "QuestBridge Chapter of Notre Dame",
+      "category": "Networking",
+      "tags": [
+        "Mentorship",
+        "Program members",
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12836049"
+    },
+    {
+      "title": "TEA@ND General Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds a general meeting to discuss industry-related projects and competitions.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "162 Mendoza College of Business",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710382"
+    },
+    {
+      "title": "Weekly Bible Study",
+      "summary": "The Baptist Collegiate Ministry holds a weekly bible study and fellowship meeting in LaFortune.",
+      "eventDate": "2026-10-08",
+      "startTime": "20:30",
+      "endTime": "21:30",
+      "location": "LaFortune Dooley Room - Rm 102",
+      "hostOrganization": "Baptist Collegiate Ministry",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634190"
+    },
+    {
+      "title": "Collegiate Gospel Group Weekly Meeting",
+      "summary": "The Collegiate Gospel Group holds a weekly worship and fellowship meeting in Coleman-Morse.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:30",
+      "endTime": "21:45",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Collegiate Gospel Group",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12771265"
+    },
+    {
+      "title": "Chi Alpha Christian Fellowship Weekly Meeting",
+      "summary": "Chi Alpha Christian Fellowship hosts a weekly meeting in DeBartolo Hall. Reservations are required as space is limited.",
+      "eventDate": "2026-10-08",
+      "startTime": "20:00",
+      "endTime": "21:45",
+      "location": "140 DeBartolo Hall",
+      "hostOrganization": "Chi Alpha Christian Fellowship",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772155"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611451"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-08",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634882"
+    },
+    {
+      "title": "Iron Sharpens Iron Weekly Gatherings",
+      "summary": "Iron Sharpens Iron holds a weekly gathering in Coleman-Morse for worship, fellowship, and bible study.",
+      "eventDate": "2026-10-08",
+      "startTime": "20:45",
+      "endTime": "23:45",
+      "location": "104 CoMo Hammes Lounge",
+      "hostOrganization": "Iron Sharpens Iron",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12696260"
+    },
+    {
+      "title": "Board Game Night",
+      "summary": "Board Game Club welcomes beginners and experienced players for games and conversation in LaFortune. This session runs into the following morning.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:15",
+      "endTime": "01:45",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Board Game Club",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Board games",
+        "Club meeting",
+        "Overnight"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710394"
+    },
+    {
+      "title": "Peer Listener Pop-Up",
+      "summary": "The McDonald Center for Student Well-Being hosts a Peer Listener pop-up in the North Dining Hall for students to ask questions and grab information.",
+      "eventDate": "2026-10-09",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "location": "North Dining Hall Lobby",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12518578"
+    },
+    {
+      "title": "South Bend Farmers' Market",
+      "summary": "Student Government hosts a farmers’ market on South Quad featuring local produce and goods from South Bend vendors.",
+      "eventDate": "2026-10-09",
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "location": "South Quad - Flag Pole",
+      "hostOrganization": "Executive Cabinet - Student Government",
+      "category": "Community",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737259"
+    },
+    {
+      "title": "Raising the Bar at the Gym: Girl Gains Pull-up Fundraiser",
+      "summary": "Girl Gains Notre Dame hosts a pull-up/push-up fundraiser on South Quad. Donations are accepted during the event.",
+      "eventDate": "2026-10-09",
+      "startTime": "11:00",
+      "endTime": "14:00",
+      "location": "South Quad - Alumni",
+      "hostOrganization": "Girl Gains Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Strength training",
+        "Fundraiser"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772381"
+    },
+    {
+      "title": "Irish Gardens Pop-Up Shop",
+      "summary": "Irish Gardens hosts a floral pop-up shop on campus to celebrate the home football game.",
+      "eventDate": "2026-10-09",
+      "startTime": "11:00",
+      "endTime": "14:00",
+      "location": "in between duncan, fitzpatrick hall of science, and debart (on terrace)",
+      "hostOrganization": "Irish Gardens",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Flowers"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12812152"
+    },
+    {
+      "title": "World Mental Health Day",
+      "summary": "The McDonald Center for Student Well-Being hosts an event in the Duncan Student Center for World Mental Health Day, offering resources and support.",
+      "eventDate": "2026-10-09",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "location": "Duncan Student Center, Room 106",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12488313"
+    },
+    {
+      "title": "Breen Phillips Hall Barn Party",
+      "summary": "Breen-Phillips Hall Council hosts a petting zoo and bake sale on Fieldhouse Mall to benefit breast cancer research.",
+      "eventDate": "2026-10-09",
+      "startTime": "13:00",
+      "endTime": "16:00",
+      "location": "Field House Mall",
+      "hostOrganization": "Breen-Phillips Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12800922"
+    },
+    {
+      "title": "Bagels and Coffee Fundraiser",
+      "summary": "Buy bagels and coffee at Fighting Together’s campus fundraiser. Check the original listing for this date’s menu and beneficiary.",
+      "eventDate": "2026-10-09",
+      "startTime": "10:00",
+      "endTime": "17:00",
+      "location": "LaFortune Elevator Lobby",
+      "hostOrganization": "Fighting Together",
+      "category": "Community",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724731"
+    },
+    {
+      "title": "Field Hockey Fundraiser",
+      "summary": "The Field Hockey Club hosts a fundraiser on South Quad where participants can pay a $5 donation to pie a team member.",
+      "eventDate": "2026-10-09",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "South Quad",
+      "hostOrganization": "Field Hockey Club, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Field hockey",
+        "Fundraiser"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12826566"
+    },
+    {
+      "title": "Bench for Breast Cancer",
+      "summary": "The Powerlifting Club hosts a bench press fundraiser on the Duncan Student Center patio to benefit the Harper Cancer Research Institute. Fees apply for competition.",
+      "eventDate": "2026-10-09",
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "location": "Duncan Student Center Patio",
+      "hostOrganization": "Powerlifting Club",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Strength training",
+        "Fundraiser"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12838384"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-09",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737152"
+    },
+    {
+      "title": "Short-Form Show III",
+      "summary": "The Humor Artists of Notre Dame host a free 90-minute improvised comedy show in the Washington Hall Lab Theatre.",
+      "eventDate": "2026-10-09",
+      "startTime": "20:00",
+      "endTime": "21:30",
+      "location": "Lab Theatre — Washington Hall",
+      "hostOrganization": "The Humor Artists of the University of Notre Dame du Lac",
+      "category": "Arts & Culture",
+      "tags": [
+        "Performance"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12666450"
+    },
+    {
+      "title": "Irish Dance, Culture, & History",
+      "summary": "Irish Dance Club and other Irish groups present a show about Irish culture and history. The 3–11 p.m. RSS block appears to be a venue reservation, not a confirmed curtain time. Check the source for performance time.",
+      "eventDate": "2026-10-09",
+      "startTime": null,
+      "endTime": null,
+      "location": "Washington Hall",
+      "hostOrganization": "Irish Dance Club",
+      "category": "Arts & Culture",
+      "tags": [
+        "Performance"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12805680"
+    },
+    {
+      "title": "BP/Siegfried Dance",
+      "summary": "Breen-Phillips and Siegfried host their SYR dance at Stepan Center. Confirm dorm invitation and admission requirements with the organizers.",
+      "eventDate": "2026-10-09",
+      "startTime": "21:00",
+      "endTime": "23:45",
+      "location": "Stepan Center",
+      "hostOrganization": "Breen-Phillips Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Mixer",
+        "Dance",
+        "Dorm event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12781193"
+    },
+    {
+      "title": "Bagels and Coffee Fundraiser",
+      "summary": "Buy bagels and coffee at Fighting Together’s campus fundraiser. Check the original listing for this date’s menu and beneficiary.",
+      "eventDate": "2026-10-11",
+      "startTime": "09:00",
+      "endTime": "12:30",
+      "location": "South Quad - Main Circle",
+      "hostOrganization": "Fighting Together",
+      "category": "Community",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12837296"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-11",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "location": "Stepan Center",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842181"
+    },
+    {
+      "title": "Marian Procession",
+      "summary": "The Militia of the Immaculata hosts a Marian procession from the Basilica to the Grotto.",
+      "eventDate": "2026-10-11",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "location": "Basilica to God Quad to Grotto",
+      "hostOrganization": "Militia of the Immaculata",
+      "category": "Community",
+      "tags": [
+        "Community"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12798445"
+    },
+    {
+      "title": "Wabruda Soccer Event",
+      "summary": "The Wabruda hosts a soccer event at Ricci Field for club members.",
+      "eventDate": "2026-10-11",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "location": "Rec Sports - Ricci Field 1",
+      "hostOrganization": "The Wabruda",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Soccer",
+        "Club activity",
+        "Members event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842309"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-11",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12610113"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-11",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Rec Sports - Smith Center Activity Studio 1",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737630"
+    },
+    {
+      "title": "Wheelchair Basketball 2026",
+      "summary": "Ryan Hall hosts 5-on-5 wheelchair basketball from 1–5 p.m. Team registration requires a $25 donation to River City Challenged Athletes; the sponsor provides wheelchairs. Check team and spectator arrangements in the source.",
+      "eventDate": "2026-10-11",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "location": "Bookstore Basketball Courts",
+      "hostOrganization": "Ryan Hall Council",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Basketball",
+        "Fundraiser",
+        "Registration required"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12800852"
+    },
+    {
+      "title": "Special Olympics Practice",
+      "summary": "Special Olympics lists a football practice at Ricci Field 5. Confirm athlete and volunteer participation requirements with the organization; this is not a varsity spectator game.",
+      "eventDate": "2026-10-11",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Rec Sports - Ricci Field 5",
+      "hostOrganization": "Special Olympics, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Football",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724894"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-11",
+      "startTime": "18:00",
+      "endTime": "21:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611452"
+    },
+    {
+      "title": "Asian Allure practice",
+      "summary": "The Filipino-American Student Organization hosts a Tinikling practice at Washington Hall for the upcoming Asian Cultural showcase.",
+      "eventDate": "2026-10-11",
+      "startTime": "20:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Rehearsal Room",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842139"
+    },
+    {
+      "title": "Put It In Perspective Workshop",
+      "summary": "Learn to break down anxiety, consider realistic outcomes, and plan how to respond. Appetizers are provided at this stress-management workshop.",
+      "eventDate": "2026-10-12",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "location": "Champions of Diversity Room",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12514995"
+    },
+    {
+      "title": "Access-ABLE Weekly Meeting",
+      "summary": "Access-ABLE hosts weekly meetings in Coleman-Morse to provide a safe space for students in the disability community.",
+      "eventDate": "2026-10-12",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "201 Coleman-Morse",
+      "hostOrganization": "Access-ABLE of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12624600"
+    },
+    {
+      "title": "Cookies and Complaints with DODA",
+      "summary": "Discuss inaccessible campus spaces, accommodations, and inclusion with Access-ABLE and Student Government’s disability advocates. Insomnia cookies include gluten-free and vegan options.",
+      "eventDate": "2026-10-12",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Student Government Office",
+      "hostOrganization": "Access-ABLE of Notre Dame",
+      "category": "Community",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12796989"
+    },
+    {
+      "title": "Crumbs and Convos with the Peer Listeners",
+      "summary": "The McDonald Center for Student Well-Being hosts a conversation session with Peer Listeners at LaFortune, featuring snacks and information on campus resources.",
+      "eventDate": "2026-10-12",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "location": "LaFortune Community Kitchen",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Refreshments"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12828034"
+    },
+    {
+      "title": "OCF Discussion Series",
+      "summary": "The Orthodox Christian Fellowship holds a bi-weekly discussion session for bible study and fellowship.",
+      "eventDate": "2026-10-12",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "Conference 2C  W212A",
+      "hostOrganization": "Orthodox Christian Fellowship of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840249"
+    },
+    {
+      "title": "Stand-Up Weekly Meeting",
+      "summary": "Student Stand-ups of Notre Dame hosts a weekly meeting in DeBartolo Hall to workshop and pitch jokes.",
+      "eventDate": "2026-10-12",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "207 DeBartolo Hall",
+      "hostOrganization": "Student Stand-ups of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12667126"
+    },
+    {
+      "title": "Peer Listening Program",
+      "summary": "The McDonald Center for Student Well-Being hosts a Peer Listening session at the LaFortune Student Center, offering students a space for support.",
+      "eventDate": "2026-10-12",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, Room 303",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584252"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-12",
+      "startTime": "20:30",
+      "endTime": "22:30",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737153"
+    },
+    {
+      "title": "Asian Allure Dance Practice",
+      "summary": "The Hawaii Club holds dance rehearsals for their Asian Allure performance at the Smith Center Activity Studio. This event is a club-specific practice.",
+      "eventDate": "2026-10-12",
+      "startTime": "20:30",
+      "endTime": "22:30",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Hawaii Club - Na Pua Kai 'Ewalu",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12766374"
+    },
+    {
+      "title": "Taco About It Tuesday",
+      "summary": "The McDonald Center for Student Well-Being hosts a weekly taco conversation series at Saint Liam Hall to offer students a safe space for reflection.",
+      "eventDate": "2026-10-13",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "McDonald Center, St Liam Hall 2nd floor",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12482714"
+    },
+    {
+      "title": "Prospective Club Information Meeting",
+      "summary": "The Club Coordination Council hosts an information meeting for prospective clubs in DeBartolo Hall.",
+      "eventDate": "2026-10-13",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "116 DeBartolo Hall",
+      "hostOrganization": "Club Coordination Council",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting",
+        "Starting a club"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12848427"
+    },
+    {
+      "title": "TEA@ND Projects Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds project meetings for students interested in the themed entertainment industry.",
+      "eventDate": "2026-10-13",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "B19 Fitzpatrick Hall of Engineering",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710415"
+    },
+    {
+      "title": "Technology and Catholicism Weekly Meetings",
+      "summary": "The Technology and Catholicism Club hosts a weekly discussion group in Coleman-Morse regarding the intersection of technology and faith.",
+      "eventDate": "2026-10-13",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Technology and Catholicism Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12738037"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-13",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "Saint Liam Hall, Room 215",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584354"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-13",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12601628"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-13",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611453"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-13",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12561522"
+    },
+    {
+      "title": "Tax Law Society General Body Meeting",
+      "summary": "The Tax Law Society holds a general body meeting in Eck Hall of Law featuring presentations on tax courses. Lunch will be provided.",
+      "eventDate": "2026-10-14",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck/Biolchini",
+      "hostOrganization": "Tax Law Society of the Notre Dame Law School",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12783338"
+    },
+    {
+      "title": "Dunne Hall x Pasquerilla West Hall Blood Drive",
+      "summary": "Dunne Hall and Pasquerilla West Hall co-host a blood drive at Library Circle to support the South Bend Medical Foundation.",
+      "eventDate": "2026-10-14",
+      "startTime": "13:00",
+      "endTime": "16:00",
+      "location": "Library Circle",
+      "hostOrganization": "Dunne Hall Council",
+      "category": "Community",
+      "tags": [
+        "Blood drive"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12785501"
+    },
+    {
+      "title": "Wellness Wednesday",
+      "summary": "Drop by the McDonald Center’s wellness event for free snacks, swag, and practical tips for a midweek reset. Locations vary by week; use this card and the original source for the current spot.",
+      "eventDate": "2026-10-14",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Duncan Student Center tables",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12489288"
+    },
+    {
+      "title": "Special Olympics Practice",
+      "summary": "Special Olympics lists a football practice at Ricci Field 5. Confirm athlete and volunteer participation requirements with the organization; this is not a varsity spectator game.",
+      "eventDate": "2026-10-14",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Rec Sports - Ricci Field 5",
+      "hostOrganization": "Special Olympics, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Football",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724896"
+    },
+    {
+      "title": "Special Olympics Practice",
+      "summary": "Special Olympics lists a football practice at Ricci Field 5. Confirm athlete and volunteer participation requirements with the organization; this is not a varsity spectator game.",
+      "eventDate": "2026-10-14",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Rec Sports - Ricci Field 5",
+      "hostOrganization": "Special Olympics, Notre Dame",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Football",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12724898"
+    },
+    {
+      "title": "Video Game Club General Meeting",
+      "summary": "Play the Gaming Lab’s featured games, PCs, and consoles, then stay for snacks and conversation with Video Gaming Club. Check club participation details.",
+      "eventDate": "2026-10-14",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Information Technology Center, Gaming Lab 121",
+      "hostOrganization": "Video Gaming Club of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Gaming",
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12817945"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-14",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, Room 223",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584400"
+    },
+    {
+      "title": "PrismND Weekly HangOUTS",
+      "summary": "PrismND hosts a weekly community hangout for LGBTQ+ students and members of the tri-campus community to socialize.",
+      "eventDate": "2026-10-14",
+      "startTime": "21:00",
+      "endTime": "22:00",
+      "location": "LaFortune Student Center Champions of Diversity Room - Priority Date Request",
+      "hostOrganization": "PrismND",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12730864"
+    },
+    {
+      "title": "PDub's BDubs",
+      "summary": "Pasquerilla West’s dorm-restaurant trial serves boneless wings and a dirty-soda bar for hall residents. The description does not confirm that later dates opened to other students.",
+      "eventDate": "2026-10-14",
+      "startTime": "21:00",
+      "endTime": "22:30",
+      "location": "Pasquerilla West Hall",
+      "hostOrganization": "Pasquerilla West Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Residents event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12725064"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-14",
+      "startTime": "20:30",
+      "endTime": "22:30",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737154"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-14",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12561523"
+    },
+    {
+      "title": "Coffee and Donut Pop-Up",
+      "summary": "The Engineering Leadership Council hosts a pop-up event in the Fitzpatrick Hall lobby offering donuts and coffee to students.",
+      "eventDate": "2026-10-15",
+      "startTime": "09:00",
+      "endTime": "11:00",
+      "location": "Fitzpatrick Hall 1st Floor Lobby",
+      "hostOrganization": "Engineering Leadership Council of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12831344"
+    },
+    {
+      "title": "The Future of State Policy on Bioethics",
+      "summary": "The Jus Vitae Association hosts Clarke Forsythe at Eck Hall of Law for a lecture regarding the future of state bioethics policy.",
+      "eventDate": "2026-10-15",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "location": "Eck Hall of Law",
+      "hostOrganization": "Jus Vitae Association of the Notre Dame School of Law",
+      "category": "Academic",
+      "tags": [
+        "Academic"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12839164"
+    },
+    {
+      "title": "Take a Paws",
+      "summary": "The McDonald Center for Student Well-Being hosts a weekly dog therapy session for students to destress.",
+      "eventDate": "2026-10-15",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "location": "McDonald Center for Student Well-Being",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12500177"
+    },
+    {
+      "title": "Berry Bash",
+      "summary": "Enjoy a fall berry bar with whipped cream, chocolate chips, and a coloring activity. The junior class council hosts, but the description does not state an exclusive class-year audience.",
+      "eventDate": "2026-10-15",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "location": "Fieldhouse Mall",
+      "hostOrganization": "Class of 2028",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12751798"
+    },
+    {
+      "title": "Cyber Security Team Practice",
+      "summary": "The Linux Users Group hosts a cybersecurity team practice session for students to run labs and competitions.",
+      "eventDate": "2026-10-15",
+      "startTime": "16:30",
+      "endTime": "17:30",
+      "location": "244 DeBartolo Hall",
+      "hostOrganization": "Linux Users Group of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799802"
+    },
+    {
+      "title": "Woman in Computer Science General Meeting",
+      "summary": "Women in Computer Science holds a general meeting in DeBartolo Hall to discuss professional development and resume preparation.",
+      "eventDate": "2026-10-15",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "126 DeBartolo Hall",
+      "hostOrganization": "Women in Computer Science",
+      "category": "Career",
+      "tags": [
+        "Club meeting",
+        "Computer science",
+        "Resume preparation"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12831534"
+    },
+    {
+      "title": "CCS Mahjong & Game Night",
+      "summary": "The Chinese Culture Society hosts a game night with mahjong and snacks. Everyone is welcome to attend.",
+      "eventDate": "2026-10-15",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Chinese Culture Society",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Mahjong",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12641324"
+    },
+    {
+      "title": "TEA@ND General Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds a general meeting to discuss industry-related projects and competitions.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "162 Mendoza College of Business",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710383"
+    },
+    {
+      "title": "Weekly Bible Study",
+      "summary": "The Baptist Collegiate Ministry holds a weekly bible study and fellowship meeting in LaFortune.",
+      "eventDate": "2026-10-15",
+      "startTime": "20:30",
+      "endTime": "21:30",
+      "location": "LaFortune Dooley Room - Rm 102",
+      "hostOrganization": "Baptist Collegiate Ministry",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634191"
+    },
+    {
+      "title": "Collegiate Gospel Group Weekly Meeting",
+      "summary": "The Collegiate Gospel Group holds a weekly worship and fellowship meeting in Coleman-Morse.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:30",
+      "endTime": "21:45",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Collegiate Gospel Group",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772112"
+    },
+    {
+      "title": "Chi Alpha Christian Fellowship Weekly Meeting",
+      "summary": "Chi Alpha Christian Fellowship hosts a weekly meeting in DeBartolo Hall. Reservations are required as space is limited.",
+      "eventDate": "2026-10-15",
+      "startTime": "20:00",
+      "endTime": "21:45",
+      "location": "140 DeBartolo Hall",
+      "hostOrganization": "Chi Alpha Christian Fellowship",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772156"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611454"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-15",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634883"
+    },
+    {
+      "title": "Iron Sharpens Iron Weekly Gatherings",
+      "summary": "Iron Sharpens Iron holds a weekly gathering in Coleman-Morse for worship, fellowship, and bible study.",
+      "eventDate": "2026-10-15",
+      "startTime": "20:45",
+      "endTime": "23:45",
+      "location": "104 CoMo Hammes Lounge",
+      "hostOrganization": "Iron Sharpens Iron",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12696261"
+    },
+    {
+      "title": "Board Game Night",
+      "summary": "Board Game Club welcomes beginners and experienced players for games and conversation in LaFortune. This session runs into the following morning.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:15",
+      "endTime": "01:45",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Board Game Club",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Board games",
+        "Club meeting",
+        "Overnight"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710395"
+    },
+    {
+      "title": "Project Fresh Recurring Dance Practice Fall",
+      "summary": "Project Fresh hosts recurring dance practices at the Smith Center for club members to learn and share choreography.",
+      "eventDate": "2026-10-16",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "location": "Rec Sports - Smith Center Activity Studio 2",
+      "hostOrganization": "Project Fresh",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12737155"
+    },
+    {
+      "title": "Happy Dashain and Tihar 2083",
+      "summary": "Celebrate Dashain and Tihar with traditional Nepali music and dance, festive food, cultural rites, and activities. Everyone is welcome, including people new to these traditions. Tickets are required.",
+      "eventDate": "2026-10-16",
+      "startTime": "17:00",
+      "endTime": "22:00",
+      "location": "Dahnke Balroom  (Priority Date Reservation)",
+      "hostOrganization": "Nepalese Student Association at Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Cultural celebration",
+        "Tickets required"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12845245"
+    },
+    {
+      "title": "Friday Night Magic",
+      "summary": "RPG Club welcomes newcomers and experienced Magic: The Gathering players. Loaner decks are available; the listed session continues into the following morning.",
+      "eventDate": "2026-10-16",
+      "startTime": "17:00",
+      "endTime": "02:00",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Role Playing Game Club",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Card games",
+        "Club meeting",
+        "Overnight"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634149"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-18",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "location": "Stepan Center",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842182"
+    },
+    {
+      "title": "Asian Allure practice",
+      "summary": "The Filipino-American Student Organization hosts a Tinikling practice at Washington Hall for the upcoming Asian Cultural showcase.",
+      "eventDate": "2026-10-18",
+      "startTime": "20:00",
+      "endTime": "23:00",
+      "location": "Washington Hall Rehearsal Room",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842140"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-14",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, GRC Huddle Room (223)",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12513907"
+    },
+    {
+      "title": "Dance Practice - Asian Allure",
+      "summary": "The Filipino-American Student Organization hosts weekly Tinikling dance practices at the Stepan Center in preparation for the Asian Cultural showcase. This event is a club-specific rehearsal.",
+      "eventDate": "2026-10-25",
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "location": "Stepan Center",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12842183"
+    },
+    {
+      "title": "Access-ABLE Weekly Meeting",
+      "summary": "Access-ABLE hosts weekly meetings in Coleman-Morse to provide a safe space for students in the disability community.",
+      "eventDate": "2026-10-26",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "201 Coleman-Morse",
+      "hostOrganization": "Access-ABLE of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12624601"
+    },
+    {
+      "title": "OCF Discussion Series",
+      "summary": "The Orthodox Christian Fellowship holds a bi-weekly discussion session for bible study and fellowship.",
+      "eventDate": "2026-10-26",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "Conference 2C  W212A",
+      "hostOrganization": "Orthodox Christian Fellowship of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840253"
+    },
+    {
+      "title": "Stand-Up Weekly Meeting",
+      "summary": "Student Stand-ups of Notre Dame hosts a weekly meeting in DeBartolo Hall to workshop and pitch jokes.",
+      "eventDate": "2026-10-26",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "207 DeBartolo Hall",
+      "hostOrganization": "Student Stand-ups of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12667127"
+    },
+    {
+      "title": "Peer Listening Program",
+      "summary": "The McDonald Center for Student Well-Being hosts a Peer Listening session at the LaFortune Student Center, offering students a space for support.",
+      "eventDate": "2026-10-26",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "location": "LaFortune Student Center, Room 303",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584253"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-12",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12581823"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-26",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12581824"
+    },
+    {
+      "title": "Taco About It Tuesday",
+      "summary": "The McDonald Center for Student Well-Being hosts a weekly taco conversation series at Saint Liam Hall to offer students a safe space for reflection.",
+      "eventDate": "2026-10-27",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "McDonald Center, St Liam Hall 2nd floor",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Social",
+      "tags": [
+        "Social"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12482715"
+    },
+    {
+      "title": "GreeNDot + Alcohol Awareness",
+      "summary": "greeNDot hosts a workshop in the Coleman-Morse Center about alcohol-related risk, intervention strategies, and support.",
+      "eventDate": "2026-10-27",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "Coleman-Morse Center",
+      "hostOrganization": "greeNDot",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12575111"
+    },
+    {
+      "title": "ASME October Meeting + Design Competition!",
+      "summary": "The American Society of Mechanical Engineers hosts a Halloween-themed general meeting and CAD design competition in DeBartolo Hall.",
+      "eventDate": "2026-10-27",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "140 DeBartolo Hall",
+      "hostOrganization": "American Society of Mechanical Engineers",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840065"
+    },
+    {
+      "title": "TEA@ND Projects Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds project meetings for students interested in the themed entertainment industry.",
+      "eventDate": "2026-10-27",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "B19 Fitzpatrick Hall of Engineering",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710416"
+    },
+    {
+      "title": "Technology and Catholicism Weekly Meetings",
+      "summary": "The Technology and Catholicism Club hosts a weekly discussion group in Coleman-Morse regarding the intersection of technology and faith.",
+      "eventDate": "2026-10-27",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Technology and Catholicism Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12738038"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-27",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "Saint Liam Hall, Room 215",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584355"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-27",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Activity Studio 205",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12601629"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-27",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611455"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-27",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12752884"
+    },
+    {
+      "title": "Wellness Wednesday",
+      "summary": "Drop by the McDonald Center’s wellness event for free snacks, swag, and practical tips for a midweek reset. Locations vary by week; use this card and the original source for the current spot.",
+      "eventDate": "2026-10-28",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "location": "Duncan Student Center Tables",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12489290"
+    },
+    {
+      "title": "ICAN Help: Suicide Prevention and Mental Health Literacy Training",
+      "summary": "The McDonald Center for Student Well-Being hosts a suicide prevention and mental health literacy training in LaFortune.",
+      "eventDate": "2026-10-28",
+      "startTime": "17:30",
+      "endTime": "18:45",
+      "location": "Champions of Diversity Room, LaFortune Student Center",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710405"
+    },
+    {
+      "title": "Crafts and Crumbl",
+      "summary": "Make Halloween decorations for children at South Bend Ronald McDonald House, with Crumbl cookies provided. The description identifies Duncan tables; confirm the exact table with the organizer.",
+      "eventDate": "2026-10-28",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Duncan Student Center tables — confirm table in source",
+      "hostOrganization": "Class of 2028",
+      "category": "Community",
+      "tags": [
+        "Community"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12828760"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-28",
+      "startTime": "19:30",
+      "endTime": "21:30",
+      "location": "LaFortune Student Center, Room 223",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12584401"
+    },
+    {
+      "title": "PrismND Weekly HangOUTS",
+      "summary": "PrismND hosts a weekly community hangout for LGBTQ+ students and members of the tri-campus community to socialize.",
+      "eventDate": "2026-10-28",
+      "startTime": "21:00",
+      "endTime": "22:00",
+      "location": "LaFortune Student Center Champions of Diversity Room - Priority Date Request",
+      "hostOrganization": "PrismND",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12730865"
+    },
+    {
+      "title": "PDub's BDubs",
+      "summary": "Pasquerilla West’s dorm-restaurant trial serves boneless wings and a dirty-soda bar for hall residents. The description does not confirm that later dates opened to other students.",
+      "eventDate": "2026-10-28",
+      "startTime": "21:00",
+      "endTime": "22:30",
+      "location": "Pasquerilla West Hall",
+      "hostOrganization": "Pasquerilla West Hall Council",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Food",
+        "Residents event"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12725065"
+    },
+    {
+      "title": "Weekly Meeting and Practice",
+      "summary": "Undergraduate and graduate Quizbowl club members practice tournament questions and coordinate intercollegiate competition logistics. Check with the club about joining.",
+      "eventDate": "2026-10-28",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Quizbowl Club of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12752885"
+    },
+    {
+      "title": "Patch to Palette",
+      "summary": "Student Union Board provides mini pumpkins and painting supplies for a fall break. Fieldhouse Mall is listed, with Fitz Terrace mentioned as an alternative; snacks are tentative.",
+      "eventDate": "2026-10-29",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "location": "Field House Mall",
+      "hostOrganization": "Student Union Board",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Pumpkin painting",
+        "Location may change"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12750816"
+    },
+    {
+      "title": "Take a Paws",
+      "summary": "The McDonald Center for Student Well-Being hosts a weekly dog therapy session for students to destress.",
+      "eventDate": "2026-10-29",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "location": "McDonald Center for Student Well-Being",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12500178"
+    },
+    {
+      "title": "In Focus: Photography and Resilience Workshop",
+      "summary": "The McDonald Center for Student Well-Being hosts a photography and resilience workshop. Registration is required to reserve a disposable camera.",
+      "eventDate": "2026-10-29",
+      "startTime": "15:30",
+      "endTime": "17:00",
+      "location": "Champions of Diversity Room, LaFortune Student Center",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12839274"
+    },
+    {
+      "title": "Cyber Security Team Practice",
+      "summary": "The Linux Users Group hosts a cybersecurity team practice session for students to run labs and competitions.",
+      "eventDate": "2026-10-29",
+      "startTime": "16:30",
+      "endTime": "17:30",
+      "location": "244 DeBartolo Hall",
+      "hostOrganization": "Linux Users Group of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799803"
+    },
+    {
+      "title": "CCS Mahjong & Game Night",
+      "summary": "The Chinese Culture Society hosts a game night with mahjong and snacks. Everyone is welcome to attend.",
+      "eventDate": "2026-10-29",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Chinese Culture Society",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Mahjong",
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12641325"
+    },
+    {
+      "title": "TEA@ND General Meeting",
+      "summary": "The Themed Entertainment Association at Notre Dame holds a general meeting to discuss industry-related projects and competitions.",
+      "eventDate": "2026-10-29",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "162 Mendoza College of Business",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710384"
+    },
+    {
+      "title": "March for Life Pilgrimage Information Session",
+      "summary": "Right to Life, Notre Dame hosts an information session in DeBartolo Hall regarding the upcoming March for Life pilgrimage.",
+      "eventDate": "2026-10-29",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "location": "102 DeBartolo Hall",
+      "hostOrganization": "Right To Life, Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12836553"
+    },
+    {
+      "title": "Weekly Bible Study",
+      "summary": "The Baptist Collegiate Ministry holds a weekly bible study and fellowship meeting in LaFortune.",
+      "eventDate": "2026-10-29",
+      "startTime": "20:30",
+      "endTime": "21:30",
+      "location": "LaFortune Dooley Room - Rm 102",
+      "hostOrganization": "Baptist Collegiate Ministry",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634192"
+    },
+    {
+      "title": "Collegiate Gospel Group Weekly Meeting",
+      "summary": "The Collegiate Gospel Group holds a weekly worship and fellowship meeting in Coleman-Morse.",
+      "eventDate": "2026-10-29",
+      "startTime": "19:30",
+      "endTime": "21:45",
+      "location": "330 Coleman-Morse",
+      "hostOrganization": "Collegiate Gospel Group",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772113"
+    },
+    {
+      "title": "Chi Alpha Christian Fellowship Weekly Meeting",
+      "summary": "Chi Alpha Christian Fellowship hosts a weekly meeting in DeBartolo Hall. Reservations are required as space is limited.",
+      "eventDate": "2026-10-29",
+      "startTime": "20:00",
+      "endTime": "21:45",
+      "location": "140 DeBartolo Hall",
+      "hostOrganization": "Chi Alpha Christian Fellowship",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12772157"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-10-29",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611456"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-10-29",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634884"
+    },
+    {
+      "title": "Iron Sharpens Iron Weekly Gatherings",
+      "summary": "Iron Sharpens Iron holds a weekly gathering in Coleman-Morse for worship, fellowship, and bible study.",
+      "eventDate": "2026-10-29",
+      "startTime": "20:45",
+      "endTime": "23:45",
+      "location": "104 CoMo Hammes Lounge",
+      "hostOrganization": "Iron Sharpens Iron",
+      "category": "Clubs",
+      "tags": [
+        "Club meeting"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12696262"
+    },
+    {
+      "title": "Board Game Night",
+      "summary": "Board Game Club welcomes beginners and experienced players for games and conversation in LaFortune. This session runs into the following morning.",
+      "eventDate": "2026-10-29",
+      "startTime": "19:15",
+      "endTime": "01:45",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Board Game Club",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Board games",
+        "Club meeting",
+        "Overnight"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710396"
+    },
+    {
+      "title": "Peer Listener Pop-Up",
+      "summary": "The McDonald Center for Student Well-Being hosts a Peer Listener pop-up in the North Dining Hall for students to ask questions and grab information.",
+      "eventDate": "2026-10-30",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "location": "North Dining Hall Lobby",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Wellness"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12518579"
+    },
+    {
+      "title": "Friday Night Magic",
+      "summary": "RPG Club welcomes newcomers and experienced Magic: The Gathering players. Loaner decks are available; the listed session continues into the following morning.",
+      "eventDate": "2026-10-30",
+      "startTime": "17:00",
+      "endTime": "02:00",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Role Playing Game Club",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Card games",
+        "Club meeting",
+        "Overnight"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12634150"
+    },
+    {
+      "title": "Asian Allure Dinner",
+      "summary": "Asian American Association provides dinner for attendees of its Asian Allure showcase. Confirm showcase-attendee participation and dinner arrangements with the club.",
+      "eventDate": "2026-10-31",
+      "startTime": "18:00",
+      "endTime": "23:00",
+      "location": "LaFortune Community Kitchen",
+      "hostOrganization": "Asian American Association of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Dinner",
+        "Showcase attendees"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12843377"
+    },
+    {
+      "title": "Ballroom Practice",
+      "summary": "The Ballroom Dance Club holds weekly rehearsals for members to practice Latin and American-style dances at the Rockne Activity Studio.",
+      "eventDate": "2026-11-01",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "location": "Rec Sports - Smith Center Activity Studio 3",
+      "hostOrganization": "Ballroom Dance Club, Notre Dame/Saint Mary's",
+      "category": "Clubs",
+      "tags": [
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12610114"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Graduate Student Government hosts indoor volleyball for graduate students at Rockne Memorial Gym. No experience is required for these sessions.",
+      "eventDate": "2026-11-01",
+      "startTime": "18:00",
+      "endTime": "21:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611457"
+    },
+    {
+      "title": "Red Cross Blood Drive",
+      "summary": "The Red Cross Club hosts a blood drive on the 8th floor of the Rasmus Club for members of the Notre Dame community.",
+      "eventDate": "2026-11-02",
+      "startTime": "11:00",
+      "endTime": "17:30",
+      "location": "8th Floor, Rasmus Club",
+      "hostOrganization": "American Red Cross Club of the University of Notre Dame",
+      "category": "Community",
+      "tags": [
+        "Blood drive"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12753646"
+    },
+    {
+      "title": "Peer Listening",
+      "summary": "Trained student Peer Listeners offer drop-in support, a welcoming space, and a listening ear for whatever is on your mind. Check this listing’s room and time.",
+      "eventDate": "2026-10-28",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "location": "LaFortune Student Center, GRC Huddle Room (223)",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "Support"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12513908"
+    },
+    {
+      "title": "Notre Dame Men's Boxing Practice",
+      "summary": "Men’s Boxing Club holds practice at Stepan Center. Contact the club about joining, training, equipment, and waiver requirements; this is not a public bout.",
+      "eventDate": "2026-10-05",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "location": "Stepan Center",
+      "hostOrganization": "Boxing Club, Notre Dame, Men's",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Boxing",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12561221"
+    },
+    {
+      "title": "Innovation for Impact - Run for Impact",
+      "summary": "Run a 5K around Saint Mary’s Lake with Innovation for Impact. The description says the start is Rockne Athletic Center, while the location field lists Main Circle; confirm the meeting point and race start before attending. The listed 3:30–5:30 p.m. block is the event window.",
+      "eventDate": "2026-10-09",
+      "startTime": "15:30",
+      "endTime": "17:30",
+      "location": null,
+      "hostOrganization": "Innovation for Impact",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Track & running",
+        "5K",
+        "Registration"
+      ],
+      "classYears": [],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12828927"
+    },
+    {
+      "title": "Class of 2028 5k Race",
+      "summary": "The junior class hosts a casual 5K past Saint Mary’s Lake, Notre Dame Stadium, and Touchdown Jesus, starting and finishing behind the Golden Dome. Sign-up is required through the form in the original listing; the posted 10 a.m.–1 p.m. window does not specify the race’s starting gun.",
+      "eventDate": "2026-10-11",
+      "startTime": "10:00",
+      "endTime": "13:00",
+      "location": "Behind the Golden Dome",
+      "hostOrganization": "Class of 2028",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Track & running",
+        "5K",
+        "Registration"
+      ],
+      "classYears": [
+        "Junior"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12840883"
+    },
+    {
+      "title": "Sophomore Showdown",
+      "summary": "Sophomores unwind after midterms with free Spikeball, sand volleyball, cornhole, and other yard games. No skill is required; the event is explicitly open to all sophomores.",
+      "eventDate": "2026-10-11",
+      "startTime": "11:00",
+      "endTime": "15:00",
+      "location": "South Quad  - Dillon",
+      "hostOrganization": "Class of 2029",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Volleyball",
+        "Spikeball",
+        "Social"
+      ],
+      "classYears": [
+        "Sophomore"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12837416"
+    },
+    {
+      "title": "Senior Class Fall Dessert Social",
+      "summary": "Seniors can stop by for free fall-themed desserts and connect with classmates at this senior-class social.",
+      "eventDate": "2026-10-12",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "location": "Lobby Table A  Door 16",
+      "hostOrganization": "Class of 2027",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Free desserts"
+      ],
+      "classYears": [
+        "Senior"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12796121"
+    },
+    {
+      "title": "Shamrock Kickoff (Notre Dame vs Stanford)",
+      "summary": "All students are invited to a pregame celebration with chicken tenders, caprese pasta salad, mini golf, giveaways, and Notre Dame’s therapy dogs before the Stanford home game.",
+      "eventDate": "2026-10-10",
+      "startTime": "12:00",
+      "endTime": "15:00",
+      "location": "Fieldhouse Mall",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Football",
+        "Free food",
+        "Game-day weekend"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Student organization",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12487902"
+    },
+    {
+      "title": "Football vs. Stanford",
+      "summary": "Cheer on Notre Dame at this home football matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-10",
+      "startTime": "15:30",
+      "endTime": null,
+      "location": "Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Football",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/football/schedule"
+    },
+    {
+      "title": "Football vs. Miami (FL)",
+      "summary": "Cheer on Notre Dame at this home football matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-07",
+      "startTime": "19:30",
+      "endTime": null,
+      "location": "Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Football",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/football/schedule"
+    },
+    {
+      "title": "Football vs. Boston College",
+      "summary": "Cheer on Notre Dame at this home football matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-14",
+      "startTime": "15:30",
+      "endTime": null,
+      "location": "Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Football",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/football/schedule"
+    },
+    {
+      "title": "Football vs. SMU",
+      "summary": "Cheer on Notre Dame at this home football matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-21",
+      "startTime": "19:30",
+      "endTime": null,
+      "location": "Notre Dame Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Football",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/football/schedule"
+    },
+    {
+      "title": "Hockey vs. Toronto",
+      "summary": "Notre Dame hosts Toronto for a preseason hockey exhibition at Compton Family Ice Arena. Check the official schedule for ticket and admission requirements and any changes. No end time is published.",
+      "eventDate": "2026-10-03",
+      "startTime": "16:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game",
+        "Exhibition"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Niagara",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Niagara",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-09",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Western Michigan",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-17",
+      "startTime": "18:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Merrimack",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-23",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Merrimack",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-24",
+      "startTime": "17:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Michigan State",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-12",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Michigan State",
+      "summary": "Cheer on Notre Dame at this home hockey matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-13",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Men’s Soccer vs. Cal",
+      "summary": "Notre Dame men’s soccer hosts Cal for Senior Night at Alumni Stadium. Check the official listing for spectator admission and changes. The schedule does not publish an end time.",
+      "eventDate": "2026-10-03",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Alumni Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game",
+        "Senior Night"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/msoc/schedule"
+    },
+    {
+      "title": "Men’s Soccer vs. Boston College",
+      "summary": "Cheer on Notre Dame at this home soccer matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-17",
+      "startTime": "18:00",
+      "endTime": null,
+      "location": "Alumni Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/msoc/schedule"
+    },
+    {
+      "title": "Men’s Soccer vs. Duke",
+      "summary": "Cheer on Notre Dame at this home soccer matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-30",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "Alumni Stadium",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/msoc/schedule"
+    },
+    {
+      "title": "Women’s Soccer vs. Virginia",
+      "summary": "Notre Dame women’s soccer hosts Virginia for Breast Cancer Awareness Night. The schedule lists South Bend but not the exact venue; confirm the field and admission in the official listing. No end time is published.",
+      "eventDate": "2026-10-08",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wsoc/schedule"
+    },
+    {
+      "title": "Women’s Soccer vs. Pitt",
+      "summary": "Cheer on Notre Dame at this home soccer matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wsoc/schedule"
+    },
+    {
+      "title": "Women’s Soccer vs. Miami",
+      "summary": "Cheer on Notre Dame at this home soccer matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-05",
+      "startTime": "19:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Soccer",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wsoc/schedule"
+    },
+    {
+      "title": "Volleyball vs. Stanford",
+      "summary": "Wear green as Notre Dame volleyball hosts Stanford at Purcell Pavilion. Check the official listing for tickets and admission; no end time is published.",
+      "eventDate": "2026-10-09",
+      "startTime": "17:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Cal",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-11",
+      "startTime": "13:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. North Carolina",
+      "summary": "Notre Dame volleyball’s Pink Match against North Carolina is at Purcell Pavilion. Check the official listing for tickets and admission; no end time is published.",
+      "eventDate": "2026-10-16",
+      "startTime": "18:30",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Duke",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-18",
+      "startTime": "13:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Georgia Tech",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-30",
+      "startTime": "18:30",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Clemson",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-01",
+      "startTime": "13:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. NC State",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-20",
+      "startTime": "18:30",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Wake Forest",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-22",
+      "startTime": "13:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Volleyball vs. Syracuse",
+      "summary": "Cheer on Notre Dame at this home volleyball matchup. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-28",
+      "startTime": "13:00",
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Volleyball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wvball/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Michigan",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-03",
+      "startTime": "09:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Ohio State",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-03",
+      "startTime": "11:50",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Northwestern",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-03",
+      "startTime": "17:10",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Florida",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-04",
+      "startTime": "09:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Stanford",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-04",
+      "startTime": "11:40",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Women’s Lacrosse vs. Northwestern",
+      "summary": "Cheer on Notre Dame at this home lacrosse matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-06",
+      "startTime": "20:00",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Lacrosse",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wlax/schedule"
+    },
+    {
+      "title": "Men’s Basketball vs. Mercyhurst",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-05",
+      "startTime": null,
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mbball/schedule"
+    },
+    {
+      "title": "Men’s Basketball vs. Eastern Illinois",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-09",
+      "startTime": null,
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mbball/schedule"
+    },
+    {
+      "title": "Men’s Basketball vs. South Carolina State",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-11",
+      "startTime": null,
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mbball/schedule"
+    },
+    {
+      "title": "Men’s Basketball vs. Central Michigan",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-24",
+      "startTime": null,
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mbball/schedule"
+    },
+    {
+      "title": "Men’s Basketball vs. Stonehill",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-28",
+      "startTime": null,
+      "endTime": null,
+      "location": "Purcell Pavilion",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mbball/schedule"
+    },
+    {
+      "title": "Women’s Basketball vs. Truman State (Exh.)",
+      "summary": "Cheer on Notre Dame at this home basketball exhibition. Start time has not been announced. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-26",
+      "startTime": null,
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game",
+        "Exhibition"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wbball/schedule"
+    },
+    {
+      "title": "Women’s Basketball vs. Stonehill",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-06",
+      "startTime": null,
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wbball/schedule"
+    },
+    {
+      "title": "Women’s Basketball vs. Detroit Mercy",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-10",
+      "startTime": null,
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wbball/schedule"
+    },
+    {
+      "title": "Women’s Basketball vs. Southern",
+      "summary": "Cheer on Notre Dame at this home basketball matchup. Start time has not been announced. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-11-18",
+      "startTime": null,
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Basketball",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/wbball/schedule"
+    },
+    {
+      "title": "Swimming & Diving vs. Louisville",
+      "summary": "Cheer on Notre Dame at this home swimming matchup. The official schedule lists the home city, not an exact venue; confirm the facility before attending. Check the official schedule for admission, tickets, and any changes. No end time is published.",
+      "eventDate": "2026-10-22",
+      "startTime": "14:30",
+      "endTime": null,
+      "location": "South Bend, IN",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Swimming",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/swim/schedule"
+    },
+    {
+      "title": "Rugby vs. Michigan JV",
+      "summary": "Watch Notre Dame rugby at Stinson Rugby Field. JV match before the varsity game; alumni reunion weekend. The official rugby site says admission at Stinson is free (with stated exceptions for other competitions). End time is not published; check the source for updates.",
+      "eventDate": "2026-10-09",
+      "startTime": "18:00",
+      "endTime": null,
+      "location": "Stinson Rugby Field",
+      "hostOrganization": "Notre Dame Rugby",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Rugby",
+        "Free",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://rugby.nd.edu/schedule/2022-fall-15s-season/"
+    },
+    {
+      "title": "Rugby vs. Michigan",
+      "summary": "Watch Notre Dame rugby at Stinson Rugby Field. Alumni reunion weekend. The official rugby site says admission at Stinson is free (with stated exceptions for other competitions). End time is not published; check the source for updates.",
+      "eventDate": "2026-10-09",
+      "startTime": "20:00",
+      "endTime": null,
+      "location": "Stinson Rugby Field",
+      "hostOrganization": "Notre Dame Rugby",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Rugby",
+        "Free",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://rugby.nd.edu/schedule/2022-fall-15s-season/"
+    },
+    {
+      "title": "Rugby vs. Hillsdale",
+      "summary": "Watch Notre Dame rugby at Stinson Rugby Field. The official schedule marks this as an XV/JV match. The official rugby site says admission at Stinson is free (with stated exceptions for other competitions). End time is not published; check the source for updates.",
+      "eventDate": "2026-10-15",
+      "startTime": "19:30",
+      "endTime": null,
+      "location": "Stinson Rugby Field",
+      "hostOrganization": "Notre Dame Rugby",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Rugby",
+        "Free",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://rugby.nd.edu/schedule/2022-fall-15s-season/"
+    },
+    {
+      "title": "Rugby vs. UCLA",
+      "summary": "Watch Notre Dame rugby at Stinson Rugby Field. Varsity home match. The official rugby site says admission at Stinson is free (with stated exceptions for other competitions). End time is not published; check the source for updates.",
+      "eventDate": "2026-10-16",
+      "startTime": "20:00",
+      "endTime": null,
+      "location": "Stinson Rugby Field",
+      "hostOrganization": "Notre Dame Rugby",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Rugby",
+        "Free",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://rugby.nd.edu/schedule/2022-fall-15s-season/"
+    },
+    {
+      "title": "Men’s Tennis — Hidden Duals",
+      "summary": "Notre Dame’s home Hidden Duals tournament runs October 30–November 1. This card represents one day of the same tournament, not a separate tournament. Daily start times and the specific court are not announced on the schedule. Confirm spectator access and location in the official listing.",
+      "eventDate": "2026-10-30",
+      "startTime": null,
+      "endTime": null,
+      "location": null,
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Tennis",
+        "Multi-day tournament",
+        "Time unconfirmed"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mten/schedule"
+    },
+    {
+      "title": "Men’s Tennis — Hidden Duals",
+      "summary": "Notre Dame’s home Hidden Duals tournament runs October 30–November 1. This card represents one day of the same tournament, not a separate tournament. Daily start times and the specific court are not announced on the schedule. Confirm spectator access and location in the official listing.",
+      "eventDate": "2026-10-31",
+      "startTime": null,
+      "endTime": null,
+      "location": null,
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Tennis",
+        "Multi-day tournament",
+        "Time unconfirmed"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mten/schedule"
+    },
+    {
+      "title": "Men’s Tennis — Hidden Duals",
+      "summary": "Notre Dame’s home Hidden Duals tournament runs October 30–November 1. This card represents one day of the same tournament, not a separate tournament. Daily start times and the specific court are not announced on the schedule. Confirm spectator access and location in the official listing.",
+      "eventDate": "2026-11-01",
+      "startTime": null,
+      "endTime": null,
+      "location": null,
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Tennis",
+        "Multi-day tournament",
+        "Time unconfirmed"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mten/schedule"
+    },
+    {
+      "title": "Hockey vs. Bowling Green",
+      "summary": "Notre Dame hockey hosts Bowling Green at Compton Family Ice Arena. Check the official schedule for tickets, admission, and changes; no end time is published.",
+      "eventDate": "2026-11-24",
+      "startTime": "18:30",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Hockey vs. Boston College",
+      "summary": "Notre Dame hockey hosts Boston College at Compton Family Ice Arena. Check the official schedule for tickets, admission, and changes; no end time is published.",
+      "eventDate": "2026-11-27",
+      "startTime": "15:00",
+      "endTime": null,
+      "location": "Compton Family Ice Arena",
+      "hostOrganization": "Notre Dame Athletics",
+      "category": "Sports",
+      "tags": [
+        "Spectator",
+        "Hockey",
+        "Home game"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://fightingirish.com/sports/mhockey/schedule"
+    },
+    {
+      "title": "Best of the Midwest",
+      "eventDate": "2026-10-09",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "Legends Night Club",
+      "sourceUrl": "https://sao.nd.edu/events/2026/10/09/midwest-fest/",
+      "summary": "Enjoy Midwestern-themed trivia, bingo, cheese curds, and other activities. Dressing in Midwestern attire offers a chance to win a prize; check the source for entry requirements.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Activities"
+      ],
+      "classYears": [],
+      "source": "Campus website"
+    },
+    {
+      "title": "Skate Night",
+      "eventDate": "2026-11-06",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "Compton Family Ice Arena",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/06/race/",
+      "summary": "SAO hosts a skating night at Compton Ice Arena, with themed snacks and activities. Check the original event listing for registration, equipment, and entry requirements.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Sports",
+      "tags": [
+        "Participate",
+        "Social",
+        "Ice skating"
+      ],
+      "classYears": [],
+      "source": "Campus website"
+    },
+    {
+      "title": "Rootin' Tootin' Good Time!",
+      "eventDate": "2026-11-13",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "Duncan Student Center",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/13/race-night/",
+      "summary": "SAO hosts a western-themed evening with line dancing, activities, and food. Confirm entry details in the original listing.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Activities"
+      ],
+      "classYears": [],
+      "source": "Campus website"
+    },
+    {
+      "title": "Lego Night",
+      "eventDate": "2026-11-20",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "Duncan Student Center",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/20/lego-night-1/",
+      "summary": "Try LEGO accuracy and creativity challenges, compete for prizes, and enjoy snacks at SAO’s building night. Check the source for the latest details.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Activities"
+      ],
+      "classYears": [],
+      "source": "Campus website"
+    },
+    {
+      "title": "Shamrock Kickoff - Miami",
+      "eventDate": "2026-11-07",
+      "startTime": "16:00",
+      "endTime": "19:00",
+      "location": "Field House Mall",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/07/shamrock-kick-off-miami/",
+      "summary": "Tri-campus undergraduate and graduate students are invited for pregame giveaways, games, food, and Fighting Irish spirit. Check in for Lucky Lineup Rewards points.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Football",
+        "Game-day weekend"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website"
+    },
+    {
+      "title": "Shamrock Kickoff - Boston College",
+      "eventDate": "2026-11-14",
+      "startTime": "12:00",
+      "endTime": "15:00",
+      "location": "Field House Mall",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/14/shamrock-kick-off-boston-college/",
+      "summary": "Tri-campus undergraduate and graduate students are invited for pregame giveaways, games, food, and Fighting Irish spirit. Check in for Lucky Lineup Rewards points.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Football",
+        "Game-day weekend"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website"
+    },
+    {
+      "title": "Shamrock Kickoff - SMU",
+      "eventDate": "2026-11-21",
+      "startTime": "16:00",
+      "endTime": "19:00",
+      "location": "Field House Mall",
+      "sourceUrl": "https://sao.nd.edu/events/2026/11/21/shamrock-kickoff-smu/",
+      "summary": "Tri-campus undergraduate and graduate students are invited for pregame giveaways, games, food, and Fighting Irish spirit. Check in for Lucky Lineup Rewards points.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Football",
+        "Game-day weekend"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website"
+    },
+    {
+      "title": "HalloweenFest",
+      "eventDate": "2026-10-31",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "Library Lawn, Duncan Patio, Legends",
+      "sourceUrl": "https://sao.nd.edu/events/2026/10/31/halloweenfest/",
+      "summary": "Explore a TEA@ND haunted house, food trucks, carnival games and rides, then head to Legends for a special guest artist. The artist has not yet been announced; check SAO for access and location details.",
+      "hostOrganization": "Notre Dame Student Activities Office",
+      "category": "Social",
+      "tags": [
+        "Social",
+        "Activities"
+      ],
+      "classYears": [],
+      "source": "Campus website"
+    }
+  ],
+  "existingCuratedSportCorrections": [
+    {
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12805427",
+      "tags": [
+        "Participate",
+        "Volleyball",
+        "Social",
+        "Club activity",
+        "Waiver required"
+      ]
+    },
+    {
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12744087",
+      "tags": [
+        "Participate",
+        "Spikeball",
+        "Fundraiser",
+        "Registration"
+      ]
+    },
+    {
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12832915",
+      "tags": [
+        "Participate",
+        "Track & running",
+        "Fundraiser",
+        "Walk"
+      ]
+    },
+    {
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611449",
+      "tags": [
+        "Participate",
+        "Volleyball",
+        "Club activity",
+        "No experience required"
+      ]
+    }
+  ]
+}

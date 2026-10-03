@@ -24,7 +24,7 @@ export const getEventsQueryTimeframeDefault = `all`;
 
 export const GetEventsQueryParams = zod.object({
   "search": zod.coerce.string().optional(),
-  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']).optional(),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Sports', 'Clubs', 'Arts & Culture', 'Wellness', 'Community']).optional(),
   "timeframe": zod.enum(['all', 'today', 'week']).default(getEventsQueryTimeframeDefault),
   "classYear": zod.enum(['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'All years']).optional()
 })
@@ -47,7 +47,7 @@ export const GetEventsResponseItem = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Sports', 'Clubs', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(getEventsResponseSourceUrlMax).regex(getEventsResponseSourceUrlRegExp).nullable(),
@@ -79,7 +79,7 @@ export const CreateEventBody = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Sports', 'Clubs', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(createEventBodySourceUrlMax).regex(createEventBodySourceUrlRegExp).nullish(),
@@ -104,7 +104,7 @@ export const CreateEventResponse = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Sports', 'Clubs', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(createEventResponseSourceUrlMax).regex(createEventResponseSourceUrlRegExp).nullable(),
@@ -156,7 +156,7 @@ export const ParseAnnouncementResponse = zod.object({
   "endTime": zod.string().nullable(),
   "location": zod.string().nullable(),
   "hostOrganization": zod.string().nullable(),
-  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Arts & Culture', 'Wellness', 'Community']),
+  "category": zod.enum(['Academic', 'Career', 'Networking', 'Social', 'Sports', 'Clubs', 'Arts & Culture', 'Wellness', 'Community']),
   "tags": zod.array(zod.string()),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other']),
   "sourceUrl": zod.string().url().max(parseAnnouncementResponseEventsItemOneSourceUrlMax).regex(parseAnnouncementResponseEventsItemOneSourceUrlRegExp).nullish(),

@@ -17,6 +17,8 @@ export const EventCategory = {
   Career: 'Career',
   Networking: 'Networking',
   Social: 'Social',
+  Sports: 'Sports',
+  Clubs: 'Clubs',
   'Arts_&_Culture': 'Arts & Culture',
   Wellness: 'Wellness',
   Community: 'Community',

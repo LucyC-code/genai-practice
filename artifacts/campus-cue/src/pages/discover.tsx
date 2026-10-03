@@ -1,10 +1,13 @@
-import { useMemo, useState } from "react";
-import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX, ExternalLink, Handshake, GraduationCap } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { Search, MapPin, Clock, Flag, Users, CheckCircle2, RotateCcw, CalendarX, ExternalLink, Handshake, GraduationCap, CalendarDays, List } from "lucide-react";
 import { useGetEvents, useGetEventOverview, useReportEvent, EventReportInputReason, type Event, type EventCategory, type GetEventsParams, type ClassYear } from "@workspace/api-client-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
 import { CATEGORIES, CLASS_YEARS, audienceLabel, CAT_COLOR, EventArt, SourceIcon, Unconfirmed, dateParts, timeRange } from "@/lib/cue";
+import { ACTIVITIES, SPORTS, matchesDiscovery, type Activity, type Sport } from "@/lib/discovery-filters";
+import { CalendarActions } from "@/components/calendar-actions";
+import { EventCalendar } from "@/components/event-calendar";
 
 const TF = [["all", "Anytime"], ["today", "Today"], ["week", "This week"]] as const;
 
@@ -36,7 +39,8 @@ function EventCard({ ev, i, onOpen, fits }: { ev: Event; i: number; onOpen: () =
           <span className="flex items-center gap-1 text-muted-foreground"><GraduationCap className="h-3.5 w-3.5" />{audienceLabel(ev.classYears)}</span>
         </div>
         <h3 className="mt-1.5 text-lg font-bold leading-snug group-hover:text-primary transition-colors">{ev.title}</h3>
-        <p className="mt-1 text-sm leading-relaxed text-foreground/80">{ev.summary}</p>
+        <p className="mt-1 line-clamp-3 text-sm leading-relaxed text-foreground/80">{ev.summary}</p>
+        {ev.tags.length > 0 && <div className="mt-2 flex flex-wrap gap-1">{ev.tags.slice(0, 3).map(tag => <span key={tag} className="rounded bg-muted px-1.5 py-0.5 text-[10px] font-mono-cue">{tag}</span>)}</div>}
         {fits && <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-chart-2"><CheckCircle2 className="h-3.5 w-3.5" />Fits your free time</span>}
         <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
           <span className="flex items-center gap-1"><Clock className="h-3.5 w-3.5" />{t ?? <Unconfirmed label="Time unconfirmed" />}</span>
@@ -87,6 +91,7 @@ function Detail({ ev, onClose }: { ev: Event | null; onClose: () => void }) {
             {ev.sourceUrl && <a href={ev.sourceUrl} target="_blank" rel="noopener noreferrer" data-testid="link-event-source" className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline underline-offset-4">View original event listing<ExternalLink className="h-4 w-4" /></a>}
             {ev.tags.length > 0 && <div className="flex flex-wrap gap-1.5">{ev.tags.map(t => <span key={t} className="rounded-md bg-muted px-2 py-0.5 text-xs font-mono-cue">#{t}</span>)}</div>}
             {ev.missingFields.length > 0 && <p className="rounded-lg bg-accent/40 px-3 py-2 text-xs">Not confirmed in the original announcement: {ev.missingFields.join(", ")}.</p>}
+            <CalendarActions event={ev} />
             <div className="border-t-2 border-dashed pt-4">
               {sent ? <p className="pop flex items-center gap-2 text-sm font-semibold text-chart-2" data-testid="status-report-sent"><CheckCircle2 className="h-4 w-4" />Report sent. Thank you.</p>
               : !reporting ? <button onClick={() => setReporting(true)} data-testid="button-report-open" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-destructive"><Flag className="h-4 w-4" />Report this event</button>
@@ -116,6 +121,23 @@ export default function Discover() {
   const [open, setOpen] = useState<Event | null>(null);
   const [availableFrom, setAvailableFrom] = useState("");
   const [availableUntil, setAvailableUntil] = useState("");
+  const [activity, setActivity] = useState<Activity>("");
+  const [sport, setSport] = useState<Sport>("");
+  const [onDate, setOnDate] = useState("");
+  const [visibleCount, setVisibleCount] = useState(48);
+  const [view, setView] = useState<"list" | "calendar">(() =>
+    new URLSearchParams(window.location.search).get("view") === "calendar" ? "calendar" : "list");
+  const changeView = (next: "list" | "calendar") => {
+    setView(next);
+    const params = new URLSearchParams(window.location.search);
+    if (next === "calendar") params.set("view", "calendar");
+    else params.delete("view");
+    const query = params.toString();
+    window.history.replaceState(window.history.state, "", `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`);
+  };
+  useEffect(() => {
+    setVisibleCount(48);
+  }, [search, category, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil]);
   const params = useMemo<GetEventsParams>(() => {
     const p: GetEventsParams = { timeframe };
     if (search.trim()) p.search = search.trim();
@@ -126,17 +148,18 @@ export default function Discover() {
   const { data: events, isLoading, isError, refetch } = useGetEvents(params);
   const { data: ov } = useGetEventOverview();
   const availabilityActive = !!availableFrom && !!availableUntil && availableFrom < availableUntil;
-  const matchingEvents = (events ?? []).filter(ev => !availabilityActive ||
-    (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil));
-  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil;
-  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); };
+  const matchingEvents = (events ?? []).filter(ev =>
+    matchesDiscovery(ev, activity, sport, onDate) && (!availabilityActive ||
+      (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil)));
+  const filtersActive = !!search || !!category || !!classYear || timeframe !== "all" || !!availableFrom || !!availableUntil || !!activity || !!sport || !!onDate;
+  const reset = () => { setSearch(""); setCategory(""); setClassYear(""); setTimeframe("all"); setAvailableFrom(""); setAvailableUntil(""); setActivity(""); setSport(""); setOnDate(""); };
   return (
     <div className="space-y-8">
       <section className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
         <div className="rise">
           <p className="font-mono-cue text-xs uppercase tracking-widest text-primary">Notre Dame · Between-class board</p>
           <h1 className="mt-2 text-4xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl">What's on, <span className="bg-accent px-2 -rotate-1 inline-block">right now</span> on campus.</h1>
-          <p className="mt-3 max-w-xl text-muted-foreground">Discover Notre Dame events from university calendars and student clubs. Open a card for the original listing and check the latest details.</p>
+          <p className="mt-3 max-w-xl text-muted-foreground">Home games. Club meetups. Mixers. Your next connection. Explore more of Notre Dame life, with original listings, participation details, and honest notes when something isn't confirmed.</p>
         </div>
         <div className="grid grid-cols-3 gap-3 rise" style={{ animationDelay: "120ms" }}>
           <Stat n={ov?.totalUpcoming} label="Upcoming" id="stat-upcoming" />
@@ -149,19 +172,39 @@ export default function Discover() {
         <div className="flex flex-col gap-3 md:flex-row">
           <label className="flex flex-1 items-center gap-2 rounded-full border-2 border-input bg-background px-4 py-2 focus-within:border-primary">
             <Search className="h-4 w-4 text-muted-foreground" />
-            <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search events or hosts" aria-label="Search events or hosts" data-testid="input-search" className="w-full bg-transparent text-sm outline-none" />
+            <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search events, sports, clubs or hosts" aria-label="Search events, sports, clubs or hosts" data-testid="input-search" className="w-full bg-transparent text-sm outline-none" />
           </label>
           <div className="flex rounded-full border-2 border-foreground p-0.5">
-            {TF.map(([v, l]) => <button key={v} aria-pressed={timeframe === v} onClick={() => setTimeframe(v)} data-testid={`button-timeframe-${v}`} className={`flex-1 rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${timeframe === v ? "bg-foreground text-background" : "hover:bg-muted"}`}>{l}</button>)}
+            {TF.map(([v, l]) => <button key={v} aria-pressed={timeframe === v} onClick={() => { setTimeframe(v); setOnDate(""); }} data-testid={`button-timeframe-${v}`} className={`flex-1 rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${timeframe === v ? "bg-foreground text-background" : "hover:bg-muted"}`}>{l}</button>)}
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
           {(["", ...CATEGORIES] as const).map(c => (
-            <button key={c || "all"} aria-pressed={category === c} onClick={() => setCategory(c as EventCategory | "")} data-testid={`button-category-${c || "all"}`}
+              <button key={c || "all"} aria-pressed={category === c} onClick={() => { setCategory(c as EventCategory | ""); if (c !== "Sports") setSport(""); }} data-testid={`button-category-${c || "all"}`}
               className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3 py-1 text-sm font-semibold transition-all hover:-translate-y-0.5 ${category === c ? "border-foreground text-white" : "border-border bg-background"}`}
               style={category === c ? { background: c ? CAT_COLOR[c] : "hsl(var(--foreground))" } : undefined}>{c === "Networking" && <Handshake className="h-4 w-4" />}{c || "All"}</button>
           ))}
         </div>
+        <fieldset className="border-t border-border pt-3">
+          <legend className="pt-3 text-sm font-semibold">What do you want to do?</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {ACTIVITIES.map(([value, label]) => <button key={value || "all"} aria-pressed={activity === value} onClick={() => setActivity(value)} data-testid={`button-activity-${value || "all"}`}
+              className={`rounded-full border-2 px-3 py-1 text-sm font-semibold ${activity === value ? "border-foreground bg-foreground text-background" : "border-border bg-background hover:bg-muted"}`}>{label}</button>)}
+          </div>
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
+            <label className="flex items-center gap-2 font-semibold">Sport
+              <select value={sport} onChange={e => { setSport(e.target.value as Sport); if (e.target.value) setCategory("Sports"); }} data-testid="select-sport" className="max-w-48 rounded-lg border-2 border-input bg-background px-2 py-1.5 font-normal">
+                <option value="">Any sport</option>
+                {SPORTS.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+            </label>
+            <label className="flex items-center gap-2 font-semibold">On a date
+              <input type="date" value={onDate} onChange={e => { setOnDate(e.target.value); setTimeframe("all"); }} data-testid="input-event-date" className="min-w-0 rounded-lg border-2 border-input bg-background px-2 py-1 font-normal" />
+            </label>
+            {onDate && <button onClick={() => setOnDate("")} className="text-xs underline" data-testid="button-clear-date">Any date</button>}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">Filters work together. Club membership, dorm invitations, tickets, or registration may be required—open the original listing before attending.</p>
+        </fieldset>
         <fieldset className="border-t border-border pt-3">
           <legend className="flex items-center gap-1.5 pt-3 text-sm font-semibold"><GraduationCap className="h-4 w-4" />My class year</legend>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -178,8 +221,12 @@ export default function Discover() {
           <p className="w-full text-xs text-muted-foreground">{availabilityActive ? "Showing events fully inside this window with confirmed start and end times. No calendar connection needed." : availableFrom && availableUntil ? "End time must be later than start time." : "Optional: enter both times to find events that fit."}</p>
         </div>
       </section>
-      <div className="flex items-center justify-between gap-3 text-sm" aria-live="polite">
-        <span className="font-mono-cue text-muted-foreground">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}`}</span>
+      <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+        <div className="inline-flex rounded-full border-2 border-foreground bg-card p-0.5" role="group" aria-label="Event view">
+          <button onClick={() => changeView("list")} aria-pressed={view === "list"} data-testid="button-view-list" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "list" ? "bg-foreground text-background" : "hover:bg-muted"}`}><List className="h-4 w-4" />List</button>
+          <button onClick={() => changeView("calendar")} aria-pressed={view === "calendar"} data-testid="button-view-calendar" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "calendar" ? "bg-foreground text-background" : "hover:bg-muted"}`}><CalendarDays className="h-4 w-4" />Calendar</button>
+        </div>
+        <span className="font-mono-cue text-muted-foreground" aria-live="polite">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}`}</span>
         {filtersActive && <button onClick={reset} data-testid="button-clear-filters" className="flex items-center gap-1.5 font-semibold underline underline-offset-4"><RotateCcw className="h-3.5 w-3.5" />Clear filters</button>}
       </div>
 
@@ -187,12 +234,28 @@ export default function Discover() {
       : isError ? <div className="rounded-2xl border-2 border-dashed border-destructive p-10 text-center" data-testid="status-error">
           <p className="font-bold">The board didn't load.</p>
           <button onClick={() => refetch()} data-testid="button-retry" className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-1.5 text-sm font-semibold text-background"><RotateCcw className="h-4 w-4" />Retry</button></div>
+      : view === "calendar" ? <EventCalendar events={matchingEvents} onOpen={setOpen} anchorDate={onDate || undefined} />
       : matchingEvents.length === 0 ? <div className="rounded-2xl border-2 border-dashed border-foreground/40 p-12 text-center" data-testid="status-empty">
           <CalendarX className="mx-auto h-10 w-10 text-primary" />
           <p className="mt-3 text-lg font-bold">Nothing matches that yet.</p>
           <p className="text-sm text-muted-foreground">Loosen a filter, or post an announcement you spotted.</p>
           <button onClick={reset} data-testid="button-reset" className="mt-4 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground">Clear filters</button></div>
-      : <div className="grid gap-5 md:grid-cols-2">{matchingEvents.map((ev, i) => <EventCard key={ev.id} ev={ev} i={i} fits={availabilityActive} onOpen={() => setOpen(ev)} />)}</div>}
+      : <div className="space-y-5">
+          <div className="grid gap-5 md:grid-cols-2">{matchingEvents.slice(0, visibleCount).map((ev, i) => <EventCard key={ev.id} ev={ev} i={i} fits={availabilityActive} onOpen={() => setOpen(ev)} />)}</div>
+          {matchingEvents.length > visibleCount && <div className="space-y-2 text-center">
+            <p className="text-xs text-muted-foreground">Showing {visibleCount} of {matchingEvents.length} matching events</p>
+            <button onClick={() => setVisibleCount(count => count + 48)} data-testid="button-more-events" className="rounded-full border-2 border-foreground bg-card px-5 py-2 text-sm font-semibold hover:bg-muted">Show {Math.min(48, matchingEvents.length - visibleCount)} more events</button>
+          </div>}
+        </div>}
+      <section className="rounded-xl border-2 border-dashed border-border p-4 text-sm">
+        <h2 className="font-bold">Looking beyond the dated listings?</h2>
+        <p className="mt-1 text-muted-foreground">Explore tennis, running, hockey, soccer, rugby, and other sports clubs. Track meets and additional club practices appear here only when a current campus date is verified—not from an old season or a guessed weekly schedule.</p>
+        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+          <a href="https://recsports.nd.edu/club-sports/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-primary underline">Find a sports club<ExternalLink className="h-3.5 w-3.5" /></a>
+          <a href="https://fightingirish.com/all-sports-schedule" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-primary underline">Official athletics schedules<ExternalLink className="h-3.5 w-3.5" /></a>
+          <a href="https://nd.campuslabs.com/engage/events" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-primary underline">Student event directory<ExternalLink className="h-3.5 w-3.5" /></a>
+        </div>
+      </section>
       <p className="flex items-center gap-1.5 text-xs text-muted-foreground"><Users className="h-3.5 w-3.5" />Source labels show where an announcement originally appeared.</p>
       <Detail ev={open} onClose={() => setOpen(null)} />
     </div>

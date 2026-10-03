@@ -14,3 +14,9 @@ NDCentral's public RSS feed at https://nd.campuslabs.com/engage/events.rss expos
 **Why:** Directory results were limited to the first 15 cards, while the public feed revealed hundreds of listings. Several club descriptions contradicted their structured schedule, so copying a description's time without cross-checking would mislead users.
 
 **How to apply:** Use the structured event start/end metadata for discovery, cross-check description times and cancellation status, and exclude or explicitly flag conflicts. Do not treat a graduate presenter or a class council host alone as proof of attendee eligibility.
+
+Official athletics schedules at https://fightingirish.com/ can contain an older season, away games, TBA times, and multi-day tournaments. The rugby site's https://rugby.nd.edu/schedule/2022-fall-15s-season/ URL can hold a current season despite its old slug. SAO exposes dated public activities through https://sao.nd.edu/events.ics.
+
+**Why:** The track page still displayed a previous season while football and hockey had current upcoming games. The rugby page's heading was newer than its URL. Some NDCentral listings used setup or room-reservation windows instead of public show times.
+
+**How to apply:** Verify the season heading, home/away location, and event description before importing. Never turn TBA or a tournament placeholder into midnight, or present a room reservation as the performance. Public listing visibility alone is not an all-year eligibility statement; independently check AI-extracted audience claims.

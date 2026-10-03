@@ -2,7 +2,7 @@ import { Mail, Globe, Users, Megaphone, MessageCircle } from "lucide-react";
 import { SiInstagram } from "react-icons/si";
 import type { EventCategory, EventSource } from "@workspace/api-client-react";
 
-export const CATEGORIES: EventCategory[] = ["Academic", "Career", "Networking", "Social", "Arts & Culture", "Wellness", "Community"];
+export const CATEGORIES: EventCategory[] = ["Academic", "Career", "Networking", "Social", "Sports", "Clubs", "Arts & Culture", "Wellness", "Community"];
 export const CLASS_YEARS = ["Freshman", "Sophomore", "Junior", "Senior", "Graduate"] as const;
 export function audienceLabel(years: readonly string[] | undefined) {
   if (!years?.length) return "Year not specified";
@@ -12,7 +12,7 @@ export function audienceLabel(years: readonly string[] | undefined) {
 }
 export const SOURCES: EventSource[] = ["Email", "Instagram", "GroupMe", "Campus website", "Student organization", "Other"];
 export const CAT_COLOR: Record<string, string> = {
-  Academic: "#2f6f8f", Career: "#e8572a", Networking: "#256c62", Social: "#d94f8a", "Arts & Culture": "#7a4fc4", Wellness: "#2e8b6a", Community: "#e0a416",
+  Academic: "#2f6f8f", Career: "#e8572a", Networking: "#256c62", Social: "#d94f8a", Sports: "#3556a5", Clubs: "#8c5734", "Arts & Culture": "#7a4fc4", Wellness: "#2e8b6a", Community: "#e0a416",
 };
 export function SourceIcon({ source, className = "h-3.5 w-3.5" }: { source: string; className?: string }) {
   if (source === "Instagram") return <SiInstagram className={className} />;
@@ -36,7 +36,7 @@ export function fmtTime(t: string | null) {
   return `${((h + 11) % 12) + 1}:${String(m).padStart(2, "0")} ${h >= 12 ? "PM" : "AM"}`;
 }
 export function timeRange(s: string | null, e: string | null) {
-  if (s && e) return `${fmtTime(s)} - ${fmtTime(e)}`;
+  if (s && e) return `${fmtTime(s)} - ${fmtTime(e)}${e < s ? " (next day)" : ""}`;
   if (s) return `Starts ${fmtTime(s)}`;
   if (e) return `Ends ${fmtTime(e)}`;
   return null;

@@ -145,7 +145,7 @@ components:
         - status
     EventCategory:
       type: string
-      enum: [Academic, Career, Networking, Social, "Arts & Culture", Wellness, Community]
+      enum: [Academic, Career, Networking, Social, Sports, Clubs, "Arts & Culture", Wellness, Community]
     ClassYear:
       type: string
       enum: [Freshman, Sophomore, Junior, Senior, Graduate, "All years"]
