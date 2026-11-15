@@ -1,8 +1,10 @@
 CampusCue — Campus Event Discovery
 CampusCue helps Notre Dame students find relevant campus events in one feed and turn informal announcements into structured, editable event cards. Its central task is to reduce searching and manual entry while making uncertain information visible.
-- Open the live prototype — no login was required in the November 15, 2026 check.
-- Replit project
-- GitHub repository
+## Project Links
+
+- [Open the live prototype](https://campus-event-discovery.replit.app/)
+- [Open the Replit project](https://replit.com/@lcrowe4/Campus-Event-Discovery)
+- [View the GitHub repository](https://github.com/LucyC-code/genai-practice)
 Verification and version status
 Last checked: November 15, 2026. This README records actual browser tests, live API checks, and local checks of repository commit 0667d820792a05318050b34569681e3922832967.
 
