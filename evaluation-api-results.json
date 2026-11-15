@@ -1,0 +1,217 @@
+{
+  "executedAt": "2026-11-15T18:32:53.621Z",
+  "reference": "2026-10-30T21:30 America/Indiana/Indianapolis",
+  "rows": [
+    {
+      "case": "Typical extraction + live repeats",
+      "expected": "Three live drafts: October 31, 19:00, Duncan 210, Social/Food, no host, absolute summary",
+      "actual": [
+        {
+          "title": "Free boba and board games",
+          "summary": "Free boba and board games are scheduled for October 31, 2026 at 7:00 PM in Duncan 210.",
+          "eventDate": "2026-10-31",
+          "startTime": "19:00",
+          "endTime": null,
+          "location": "Duncan 210",
+          "hostOrganization": null,
+          "category": "Social",
+          "tags": [
+            "Boba",
+            "Board games"
+          ],
+          "source": "Other",
+          "classYears": [],
+          "missingFields": [
+            "Host organization"
+          ],
+          "uncertainties": [
+            "\"Tomorrow\" was resolved to 2026-10-31 based on the reference date 2026-10-30 in America/Indiana/Indianapolis.",
+            "Relative wording was resolved using the displayed reference. Verify the date against the original post."
+          ]
+        },
+        {
+          "title": "Free boba and board games",
+          "summary": "Free boba and board games are happening October 31, 2026 at 7:00 PM in Duncan 210.",
+          "eventDate": "2026-10-31",
+          "startTime": "19:00",
+          "endTime": null,
+          "location": "Duncan 210",
+          "hostOrganization": null,
+          "category": "Social",
+          "tags": [
+            "Boba",
+            "Board games"
+          ],
+          "source": "Other",
+          "classYears": [],
+          "missingFields": [
+            "Host organization"
+          ],
+          "uncertainties": [
+            "'Tomorrow' was resolved using the reference date 2026-10-30 in America/Indiana/Indianapolis.",
+            "No host organization was stated in the announcement.",
+            "Relative wording was resolved using the displayed reference. Verify the date against the original post."
+          ]
+        },
+        {
+          "title": "Free boba and board games",
+          "summary": "Free boba and board games are scheduled for October 31, 2026 at 7:00 PM in Duncan 210.",
+          "eventDate": "2026-10-31",
+          "startTime": "19:00",
+          "endTime": null,
+          "location": "Duncan 210",
+          "hostOrganization": null,
+          "category": "Social",
+          "tags": [
+            "Boba",
+            "Board games"
+          ],
+          "source": "Other",
+          "classYears": [],
+          "missingFields": [
+            "Host organization"
+          ],
+          "uncertainties": [
+            "'Tomorrow' was resolved to 2026-10-31 based on the reference date 2026-10-30 in America/Indiana/Indianapolis.",
+            "Relative wording was resolved using the displayed reference. Verify the date against the original post."
+          ]
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "case": "Challenge",
+      "expected": "November 5, DeBartolo, no invented time/room/host/URL",
+      "actual": {
+        "events": [
+          {
+            "title": "Startup Pitch Night",
+            "summary": "Startup Pitch Night at DeBartolo. Date: November 5, 2026.",
+            "eventDate": "2026-11-05",
+            "startTime": null,
+            "endTime": null,
+            "location": "DeBartolo",
+            "hostOrganization": null,
+            "category": "Career",
+            "tags": [
+              "Pitch",
+              "RSVP"
+            ],
+            "source": "Other",
+            "classYears": [],
+            "missingFields": [
+              "Start time",
+              "Host organization"
+            ],
+            "uncertainties": [
+              "\"This Thursday\" was resolved to 2026-10-29 based on the reference date 2026-10-30, which makes the phrasing potentially ambiguous because the next coming Thursday would ordinarily be 2026-11-05; however, the instruction says to resolve \"this Thursday\" to the coming Thursday including today.",
+              "\"Link in bio\" is not a usable RSVP URL.",
+              "Relative wording was resolved using the displayed reference. Verify the date against the original post.",
+              "Weekday rule: this weekday is the upcoming occurrence including today; next weekday is seven days later. Casual usage can differ—confirm."
+            ]
+          }
+        ],
+        "notes": [
+          "Live AI extraction (configured gpt-5.4-mini) + deterministic campus-date validation. No simulated fallback.",
+          "Reference: original post time — Friday, October 30, 2026 at 9:30:00 PM EDT (America/Indiana/Indianapolis; 2026-10-31T01:30:00.000Z).",
+          "The source mentions only one identifiable event.",
+          "No host organization is stated in the announcement."
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Risk: Missing start",
+      "expected": "400; no insertion",
+      "actual": {
+        "error": "Confirm a title, a valid date, and a start time before publishing. Other missing details may remain unconfirmed."
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Risk: Missing date",
+      "expected": "400; no insertion",
+      "actual": {
+        "error": "Confirm a title, a valid date, and a start time before publishing. Other missing details may remain unconfirmed."
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Risk: Empty title",
+      "expected": "400; no insertion",
+      "actual": {
+        "error": "Confirm a title, a valid date, and a start time before publishing. Other missing details may remain unconfirmed."
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Risk: Invalid date",
+      "expected": "400; no insertion",
+      "actual": {
+        "error": "Confirm a title, a valid date, and a start time before publishing. Other missing details may remain unconfirmed."
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Risk: No review confirmation",
+      "expected": "400; no insertion",
+      "actual": {
+        "error": "Review the title, date, start time and summary against the source, then confirm your review before publishing."
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Empty/non-event",
+      "expected": "400 empty; zero drafts for greeting",
+      "actual": {
+        "emptyStatus": 400,
+        "nonEvent": {
+          "events": [],
+          "notes": [
+            "Live AI extraction (configured gpt-5.4-mini) + deterministic campus-date validation. No simulated fallback.",
+            "Reference: original post time — Friday, October 30, 2026 at 9:30:00 PM EDT (America/Indiana/Indianapolis; 2026-10-31T01:30:00.000Z)."
+          ]
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Bare late-night fragment",
+      "expected": "October 31, 19:00 if a review draft is produced; must not invent a confirmed event identity",
+      "actual": {
+        "events": [],
+        "notes": [
+          "Live AI extraction (configured gpt-5.4-mini) + deterministic campus-date validation. No simulated fallback.",
+          "Reference: original post time — Friday, October 30, 2026 at 9:30:00 PM EDT (America/Indiana/Indianapolis; 2026-10-31T01:30:00.000Z).",
+          "No campus event announcement was supplied; the text only says \"tomorrow at 7pm,\" which is insufficient to identify an event."
+        ]
+      },
+      "status": "partial"
+    },
+    {
+      "case": "Controlled graduate discovery",
+      "expected": "Filters first; Masses grouped; every occurrence accessible; fewer cards",
+      "actual": {
+        "clockDate": "2026-10-03",
+        "matchingOccurrences": 1087,
+        "cards": 37,
+        "massOccurrences": 1051,
+        "next": {
+          "date": "2026-10-03",
+          "start": "10:00",
+          "location": "Duncan Hall chapel"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "case": "Read-only extraction and rejected publications",
+      "expected": "All existing rows preserved; no insertion",
+      "actual": {
+        "before": 1879,
+        "after": 1879
+      },
+      "status": "pass"
+    }
+  ]
+}

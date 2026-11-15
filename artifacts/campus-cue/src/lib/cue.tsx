@@ -39,8 +39,8 @@ export function fmtTime(t: string | null) {
 }
 export function timeRange(s: string | null, e: string | null) {
   if (s && e) return `${fmtTime(s)} - ${fmtTime(e)}${e < s ? " (next day)" : ""}`;
-  if (s) return `Starts ${fmtTime(s)}`;
-  if (e) return `Ends ${fmtTime(e)}`;
+  if (s) return `Starts ${fmtTime(s)} · End time not confirmed`;
+  if (e) return `Ends ${fmtTime(e)} · Start time not confirmed`;
   return null;
 }
 export function Unconfirmed({ label = "Unconfirmed" }: { label?: string }) {

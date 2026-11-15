@@ -8,6 +8,8 @@ import {
 } from "@workspace/api-zod";
 import { extractEvents, isCalendarDate, missingEventFields } from "../lib/event-extraction";
 import { campusToday, campusWeekEnd } from "../lib/campus-date";
+import { dateReference, absoluteSummary } from "../lib/date-reference";
+import { publicationError } from "../lib/publication";
 
 const router: IRouter = Router();
 const parseUsage = new Map<string, { count: number; resetAt: number }>();
@@ -56,6 +58,12 @@ router.post("/events/parse", async (req, res): Promise<void> => {
     res.status(400).json({ error: "Paste an announcement between 12 and 12,000 characters and select its source." });
     return;
   }
+  try {
+    dateReference(parsed.data.originalPostTime);
+  } catch (error) {
+    res.status(400).json({ error: error instanceof Error ? error.message : "Invalid reference time." });
+    return;
+  }
   const key = req.ip ?? "unknown";
   const now = Date.now();
   const usage = parseUsage.get(key);
@@ -69,10 +77,11 @@ router.post("/events/parse", async (req, res): Promise<void> => {
     for (const [ip, entry] of parseUsage) if (entry.resetAt <= now) parseUsage.delete(ip);
   }
   try {
-    const result = await extractEvents(parsed.data.announcement, parsed.data.source);
+    const result = await extractEvents(parsed.data.announcement, parsed.data.source, parsed.data.originalPostTime);
     res.json(ParseAnnouncementResponse.parse(result));
   } catch (error) {
-    req.log.error({ err: error }, "Event extraction failed");
+    // Do not log provider payloads/errors that could contain pasted private text.
+    req.log.error("Event extraction failed; provider details and announcement omitted for privacy");
     res.status(503).json({ error: "The AI parser could not process this announcement. Please try again shortly; nothing has been published." });
   }
 });
@@ -97,6 +106,12 @@ router.post("/events", async (req, res): Promise<void> => {
       ? ["All years"] : [...new Set(parsed.data.classYears ?? [])],
     tags: parsed.data.tags.map((tag) => tag.trim()).filter(Boolean).slice(0, 12),
   };
+  const reviewError = publicationError(event);
+  if (reviewError) {
+    res.status(400).json({ error: reviewError });
+    return;
+  }
+  event.summary = absoluteSummary(event.summary, event.eventDate);
   if (!event.title || event.title.length > 200 || event.summary.length > 2000 ||
       (event.eventDate !== null && !isCalendarDate(event.eventDate)) ||
       [event.startTime, event.endTime].some((time) => time !== null && !/^([01]\d|2[0-3]):[0-5]\d$/.test(time))) {

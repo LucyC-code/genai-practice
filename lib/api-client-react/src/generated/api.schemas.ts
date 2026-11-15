@@ -93,8 +93,10 @@ export interface Event {
 }
 
 export interface EventInput {
+  /** Publication requires explicit human review confirmation. Not stored as event content. */
+  reviewConfirmed?: boolean;
   /**
-     * @minLength 1
+     * @minLength 0
      * @maxLength 200
      */
   title: string;
@@ -135,6 +137,11 @@ export type ParsedEvent = EventInput & {
 };
 
 export interface AnnouncementInput {
+  /**
+     * Optional original campus-local YYYY-MM-DDTHH:mm or offset-aware ISO timestamp. Defaults to server submission time in America/Indiana/Indianapolis.
+     * @maxLength 64
+     */
+  originalPostTime?: string;
   /**
      * @minLength 12
      * @maxLength 12000

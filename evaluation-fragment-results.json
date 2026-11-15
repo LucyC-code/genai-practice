@@ -1,0 +1,35 @@
+{
+  "case": "Bare late-night fragment follow-up",
+  "expected": "Incomplete rule-based draft, October 31, 19:00, no invented title; no AI call",
+  "actual": {
+    "events": [
+      {
+        "title": "",
+        "summary": "Date: October 31, 2026. Start: 19:00. Event identity is not confirmed.",
+        "eventDate": "2026-10-31",
+        "startTime": "19:00",
+        "endTime": null,
+        "location": null,
+        "hostOrganization": null,
+        "category": "Community",
+        "tags": [],
+        "source": "Other",
+        "sourceUrl": null,
+        "classYears": [],
+        "missingFields": [
+          "Title",
+          "Location",
+          "Host organization"
+        ],
+        "uncertainties": [
+          "Date/time-only fragment. Supply the actual event title and verify the generic category; no activity, venue or host was inferred."
+        ]
+      }
+    ],
+    "notes": [
+      "Rule-based partial draft for a date/time-only fragment; no AI call was made. Not a complete or publishable event.",
+      "Reference: original post time — Friday, October 30, 2026 at 9:30:00 PM EDT (America/Indiana/Indianapolis; 2026-10-31T01:30:00.000Z)."
+    ]
+  },
+  "status": "pass"
+}

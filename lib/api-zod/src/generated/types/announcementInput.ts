@@ -9,6 +9,11 @@ import type { EventSource } from './eventSource';
 
 export interface AnnouncementInput {
   /**
+     * Optional original campus-local YYYY-MM-DDTHH:mm or offset-aware ISO timestamp. Defaults to server submission time in America/Indiana/Indianapolis.
+     * @maxLength 64
+     */
+  originalPostTime?: string;
+  /**
      * @minLength 12
      * @maxLength 12000
      */

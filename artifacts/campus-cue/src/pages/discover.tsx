@@ -9,6 +9,9 @@ import { ACTIVITIES, SPORTS, matchesDiscovery, type Activity, type Sport } from 
 import { CalendarActions } from "@/components/calendar-actions";
 import { EventCalendar } from "@/components/event-calendar";
 import { MAX_SELECTED_CATEGORIES, toggleCategory, matchesCategories, serverCategory } from "@/lib/category-selection";
+import { availabilityError, matchesDiscoveryTime } from "@/lib/availability";
+import { groupFilteredEvents } from "@/lib/event-series";
+import { EventSeriesCard } from "@/components/event-series-card";
 
 const TF = [["all", "Anytime"], ["today", "Today"], ["week", "This week"]] as const;
 
@@ -42,7 +45,7 @@ function EventCard({ ev, i, onOpen, fits }: { ev: Event; i: number; onOpen: () =
         <h3 className="mt-1.5 text-lg font-bold leading-snug group-hover:text-primary transition-colors">{ev.title}</h3>
         <p className="mt-1 line-clamp-3 text-sm leading-relaxed text-foreground/80">{ev.summary}</p>
         {ev.tags.length > 0 && <div className="mt-2 flex flex-wrap gap-1">{ev.tags.slice(0, 3).map(tag => <span key={tag} className="rounded bg-muted px-1.5 py-0.5 text-[10px] font-mono-cue">{tag}</span>)}</div>}
-        {fits && <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-chart-2"><CheckCircle2 className="h-3.5 w-3.5" />Fits your free time</span>}
+        {fits && <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-chart-2"><CheckCircle2 className="h-3.5 w-3.5" />{ev.endTime ? "Fits your free time" : "Start fits · End time not confirmed"}</span>}
         <div className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
           <span className="flex items-center gap-1"><Clock className="h-3.5 w-3.5" />{t ?? <Unconfirmed label="Time unconfirmed" />}</span>
           <span className="flex items-center gap-1"><MapPin className="h-3.5 w-3.5" />{ev.location ?? <Unconfirmed label="Location unconfirmed" />}</span>
@@ -141,7 +144,7 @@ export default function Discover() {
     setVisibleCount(48);
   }, [search, categories, classYear, timeframe, activity, sport, onDate, availableFrom, availableUntil, includeWeeklySchedules]);
   const params = useMemo<GetEventsParams>(() => {
-    const p: GetEventsParams = { timeframe };
+    const p: GetEventsParams = { timeframe: "all" };
     if (search.trim()) p.search = search.trim();
     const category = serverCategory(categories);
     if (category) p.category = category;
@@ -150,12 +153,15 @@ export default function Discover() {
   }, [search, categories, timeframe, classYear]);
   const { data: events, isLoading, isError, refetch } = useGetEvents(params);
   const { data: ov } = useGetEventOverview();
-  const availabilityActive = !!availableFrom && !!availableUntil && availableFrom < availableUntil;
+  const timeError = availabilityError(availableFrom, availableUntil);
+  const availabilityActive = !!availableFrom && !!availableUntil && !timeError;
+  const campusToday = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Indiana/Indianapolis", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
   const matchingEvents = (events ?? []).filter(ev =>
     matchesCategories(ev.category, categories) &&
     (includeWeeklySchedules || !ev.tags.includes("Published weekly schedule")) &&
-    matchesDiscovery(ev, activity, ev.category === "Sports" ? sport : "", onDate) && (!availabilityActive ||
-      (ev.startTime && ev.endTime && ev.startTime < ev.endTime && ev.startTime >= availableFrom && ev.endTime <= availableUntil)));
+    matchesDiscovery(ev, activity, ev.category === "Sports" ? sport : "", "") &&
+    matchesDiscoveryTime(ev, availableFrom, availableUntil, onDate, timeframe, campusToday));
+  const feed = groupFilteredEvents(matchingEvents);
   const weeklyCount = matchingEvents.filter(ev => ev.tags.includes("Published weekly schedule")).length;
   const categoryLimitReached = categories.length >= MAX_SELECTED_CATEGORIES;
   const sportSelectionBlocked = categoryLimitReached && !categories.includes("Sports");
@@ -247,14 +253,16 @@ export default function Discover() {
           <label className="flex items-center gap-2">From <input type="time" value={availableFrom} onChange={e => setAvailableFrom(e.target.value)} data-testid="input-available-from" className="rounded-lg border-2 border-input bg-background px-2 py-1" /></label>
           <label className="flex items-center gap-2">to <input type="time" value={availableUntil} onChange={e => setAvailableUntil(e.target.value)} data-testid="input-available-until" className="rounded-lg border-2 border-input bg-background px-2 py-1" /></label>
           {(availableFrom || availableUntil) && <button onClick={() => { setAvailableFrom(""); setAvailableUntil(""); }} data-testid="button-clear-availability" className="text-xs underline">Clear</button>}
-          <p className="w-full text-xs text-muted-foreground">{availabilityActive ? "Showing events fully inside this window with confirmed start and end times. No calendar connection needed." : availableFrom && availableUntil ? "End time must be later than start time." : "Optional: enter both times to find events that fit."}</p>
+          <p className="w-full text-xs text-muted-foreground">Campus time (America/Indiana/Indianapolis). Known intervals must fit completely. Start-only events can match with end unconfirmed; unknown starts are excluded. From later than To crosses midnight, including the following morning of a selected date. Without a date, the window applies to each night. Blank times leave time unrestricted.</p>
+          <p className="w-full text-xs text-muted-foreground">Choose a date to revisit past events; otherwise the feed shows today and future dates.</p>
+          {timeError && <p role="alert" className="w-full text-sm text-destructive" data-testid="error-availability">{timeError}</p>}
         </div>
         <div className="space-y-1 border-t border-border pt-3">
           <label className="flex items-center gap-2 text-sm font-semibold">
             <input type="checkbox" checked={includeWeeklySchedules} onChange={e => setIncludeWeeklySchedules(e.target.checked)} data-testid="checkbox-weekly-schedules" className="h-4 w-4 accent-primary" />
             Include published weekly schedules
           </label>
-          <p className="text-xs text-muted-foreground">Counts refer to dated occurrences, not unique event series. Weekly schedules are labeled and exclude published semester breaks. Turn this off to focus on individually dated announcements.</p>
+          <p className="text-xs text-muted-foreground">Filters apply to occurrences before grouping. Recurring campus Masses share an expandable card; distinct events stay separate. Turn this off to hide published weekly schedules.</p>
         </div>
       </section>
       <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
@@ -262,7 +270,7 @@ export default function Discover() {
           <button onClick={() => changeView("list")} aria-pressed={view === "list"} data-testid="button-view-list" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "list" ? "bg-foreground text-background" : "hover:bg-muted"}`}><List className="h-4 w-4" />List</button>
           <button onClick={() => changeView("calendar")} aria-pressed={view === "calendar"} data-testid="button-view-calendar" className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 font-semibold ${view === "calendar" ? "bg-foreground text-background" : "hover:bg-muted"}`}><CalendarDays className="h-4 w-4" />Calendar</button>
         </div>
-        <span className="font-mono-cue text-muted-foreground" aria-live="polite">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${matchingEvents.length} matching event${matchingEvents.length === 1 ? "" : "s"}${weeklyCount ? ` · ${weeklyCount} weekly-schedule occurrences` : ""}`}</span>
+        <span className="font-mono-cue text-muted-foreground" aria-live="polite" data-testid="text-result-count">{isLoading ? "Finding events…" : isError ? "Feed unavailable" : `${feed.occurrences.length} matching occurrences · ${feed.items.length} cards${weeklyCount ? ` · ${weeklyCount} weekly-schedule occurrences` : ""}${feed.duplicateCount ? ` · ${feed.duplicateCount} exact duplicate listings combined` : ""}`}</span>
         {filtersActive && <button onClick={reset} data-testid="button-clear-filters" className="flex items-center gap-1.5 font-semibold underline underline-offset-4"><RotateCcw className="h-3.5 w-3.5" />Clear filters</button>}
       </div>
 
@@ -270,17 +278,21 @@ export default function Discover() {
       : isError ? <div className="rounded-2xl border-2 border-dashed border-destructive p-10 text-center" data-testid="status-error">
           <p className="font-bold">The board didn't load.</p>
           <button onClick={() => refetch()} data-testid="button-retry" className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-1.5 text-sm font-semibold text-background"><RotateCcw className="h-4 w-4" />Retry</button></div>
-      : view === "calendar" ? <EventCalendar events={matchingEvents} onOpen={setOpen} anchorDate={onDate || undefined} />
+      : view === "calendar" ? <EventCalendar events={feed.occurrences} onOpen={setOpen} anchorDate={onDate || undefined} />
       : matchingEvents.length === 0 ? <div className="rounded-2xl border-2 border-dashed border-foreground/40 p-12 text-center" data-testid="status-empty">
           <CalendarX className="mx-auto h-10 w-10 text-primary" />
           <p className="mt-3 text-lg font-bold">Nothing matches that yet.</p>
           <p className="text-sm text-muted-foreground">Loosen a filter, or post an announcement you spotted.</p>
           <button onClick={reset} data-testid="button-reset" className="mt-4 rounded-full bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground">Clear filters</button></div>
       : <div className="space-y-5">
-          <div className="grid gap-5 md:grid-cols-2">{matchingEvents.slice(0, visibleCount).map((ev, i) => <EventCard key={ev.id} ev={ev} i={i} fits={availabilityActive} onOpen={() => setOpen(ev)} />)}</div>
-          {matchingEvents.length > visibleCount && <div className="space-y-2 text-center">
-            <p className="text-xs text-muted-foreground">Showing {visibleCount} of {matchingEvents.length} matching events</p>
-            <button onClick={() => setVisibleCount(count => count + 48)} data-testid="button-more-events" className="rounded-full border-2 border-foreground bg-card px-5 py-2 text-sm font-semibold hover:bg-muted">Show {Math.min(48, matchingEvents.length - visibleCount)} more events</button>
+          <div className="grid gap-5 md:grid-cols-2">{feed.items.slice(0, visibleCount).map((item, i) => <div key={item.event.id} className="min-w-0">
+            {item.kind === "series" ? <EventSeriesCard title={item.title} occurrences={item.occurrences} onOpen={setOpen} />
+              : <EventCard ev={item.event} i={i} fits={availabilityActive} onOpen={() => setOpen(item.event)} />}
+            {feed.duplicates.get(item.event.id)?.map(duplicate => <button key={duplicate.id} onClick={() => setOpen(duplicate)} className="mt-2 text-xs underline">View identical source listing #{duplicate.id}</button>)}
+          </div>)}</div>
+          {feed.items.length > visibleCount && <div className="space-y-2 text-center">
+            <p className="text-xs text-muted-foreground">Showing {visibleCount} of {feed.items.length} cards ({feed.occurrences.length} matching occurrences)</p>
+            <button onClick={() => setVisibleCount(count => count + 48)} data-testid="button-more-events" className="rounded-full border-2 border-foreground bg-card px-5 py-2 text-sm font-semibold hover:bg-muted">Show {Math.min(48, feed.items.length - visibleCount)} more cards</button>
           </div>}
         </div>}
       <section className="rounded-xl border-2 border-dashed border-border p-4 text-sm">

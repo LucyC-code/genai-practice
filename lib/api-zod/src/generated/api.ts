@@ -61,6 +61,7 @@ export const GetEventsResponse = zod.array(GetEventsResponseItem)
 /**
  * @summary Publish a reviewed event to the campus feed
  */
+export const createEventBodyTitleMin = 0;
 export const createEventBodyTitleMax = 200;
 
 export const createEventBodySummaryMax = 2000;
@@ -75,7 +76,8 @@ export const createEventBodyClassYearsMax = 6;
 
 
 export const CreateEventBody = zod.object({
-  "title": zod.string().min(1).max(createEventBodyTitleMax),
+  "reviewConfirmed": zod.boolean().optional().describe('Publication requires explicit human review confirmation. Not stored as event content.'),
+  "title": zod.string().min(createEventBodyTitleMin).max(createEventBodyTitleMax),
   "summary": zod.string().max(createEventBodySummaryMax),
   "eventDate": zod.string().regex(createEventBodyEventDateRegExp).nullable(),
   "startTime": zod.string().nullable(),
@@ -130,16 +132,20 @@ export const GetEventOverviewResponse = zod.object({
 /**
  * @summary Extract event details from an unstructured campus announcement
  */
+export const parseAnnouncementBodyOriginalPostTimeMax = 64;
+
 export const parseAnnouncementBodyAnnouncementMin = 12;
 export const parseAnnouncementBodyAnnouncementMax = 12000;
 
 
 
 export const ParseAnnouncementBody = zod.object({
+  "originalPostTime": zod.string().max(parseAnnouncementBodyOriginalPostTimeMax).optional().describe('Optional original campus-local YYYY-MM-DDTHH:mm or offset-aware ISO timestamp. Defaults to server submission time in America/Indiana/Indianapolis.'),
   "announcement": zod.string().min(parseAnnouncementBodyAnnouncementMin).max(parseAnnouncementBodyAnnouncementMax),
   "source": zod.enum(['Email', 'Instagram', 'GroupMe', 'Campus website', 'Student organization', 'Other'])
 })
 
+export const parseAnnouncementResponseEventsItemOneTitleMin = 0;
 export const parseAnnouncementResponseEventsItemOneTitleMax = 200;
 
 export const parseAnnouncementResponseEventsItemOneSummaryMax = 2000;
@@ -155,7 +161,8 @@ export const parseAnnouncementResponseEventsItemOneClassYearsMax = 6;
 
 export const ParseAnnouncementResponse = zod.object({
   "events": zod.array(zod.object({
-  "title": zod.string().min(1).max(parseAnnouncementResponseEventsItemOneTitleMax),
+  "reviewConfirmed": zod.boolean().optional().describe('Publication requires explicit human review confirmation. Not stored as event content.'),
+  "title": zod.string().min(parseAnnouncementResponseEventsItemOneTitleMin).max(parseAnnouncementResponseEventsItemOneTitleMax),
   "summary": zod.string().max(parseAnnouncementResponseEventsItemOneSummaryMax),
   "eventDate": zod.string().regex(parseAnnouncementResponseEventsItemOneEventDateRegExp).nullable(),
   "startTime": zod.string().nullable(),

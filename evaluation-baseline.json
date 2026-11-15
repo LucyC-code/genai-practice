@@ -1,0 +1,16 @@
+{
+  "method": "Executed before edits: reproduction of inspected legacy expressions, not a historical live-model or browser replay",
+  "controlledInstant": "2026-10-31T01:30:00Z",
+  "campusTime": "2026-10-30 21:30 America/Indiana/Indianapolis",
+  "expected": {
+    "referenceDate": "2026-10-30",
+    "tomorrow": "2026-10-31",
+    "availabilityActive": true
+  },
+  "observedBeforeEdits": {
+    "referenceDate": "2026-10-31",
+    "tomorrow": "2026-11-01",
+    "availabilityActive": false,
+    "consequence": "Time predicate bypassed: all otherwise matching events pass."
+  }
+}

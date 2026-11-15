@@ -10,8 +10,10 @@ import type { EventCategory } from './eventCategory';
 import type { EventSource } from './eventSource';
 
 export interface EventInput {
+  /** Publication requires explicit human review confirmation. Not stored as event content. */
+  reviewConfirmed?: boolean;
   /**
-     * @minLength 1
+     * @minLength 0
      * @maxLength 200
      */
   title: string;

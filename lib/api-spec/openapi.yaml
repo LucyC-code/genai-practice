@@ -218,9 +218,12 @@ components:
     EventInput:
       type: object
       properties:
+        reviewConfirmed:
+          type: boolean
+          description: Publication requires explicit human review confirmation. Not stored as event content.
         title:
           type: string
-          minLength: 1
+          minLength: 0
           maxLength: 200
         summary:
           type: string
@@ -286,6 +289,10 @@ components:
     AnnouncementInput:
       type: object
       properties:
+        originalPostTime:
+          type: string
+          maxLength: 64
+          description: Optional original campus-local YYYY-MM-DDTHH:mm or offset-aware ISO timestamp. Defaults to server submission time in America/Indiana/Indianapolis.
         announcement:
           type: string
           minLength: 12
