@@ -38,3 +38,9 @@ Football-weekend networking requires checking Mendoza, the Alumni Association, a
 **Why:** The central feeds omitted explicitly advertised alumni/graduate-student and donor-community gatherings. Search results also mixed in Notre Dame of Maryland events and older Instagram posts, while giving-society listings carried restrictive member levels and advance-registration rules.
 
 **How to apply:** Check https://mendoza.nd.edu/alumni/gamedayconnect, current my.nd.edu Football Fridays listings, and https://giving.nd.edu/notre-dame-giving-society-events-for-the-2026-football-season. The giving site exposes public structured records at /wp-json/tribe/events/v1/events with date-window and pagination parameters; use its actual start/end dates and venues, not publication dates or reused image years. Missing dinner venues remain unknown. Distinguish public community networking from donor-only receptions and employer recruiting.
+
+Extract RSS description bodies structurally rather than slicing text by the item title's length; title padding can differ from rendered text. Check both end date and end time before rejecting an event as inconsistent.
+
+**Why:** Public NDCentral titles can contain extra whitespace, while the description's displayed title is normalized. Some club game nights genuinely finish after midnight on the following date.
+
+**How to apply:** Parse the description's body element and verify offset-aware start/end metadata. For timezone formatting in research tooling, use Node's `Intl` (or an impure callback); the durable JavaScript callback scope did not expose `Intl`.

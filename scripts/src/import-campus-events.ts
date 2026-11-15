@@ -52,6 +52,8 @@ assert.equal(Object.values(counts).reduce((a, b) => a + b, 0), events.length);
 console.log(JSON.stringify({ validated: events.length, categories: counts, apply: process.argv.includes("--apply") }));
 
 if (process.argv.includes("--apply")) {
+  assert.ok(process.argv.includes("--reviewed"), "Review the fixture against its original sources, then pass --reviewed to explicitly approve publication.");
+  assert.ok(events.every(event => event.title.trim() && event.eventDate && event.startTime), "New imports require confirmed titles, dates and start times.");
   const domain = process.env.REPLIT_DEV_DOMAIN;
   if (!domain) throw new Error("REPLIT_DEV_DOMAIN is required for this development-only import.");
   const endpoint = `https://${domain}/api/events`;
@@ -65,7 +67,7 @@ if (process.argv.includes("--apply")) {
     while (!failed && cursor < pending.length) {
       const event = pending[cursor++];
       try {
-        const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(event) });
+        const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...event, reviewConfirmed: true }) });
         if (!response.ok) throw new Error(`Import failed for ${event.title} (${response.status}): ${await response.text()}`);
         CreateEventResponse.parse(await response.json());
         inserted++;

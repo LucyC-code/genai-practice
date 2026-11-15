@@ -1,0 +1,870 @@
+{
+  "researchedAt": "2026-11-15",
+  "timezone": "America/Indiana/Indianapolis",
+  "reviewMethod": "Replit Agent compared current public NDCentral RSS metadata, descriptions and existing database identities; networking, graduate-meal and volunteering pages also fetched directly. This is source curation requested by the user, not automatic AI-extraction publication or a claim that a student checked a review checkbox.",
+  "sources": [
+    {
+      "url": "https://nd.campuslabs.com/engage/events.rss",
+      "type": "Current public organizer RSS with offset-aware start/end, venue, host and source links"
+    },
+    {
+      "url": "https://nd.campuslabs.com/engage/event/12937935",
+      "type": "Direct primary detail-page cross-check"
+    },
+    {
+      "url": "https://nd.campuslabs.com/engage/event/12970435",
+      "type": "Direct primary detail-page cross-check"
+    },
+    {
+      "url": "https://nd.campuslabs.com/engage/event/12963376",
+      "type": "Direct primary detail-page cross-check"
+    }
+  ],
+  "scopeNote": "Fifty individually dated on-campus student opportunities, November 16–December 8. No weekly worship expansion. Excludes canceled, off-campus and virtual events, ambiguous performance reservation windows, board meetings and reimbursement-only programs. Audience not inferred from host. December 3 Board Game Night explicitly ends at 1:45 a.m. December 4.",
+  "events": [
+    {
+      "title": "VRA & SAVE Act: SCOTUS Decision Meaning for Voters",
+      "summary": "Join ACS as we host IUSB'sProfessor Elizabeth Bennion as she discusses recent Supreme Court decisions that may impose limits on voting rights, as well as the potential impacts of the SAVE Act. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-16",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck Hall of Law",
+      "hostOrganization": "American Constitution Society for Law and Policy, Notre Dame Law School Chapter",
+      "category": "Politics",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12969015"
+    },
+    {
+      "title": "Dreamcatcher Making Workshop",
+      "summary": "We are hosting a dreamcatcher making workshop in conjunction with MSPS to celebrate Native American heritage month. Supplies will be provided by MSPS (room has also already been reserved by them). Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-16",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "LaFortune Community Kitchen",
+      "hostOrganization": "Native American Student Association of Notre Dame",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12968862"
+    },
+    {
+      "title": "SOLES General Meeting",
+      "summary": "General Meeting for the Society of Latino Engineers and Scientists. These meetings consist of community building, professional development, and also information on navigating Notre Dame as a Latino/a in Engineering/Science. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-16",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "131 DeBartolo Hall",
+      "hostOrganization": "Society of Latino Engineers and Scientists",
+      "category": "Clubs",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12949491"
+    },
+    {
+      "title": "BBAND General Meeting",
+      "summary": "A general BBAND meeting in the fall for any ND students who would like to join. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "16:30",
+      "endTime": "18:30",
+      "location": "134 Mendoza College of Business",
+      "hostOrganization": "Black Business Association of Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12965842"
+    },
+    {
+      "title": "Beyond Notre Dame",
+      "summary": "Members of the Class of 2027 are invited to a conversation with the Center for Student Support and Care to discuss strategies to navigate the second semester of senior year and the transition into life after graduation. Chipotle will be provided! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "125 DeBartolo Hall",
+      "hostOrganization": "Class of 2027",
+      "category": "Career",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12891594"
+    },
+    {
+      "title": "Wind Turbine Testing Day",
+      "summary": "The previous wind turbine designs will be tested, and their efficiencies will be compared. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "location": "212 Stinson Remick",
+      "hostOrganization": "Renewable Energy Club of Notre Dame",
+      "category": "Science & Technology",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12956709"
+    },
+    {
+      "title": "CEEES SWE Sudoku Showdown",
+      "summary": "Join CEEES SWE for a fun Sudoku Showdown! Put your logic and problem-solving skills to the test in a friendly competition with fellow students. All skill levels are welcome! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "location": "116 DeBartolo Hall",
+      "hostOrganization": "Society of Women Engineers, University of Notre Dame section of the",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12938455"
+    },
+    {
+      "title": "TEA@ND Projects Meeting",
+      "summary": "Join TEA@ND to work on our themed entertainment industry related projects and competitions! The themed entertainment industry encompasses everything from theme parks, museums, zoos, aquariums, and more! Project meetings provide students with industry related skills as we learn about enigneering, design, and storytelling. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "B19 Fitzpatrick Hall of Engineering",
+      "hostOrganization": "Themed Entertainment Association at Notre Dame",
+      "category": "Clubs",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710419"
+    },
+    {
+      "title": "Grad Student Indoor Volleyball",
+      "summary": "Grad student indoor volleyball! While it's too cold to play sand, we'll play inside every Tuesday and Thursday 7-10pm and Sundays 6-9pm, in the Rockne Memorial Gym. No experience required! Great way to meet fellow grad students, get active, and have some fun! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-17",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "location": "Rec Sports - Rockne Basketball Court 1",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Sports",
+      "tags": [
+        "November–December 2026",
+        "Volleyball",
+        "Participate"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12611464"
+    },
+    {
+      "title": "Red Cross Blood Drive",
+      "summary": "The Red Cross Club will host a blood drive to collect blood donations from members of the Notre Dame community. Members from the Red Cross will set up sign in tables for club members to run and the nurses will collect the donations. Donor eligibility applies; consult the organizer for appointment requirements. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "10:00",
+      "endTime": "17:00",
+      "location": "8th Floor, Rasmus Club",
+      "hostOrganization": "American Red Cross Club of the University of Notre Dame",
+      "category": "Service & Volunteering",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12753448"
+    },
+    {
+      "title": "Tax LLM Talk with Professor Steve Olson",
+      "summary": "Come hear from Professor Steve Olson of Villanova University about what tax LLMs are, why they are useful, and how to go about getting one. Lunch will be provided! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Eck School of Law",
+      "hostOrganization": "Tax Law Society of the Notre Dame Law School",
+      "category": "Career",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12883655"
+    },
+    {
+      "title": "Wellness Wednesday: Note Your Gratitude",
+      "summary": "Take a pause and send some love! Stop by our gratitude station to write a quick postcard to NDPD, Dining Hall Staff, or the custodial team and discover how simple acts of appreciation can boost your well-being and brighten someone's day. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "location": "Duncan Student Center Tables",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12489293"
+    },
+    {
+      "title": "Cornucopia Craze",
+      "summary": "This event is a Hunger Games-themed trail mix-making event to generate excitement for the new Hunger Games movie and build community with a fun snack event! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Field House Mall",
+      "hostOrganization": "Student Union Board",
+      "category": "Food",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12967130"
+    },
+    {
+      "title": "A Talk with Dr. Von Holzen",
+      "summary": "Join us for an informational talk with Dr. Urs von Holzen! Dr. von Holzen currently holds the position of Medical Director at the Goshen Center for Cancer Care. He is a professor of Surgery at Indiana University School of Medicine in South Bend. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "17:15",
+      "endTime": "18:30",
+      "location": "Meeting Rm 1 South W106",
+      "hostOrganization": "Harper Cancer Research Institute Society",
+      "category": "Science & Technology",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12963178"
+    },
+    {
+      "title": "Professional Development Workshop",
+      "summary": "In partnership with the Meruelo Family Center for Career Development, this workshop will offer students an opportunity to strengthen their resumes and better prepare for future career opportunities. The workshop will address how to describe experiences effectively and identify areas for improvement. Students will also be introduced to Career Center services and resources that can support their internship and job searches. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "location": "Duncan Student Center - Meruelo Family Center for Career Development, Room 512",
+      "hostOrganization": "Global Health Club of Notre Dame",
+      "category": "Career",
+      "tags": [
+        "November–December 2026",
+        "Resume workshop",
+        "Career"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12938264"
+    },
+    {
+      "title": "ASCE X EES Event",
+      "summary": "This event will be a fun social gameshow event for members of the ASCE and EES engineering student clubs. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "141 DeBartolo Hall",
+      "hostOrganization": "American Society of Civil Engineers, University of Notre Dame Student Chapter",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12975433"
+    },
+    {
+      "title": "ASCEND KPOP Dance Club Hangout Event 2026 Fall",
+      "summary": "Community Bonding for ASCEND Dance Club, where we DIY photocards, friendship bracelets, K-pop performance streaming, and fun talks! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-18",
+      "startTime": "19:00",
+      "endTime": "21:00",
+      "location": "Meeting Rm 1 South W106",
+      "hostOrganization": "ASCEND: K-Pop Dance Club",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12974718"
+    },
+    {
+      "title": "Cooking Club Fall Bake Sale",
+      "summary": "Join us for our Fall Bake Sale, featuring a delicious spread of scratch-made seasonal treats crafted by Cooking Club’s board members. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "10:30",
+      "endTime": "14:30",
+      "location": "Duncan Student Center Lobby Table A, Lobby Table B",
+      "hostOrganization": "Cooking Club of Notre Dame",
+      "category": "Food",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12925479"
+    },
+    {
+      "title": "STEM writing Workshop / Overleaf Tutorial",
+      "summary": "Join us for a writing workshop specifically for STEM students. We will discuss how to use tools such as Overleaf, as well as some tips and tricks for writing papers. Pizza will be provided Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026",
+        "STEM writing",
+        "Workshop"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12973199"
+    },
+    {
+      "title": "Beyond Small Talk: Networking Skills for Scientists & Engineers",
+      "summary": "The motive of this event is to Identify opportunities to build professional connections and approach networking as intentional relationship-building. Develop and deliver a concise, adaptable elevator pitch that communicates their background, work, interests, and professional direction. Apply strategies for initiating and managing small talk, including finding points of connection and transitioning from casual conversation to meaningful professional topics. Practice strategies for sustaining, concluding, and following up on professional networking conversations. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "location": "McCourtney Hall East-Lower Level-NDR B019 Meeting Room",
+      "hostOrganization": "Electrochemical Society Student Chapter of Notre Dame",
+      "category": "Networking",
+      "tags": [
+        "November–December 2026",
+        "Networking skills",
+        "Workshop"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12937935"
+    },
+    {
+      "title": "Take a Paws",
+      "summary": "This week enjoy Crumbl Cookies with a Comfort K9 at the McDonald Center for Student Well-Being! Drop in any Thursday for your weekly dose of puppy love and tasty treats. You deserve a break! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "location": "McDonald Center for Student Well-Being",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12500181"
+    },
+    {
+      "title": "Popping with Gratitude",
+      "summary": "FLIP's first event of the year will be a gratitude note writing and build your own snack mix event. Students can come write what they're grateful for on a sticky note and post it on a banner, and then build their own snack mix with a variety of provided ingredients. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "15:00",
+      "endTime": "18:00",
+      "location": "LaFortune Elevator Lobby",
+      "hostOrganization": "Student Union Board",
+      "category": "Food",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12898853"
+    },
+    {
+      "title": "Stich the Gap: Navigating Difficult Conversations",
+      "summary": "Learn to navigate difficult conversations or conflict in this short workshop and get a chance to try out cross-stitching with your own free kit! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "15:30",
+      "endTime": "17:00",
+      "location": "Champions of Diversity Room",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12515018"
+    },
+    {
+      "title": "Craft and Unwind: Student Concerns Drop-In",
+      "summary": "Join us for a monthly informal drop-in space to chill, craft, and chat about graduate student life. Whether you're navigating new adjustments, have student concerns, or just looking for a community, this is your space to recharge. Unwind with hands-on crafting activities like crocheting, adult coloring, and bracelet/keychain making. Vocalize what’s on your mind, or just zone out and focus on your craft. Supplies and light refreshments are provided. All are welcome. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "location": "Grad Student Lounge",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Wellness",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12750179"
+    },
+    {
+      "title": "Gratitude Grams",
+      "summary": "Making gratitude grams with candy. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "location": "Lobby Table A  Door 16",
+      "hostOrganization": "Class of 2028",
+      "category": "Community",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12925504"
+    },
+    {
+      "title": "Noraebang November",
+      "summary": "KSA will host a casual, fun karaoke night (called noraebang in Korean) with spam kimchi fried rice. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "16:00",
+      "endTime": "20:00",
+      "location": "Fischer Community Center",
+      "hostOrganization": "Korean Student Association",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12934062"
+    },
+    {
+      "title": "Game Night",
+      "summary": "CCS is hosting a game night to play mahjong, enjoy Chinese snacks, and meet new people. Following games, we will have a CCS dinner for anyone wanting to join. Everyone is welcome! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Chinese Culture Society",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12641328"
+    },
+    {
+      "title": "Greek Cooking Class",
+      "summary": "This will be a cooking class on making koulourakia, a kind of Greek cookie! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Community Kitchen",
+      "hostOrganization": "Hellenic Student Association of Notre Dame",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12922745"
+    },
+    {
+      "title": "Cosmic Cubes: A Rubik’s Cube & Astronomy Night",
+      "summary": "Join Cosmos Club and Rubik’s Cube Club for a night of puzzles, space, and friendly competition! Learn how to solve a Rubik’s Cube, compete in timed challenges, and explore how math and patterns show up in astronomy. Whether you're a speedcuber or have never solved a cube before, everyone is welcome! We'll have snacks, prizes, and plenty of opportunities to try something new. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "125 DeBartolo Hall",
+      "hostOrganization": "Cosmos",
+      "category": "Science & Technology",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12959395"
+    },
+    {
+      "title": "Pizza, Path, and Planning",
+      "summary": "Event for underclassmen to come and speak to upperclassmen regarding courses for next semester and research opportunities, while also having pizza! This event is held every semester in preparation for course registration. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "location": "Nieuwland Science Hall Rm. 202",
+      "hostOrganization": "Society of Physics Students, University of Notre Dame Chapter",
+      "category": "Academic",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "Freshman",
+        "Sophomore"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12965374"
+    },
+    {
+      "title": "QuestBridge Thanksgiving Potluck",
+      "summary": "Thanksgiving is all about bringing people together, and what better way to celebrate than sharing a meal with our QuestBridge community? Come enjoy Olive Garden catering , catch up with friends, and take a well-deserved break from the semester. No activities or agenda , just a cozy gathering filled with food, conversation, and good company. Feel free to bring a dish to share, but it's absolutely not required! Come hungry, stay awhile, and celebrate Thanksgiving with your QuestBridge family! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "location": "Meeting Rm 2 North W246",
+      "hostOrganization": "QuestBridge Chapter of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12941525"
+    },
+    {
+      "title": "Learning Workshop: Anatomy Jeopardy",
+      "summary": "The purpose of this event is to engage members in interactive, anatomy-based learning through a Jeopardy-style review format. This workshop is designed to reinforce foundational anatomical knowledge, encourage collaborative learning, and introduce members to educational programming offered by the organization. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "129 DeBartolo Hall",
+      "hostOrganization": "HOSA-Future Health Professionals Chapter of the University of Notre Dame",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12911120"
+    },
+    {
+      "title": "FASO x VSA x Japan Club",
+      "summary": "Thanksgiving Event amongst the FASO, Japan Club, and VSA. Great socializing and excitement before Thanksgiving break. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-19",
+      "startTime": "19:00",
+      "endTime": "21:00",
+      "location": "141 DeBartolo Hall",
+      "hostOrganization": "Filipino-American Student Organization of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12968709"
+    },
+    {
+      "title": "AWIS Paint and Treats",
+      "summary": "Join us for an evening of painting and delicious sweets! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-23",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "location": "207 DeBartolo Hall",
+      "hostOrganization": "Association for Women in Science-Notre Dame",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12980454"
+    },
+    {
+      "title": "SWE EE Upperclassmen Panel",
+      "summary": "Attention freshmen considering Electrical Engineering! Listen to a panel of upperclassmen describe their respective experiences with EE (whether that be in the classroom, clubs, or in the workforce). This is a great opportunity to help discern your engineering discipline. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-23",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "Meeting Rm 2 North W246",
+      "hostOrganization": "Society of Women Engineers, University of Notre Dame section of the",
+      "category": "Career",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "Freshman"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12946188"
+    },
+    {
+      "title": "Best Buddies Thanksgiving Event",
+      "summary": "Students from tri campus community and adults with IDD will meet for social activities, food, and dancing. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-23",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "location": "Dahnke Ballroom",
+      "hostOrganization": "Best Buddies",
+      "category": "Community",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12838072"
+    },
+    {
+      "title": "GSG Thanksgiving brunch",
+      "summary": "Thanksgiving Lunch Celebration Join us for a cozy and festive Thanksgiving lunch on Thursday, November 26th, from 11 am to 3 pm at the North Dining Hall . Enjoy a delicious holiday meal prepared by Campus Dining, while connecting with fellow grad students and celebrating the season of gratitude. Tickets: Advance Purchase Only: $9 per adult, $6 for children. At-the-Door Price: $25+ per person (if still available). Eligibility: Open to ND graduate students in the Arts & Letters, Science, Engineering, Global Affairs, Architecture programs, and doctoral students from Mendoza College of Business. Purchase Deadline: Noon on November 24th. One ticket per person, and tickets must be bought in advance. You can buy up to 4 tickets. Tickets are physical tickets, available exclusively through the Graduate Student Government (GSG) at a discounted rate. Tickets are purchased at the LaFortune Box Office, while supplies last. There will be 300 adult and 25 child tickets available. Credit card only, cash and Apple pay are not accepted. Don’t miss this opportunity to share a meal, enjoy good company, and make new memories. We look forward to celebrating Thanksgiving with you! The listing mentions conditional at-the-door pricing but also says advance tickets are required; confirm with GSG before relying on walk-up entry. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-26",
+      "startTime": "11:00",
+      "endTime": "15:00",
+      "location": "North Dining Hall",
+      "hostOrganization": "Graduate Student Government",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Program restrictions",
+        "Ticket required"
+      ],
+      "classYears": [
+        "Graduate"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12970435"
+    },
+    {
+      "title": "Best Buddies Event — Bingo Night and Christmas",
+      "summary": "Individuals with IDD (registered through the Logan Center) and ND students will meet for social activities, food, bingo, and crafts. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-30",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "location": "Dahnke Ballroom",
+      "hostOrganization": "Best Buddies",
+      "category": "Community",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12838052"
+    },
+    {
+      "title": "\"Holiday Celebration: Unwind & Enjoy Christmas Music\"",
+      "summary": "Social event for Notre Dame songwriters, share any recent music, connect with friends. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-11-30",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "location": "O'Neill Hall of Music Rm 324",
+      "hostOrganization": "Songwriters Association of Notre Dame",
+      "category": "Arts & Culture",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710942"
+    },
+    {
+      "title": "Red Cross Blood Drive",
+      "summary": "The Red Cross Club will host a blood drive to collect blood donations from members of the Notre Dame community. Members from the Red Cross will set up sign in tables for club members to run and the nurses will collect the donations. Donor eligibility applies; consult the organizer for appointment requirements. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-01",
+      "startTime": "11:00",
+      "endTime": "16:00",
+      "location": "8th Floor, Rasmus Club",
+      "hostOrganization": "American Red Cross Club of the University of Notre Dame",
+      "category": "Service & Volunteering",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12753462"
+    },
+    {
+      "title": "WLF Finals Send-Off",
+      "summary": "WLF will have a finals send off for its members. We will provide goodie bags for members, as well as free lunch. It will be a great time for members to socialize before finals. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-01",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "location": "Notre Dame Law - Eck Hall",
+      "hostOrganization": "Women's Legal Forum, Notre Dame Law School",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Club activity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12949789"
+    },
+    {
+      "title": "Wellness Wednesday - Sleep for Success",
+      "summary": "Ready to upgrade your sleep routine? Drop by the Duncan Student Center table to build your custom sleep kit and grab the best tools, tips, and tricks for catching better Zs during crunch time! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-02",
+      "startTime": "15:00",
+      "endTime": "17:00",
+      "location": "Duncan Student Center Tables",
+      "hostOrganization": "McDonald Center for Student Well-Being",
+      "category": "Wellness",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12489294"
+    },
+    {
+      "title": "Game Night",
+      "summary": "CCS is hosting a game night to play mahjong, enjoy Chinese snacks, and meet new people. Following games, we will have a CCS dinner for anyone wanting to join. Everyone is welcome! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-03",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Chinese Culture Society",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12641329"
+    },
+    {
+      "title": "Board Game Night",
+      "summary": "Come join the Board Game Club for an amazing night of captivating board gaming and cheerful friendship. Open to beginners and experienced players alike! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-03",
+      "startTime": "19:15",
+      "endTime": "01:45",
+      "location": "LaFortune McNeill Room - Rm116",
+      "hostOrganization": "Board Game Club",
+      "category": "Social",
+      "tags": [
+        "November–December 2026",
+        "Board games",
+        "Ends next day"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12710400"
+    },
+    {
+      "title": "Holiday Veteran Card Making",
+      "summary": "Join the American Red Cross Club at Notre Dame for our Holiday Veteran Card Making Event! Stop by our table in the Duncan Student Center to help create heartfelt seasonal cards that will be sent to veterans, honoring their service and bringing them joy this holiday season. We’ll provide all the supplies you need—cards, markers, and stickers —so you can add a personal touch. This event isn’t just about giving back; it’s also a chance to meet fellow students who are passionate about making a difference. Enjoy some free snacks, and chat with club members to learn more about our volunteer opportunities. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-04",
+      "startTime": "11:30",
+      "endTime": "13:30",
+      "location": "Lobby Table A  Door 16",
+      "hostOrganization": "American Red Cross Club of the University of Notre Dame",
+      "category": "Service & Volunteering",
+      "tags": [
+        "November–December 2026",
+        "Volunteer opportunity"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12963376"
+    },
+    {
+      "title": "Beading Circle (Fall Semester)",
+      "summary": "Board member Viddy Wabindato will lead a beading circle on Fridays from 4-5pm. Anyone is welcome to join to learn how to bead different styles of Native jewelry. Supplies will be provided. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-04",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "location": "LaFortune Champions of Diversity Room",
+      "hostOrganization": "Native American Student Association of Notre Dame",
+      "category": "Workshops",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [
+        "All years"
+      ],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12968860"
+    },
+    {
+      "title": "Community Garden End-of-Year Potluck",
+      "summary": "Join the Community Garden of Notre Dame for our second annual end-of-year potluck! Bring a dish or games to share and celebrate the end of the season with your fellow gardeners. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-04",
+      "startTime": "17:00",
+      "endTime": "19:00",
+      "location": "Meeting Rm 1 South W106",
+      "hostOrganization": "Community Garden of Notre Dame",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12845241"
+    },
+    {
+      "title": "MSA Banquet Dinner",
+      "summary": "End of semester dinner celebration of the MSA community. Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-05",
+      "startTime": "17:30",
+      "endTime": "23:45",
+      "location": "Meeting Rm 2 North W246",
+      "hostOrganization": "Muslim Student Association of Notre Dame",
+      "category": "Food",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12933145"
+    },
+    {
+      "title": "SWE AME LWOK Event",
+      "summary": "Holiday craft and snacks available in a drop-by event for AME students to connect and de-stress before finals Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-07",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "location": "LaFortune Gold Room - Rm 306",
+      "hostOrganization": "Society of Women Engineers, University of Notre Dame section of the",
+      "category": "Social",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12959389"
+    },
+    {
+      "title": "Periodic Table Cookie Decorating",
+      "summary": "A fun way to end the semester! We'll get together and decorate cookies as the periodic table! Check the original organizer listing for RSVP and participation requirements; a public listing is not proof of unrestricted attendance.",
+      "eventDate": "2026-12-08",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "location": "Jordan Hall Reading Room",
+      "hostOrganization": "Chemistry and Biochemistry Club",
+      "category": "Food",
+      "tags": [
+        "November–December 2026"
+      ],
+      "classYears": [],
+      "source": "Campus website",
+      "sourceUrl": "https://nd.campuslabs.com/engage/event/12799924"
+    }
+  ]
+}

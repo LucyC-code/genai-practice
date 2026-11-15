@@ -42,6 +42,14 @@ Model configuration is not a guarantee of factual correctness. One evaluated cha
 
 Existing PostgreSQL event/report data and original source links are preserved. Public-source import fixtures are under `scripts/data/`: NDCentral, university/SAO calendars, official department/library/athletics pages, Campus Ministry/Basilica schedules, and organizer-confirmed alumni/Mendoza/Giving Society events. Imports are researched snapshots, **not** continuous synchronization. Published weekly schedules are labeled occurrences with documented semester exceptions, not thousands of independently announced special events.
 
+On November 15, 2026, 50 more student opportunities dated November 16–December 8 were curated from current public NDCentral listings and added without changing the previous 1,879 records. The fixture `scripts/data/notre-dame-november-student-events.json` preserves source links, graduate/program and club restrictions, the Thanksgiving meal's advance-ticket deadline, and an explicitly overnight Board Game Night. Unknown class-year eligibility is left unset rather than guessed. Curated imports now require an explicit `--reviewed` approval in addition to `--apply`:
+
+```bash
+pnpm --filter @workspace/scripts exec tsx src/import-campus-events.ts --fixture data/notre-dame-november-student-events.json
+# After checking the original sources:
+pnpm --filter @workspace/scripts exec tsx src/import-campus-events.ts --fixture data/notre-dame-november-student-events.json --reviewed --apply
+```
+
 The app does not connect to private GroupMe, email, or Instagram accounts. A source selector is only a label. Before extraction, students are told to share only authorized announcements and remove private names, contact details, private links, and other sensitive information.
 
 - Ordinary pasted announcements are sent to the configured external AI service via Replit. Provider/platform retention is outside this app’s control; no zero-retention guarantee is made.
