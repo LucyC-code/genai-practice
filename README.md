@@ -5,6 +5,7 @@ CampusCue helps Notre Dame students find relevant campus events in one feed and 
 - [Open the live prototype](https://campus-event-discovery.replit.app/)
 - [Open the Replit project](https://replit.com/@lcrowe4/Campus-Event-Discovery)
 - [View the GitHub repository](https://github.com/LucyC-code/genai-practice)
+- https://drive.google.com/file/d/1efvcp-Az_a28L-IN0A6WUYThZkHUHkI1/view?usp=sharing - video link
 Verification and version status
 Last checked: November 15, 2026. This README records actual browser tests, live API checks, and local checks of repository commit 0667d820792a05318050b34569681e3922832967.
 
