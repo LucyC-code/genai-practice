@@ -242,4 +242,13 @@ Remaining limitations and next priorities
 3. Finish submission materials and source-quality checks. Add the demo and personal AI-use reflection. Verify mobile/accessibility behaviour and source freshness. An unfiltered browser view showed 563 “Upcoming” versus 564 matching occurrences and two similar sustainability listings; investigate count definitions and duplicate coverage.
 Review and grouping reduce risk and clutter but do not guarantee every event is accurate or relevant. Calendar-export unit tests passed; browser download/export integration was not exercised. The evaluation was not a security audit.
 
+AI-use disclosure and reflection
+ChatGPT assisted with organizing peer feedback, writing the Replit revision prompt, drafting documentation and a video plan, and performing repository/browser/API checks documented above. The repository history includes Replit Agent contributions, but that alone does not establish which prompts or personal decisions produced each change.
+
+Representative requests in this workflow:
+- Turn peer feedback into a focused Replit implementation prompt: produced requirements for grouping, scheduling, review, and evaluation.
+- Draft an updated README and video plan: produced submission-documentation drafts.
+- Run the checks and update the README after testing: produced the actual results and the deployment/repository mismatch documented here.
+Correction during verification: Earlier documentation described extraction as simulated and omitted persistence. The inspected source contains a live model call, PostgreSQL event insertion, and a basic duplicate check. Those old claims were removed. This is an audit correction, not a claim about a personal decision by the student.
+
 </details>
